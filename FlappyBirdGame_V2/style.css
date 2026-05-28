@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game-wrapper {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border: 4px solid #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+canvas {
+    display: block;
+    background-color: #70c5ce; /* Sky blue */
+}
+
+#ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#score-display {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    z-index: 10;
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    z-index: 20;
+}
+
+.screen.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #ffcc00;
+    color: #000;
+    border: 3px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #cc9900;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 #cc9900;
+}

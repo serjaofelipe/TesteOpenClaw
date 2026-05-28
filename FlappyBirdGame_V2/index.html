@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Auto-Gerado</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-wrapper">
+        <canvas id="gameCanvas" width="400" height="500"></canvas>
+        <div id="ui">
+            <div id="start-screen" class="screen active">
+                <h1 style="color: #ffcc00; text-shadow: 2px 2px #000;">FLAPPY BIRD</h1>
+                <p style="margin-top: 20px; font-size: 12px; color: #fff;">Aperte ESPAÇO para voar</p>
+            </div>
+            <div id="game-over-screen" class="screen">
+                <h2 style="color: #ff3333; text-shadow: 2px 2px #000;">GAME OVER</h2>
+                <p id="final-score" style="margin-top: 15px; color: #fff;">Score: 0</p>
+                <button id="restart-btn" style="margin-top: 20px;">Jogar Novamente</button>
+            </div>
+            <div id="score-display">0</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
