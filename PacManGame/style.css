@@ -11,79 +11,118 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: white;
+    color: #fff;
 }
 
 #game-container {
-    position: relative;
-    width: 400px;
-    background-color: #000;
-    border: 4px solid #1919A6;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(25, 25, 166, 0.8);
-    overflow: hidden;
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 #header {
+    width: 448px;
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    font-size: 12px;
-    text-align: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.score-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    gap: 8px;
+}
+
+#score, #high-score {
     color: #fff;
+}
+
+#canvas-wrapper {
+    position: relative;
+    width: 448px;
+    height: 496px;
+    border: 2px solid #222;
+    background-color: #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 canvas {
     display: block;
-    background-color: #000;
-    margin: 0 auto;
 }
 
-#ui-layer {
-    position: absolute;
-    top: 60px; /* Abaixo do header */
-    left: 0;
-    width: 100%;
-    height: 440px;
-    pointer-events: none;
-}
-
-.screen {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.85);
+    background-color: rgba(0, 0, 0, 0.85);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     opacity: 0;
-    transition: opacity 0.3s;
     pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 10;
 }
 
-.screen.active {
+.overlay.active {
     opacity: 1;
     pointer-events: all;
 }
 
-button {
-    margin-top: 20px;
-    padding: 15px 20px;
-    font-size: 12px;
-    background-color: #ffff00;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 4px 0 #baba00;
+.title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
 }
 
-button:active {
-    transform: translateY(4px);
-    box-shadow: 0 0 0 #baba00;
+.blink {
+    animation: blinker 1s linear infinite;
+    font-size: 12px;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+button {
+    margin-top: 30px;
+    padding: 12px 20px;
+    font-size: 12px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#footer {
+    width: 448px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 10px;
+}
+
+#lives-container {
+    display: flex;
+    gap: 10px;
+}
+
+.life-icon {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    clip-path: polygon(100% 74%, 44% 48%, 100% 21%, 100% 0, 0 0, 0 100%, 100% 100%);
 }

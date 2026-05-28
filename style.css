@@ -1,1 +1,1 @@
-body {\n    background-color: #f2f2f2;\n}
+body {background-color: #f0f0f0;}#login {display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;}#login input {padding: 10px; margin: 10px;}#login-button {padding: 10px; background-color: #4CAF50; color: #fff; border: none; border-radius: 5px; cursor: pointer;}#game {display: flex; justify-content: center; align-items: center; height: 100vh;}#canvas {border: 1px solid #000;}
