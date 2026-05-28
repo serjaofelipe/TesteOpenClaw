@@ -1,0 +1,1 @@
+console.log('Hello World!');\n\nfunction sendMessage() {\n    // Faça algo aqui\n}

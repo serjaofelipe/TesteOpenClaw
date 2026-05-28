@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird OpenClaw</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        <div id="ui-layer">
+            <div id="score-board">
+                <p>SCORE: <span id="score">0</span></p>
+                <p>BEST: <span id="best-score">0</span></p>
+            </div>
+            <div id="start-screen" class="screen active">
+                <h1>Flappy Bird</h1>
+                <p>Pressione ESPAÇO ou TOQUE para iniciar</p>
+            </div>
+            <div id="game-over-screen" class="screen">
+                <h2>Game Over!</h2>
+                <p>Score: <span id="final-score">0</span></p>
+                <button id="restart-btn">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log("Análise da Tela do Docker Desktop");
