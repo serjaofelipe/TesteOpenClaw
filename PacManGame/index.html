@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacMan OpenClaw</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <div id="header">
+            <div id="score-box">SCORE<br><span id="score">0</span></div>
+            <div id="high-score-box">HIGH SCORE<br><span id="high-score">0</span></div>
+        </div>
+        <canvas id="gameCanvas" width="400" height="440"></canvas>
+        <div id="ui-layer">
+            <div id="start-screen" class="screen active">
+                <h1 style="color: #ffb8ff;">PAC-MAN</h1>
+                <p style="color: #00ffff; margin-top: 20px;">Use as SETAS para mover</p>
+                <p style="color: #ffff00; margin-top: 10px; font-size: 10px;">Pressione ESPAÇO para Iniciar</p>
+            </div>
+            <div id="game-over-screen" class="screen">
+                <h2 style="color: #ff0000;">GAME OVER</h2>
+                <button id="restart-btn">Try Again</button>
+            </div>
+            <div id="win-screen" class="screen">
+                <h2 style="color: #00ff00;">YOU WIN!</h2>
+                <button id="next-level-btn">Next Level</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
