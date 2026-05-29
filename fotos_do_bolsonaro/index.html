@@ -1,1 +1,78 @@
-<!DOCTYPE html><html lang='pt-BR'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Fotos do Bolsonaro</title><link rel='stylesheet' href='style.css'></head><body><header><h1>Fotos do Bolsonaro</h1></header><main><section class='mural'><h2>Mural de Fotos</h2><div class='fotos'><img src='bolsonaro1.jpg' alt='Bolsonaro 1'><img src='bolsonaro2.jpg' alt='Bolsonaro 2'><img src='bolsonaro3.jpg' alt='Bolsonaro 3'></div></section></main><script src='script.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural Jair Bolsonaro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <header class="header">
+        <h1 class="title">Jair Messias <span>Bolsonaro</span></h1>
+        <p class="subtitle">Galeria Oficial &bull; Mural Fotográfico</p>
+    </header>
+
+    <main class="gallery-container">
+        <!-- Linha 1 -->
+        <div class="gallery-item" style="--animation-order: 1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Jair_Bolsonaro_2019.jpg" alt="Bolsonaro 2019">
+            <div class="overlay">
+                <h3>Posse 2019</h3>
+            </div>
+        </div>
+        <div class="gallery-item" style="--animation-order: 2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Presidente_da_Rep%C3%BAblica%2C_Jair_Bolsonaro_durante_Solenidade_de_Posse_-_45864190975.jpg" alt="Solenidade de Posse">
+            <div class="overlay">
+                <h3>Solenidade Oficial</h3>
+            </div>
+        </div>
+        <div class="gallery-item" style="--animation-order: 3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Jair_Bolsonaro_2018.jpg" alt="Campanha 2018">
+            <div class="overlay">
+                <h3>Campanha 2018</h3>
+            </div>
+        </div>
+
+        <!-- Linha 2 -->
+        <div class="gallery-item large" style="--animation-order: 4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Presidente_Jair_Bolsonaro_%2850931221762%29.jpg" alt="Discurso">
+            <div class="overlay">
+                <h3>Discurso Oficial</h3>
+            </div>
+        </div>
+        <div class="gallery-item" style="--animation-order: 5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Jair_Bolsonaro_2020.jpg" alt="Bolsonaro 2020">
+            <div class="overlay">
+                <h3>Brasília 2020</h3>
+            </div>
+        </div>
+
+        <!-- Linha 3 -->
+        <div class="gallery-item wide" style="--animation-order: 6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Bolsonaro_discursa.jpg" alt="Comício">
+            <div class="overlay">
+                <h3>Encontro com Apoiadores</h3>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Image Viewer -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="expanded-img">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido pelo Antigravity Gateway</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
