@@ -1,0 +1,1 @@
+console.log('Site de Fotos do Bolsonaro carregado com sucesso!')
