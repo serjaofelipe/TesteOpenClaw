@@ -1,1 +1,1 @@
-console.log('Hello World!');\n\nfunction sendMessage() {\n    // Faça algo aqui\n}
+const images = document.querySelectorAll('.gallery img'); images.forEach((image) => { image.addEventListener('click', () => { const src = image.src; const alt = image.alt; const img = document.createElement('img'); img.src = src; img.alt = alt; img.style.width = '500px'; img.style.height = '375px'; document.body.appendChild(img); }); });
