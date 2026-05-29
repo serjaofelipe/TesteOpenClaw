@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Moderno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TELA DE LOGIN -->
+    <div id="login-container">
+        <div class="login-box">
+            <h1>SNAKE GAME</h1>
+            <p>Acesse para jogar</p>
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Usuário" autocomplete="off">
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Senha">
+            </div>
+            <p id="error-msg"></p>
+            <button id="login-btn">Entrar</button>
+        </div>
+    </div>
+
+    <!-- TELA DO JOGO -->
+    <div id="game-container" style="display: none;">
+        <div class="header">
+            <div class="score-board">
+                <h2>Score: <span id="score">0</span></h2>
+                <h2>High Score: <span id="high-score">0</span></h2>
+            </div>
+        </div>
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas" width="600" height="600"></canvas>
+            
+            <!-- OVERLAY DE FIM DE JOGO -->
+            <div id="game-over-overlay" style="display: none;">
+                <h2>FIM DE JOGO</h2>
+                <button id="restart-btn">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
