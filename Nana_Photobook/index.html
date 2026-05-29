@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nana's Vintage Photobook</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="book-container">
+        <header>
+            <h1>O Diário da Baby Nana</h1>
+            <p>Lembranças preciosas guardadas com carinho</p>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" data-target="comeco">O Começo</button>
+            <button class="tab-btn" data-target="chegada">A Chegada</button>
+            <button class="tab-btn" data-target="brincadeiras">Brincadeiras</button>
+            <button class="tab-btn" data-target="recentes">Fotos Recentes (2025)</button>
+        </nav>
+
+        <main class="gallery">
+            <!-- ABA: O Começo -->
+            <div class="gallery-section active" id="comeco">
+                <div class="polaroid">
+                    <img src="assets/carlagravida.jpg" alt="A doce espera">
+                    <div class="caption">A doce espera...</div>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/hope.jpg" alt="Esperança">
+                    <div class="caption">Nossa esperança.</div>
+                </div>
+            </div>
+
+            <!-- ABA: A Chegada -->
+            <div class="gallery-section" id="chegada">
+                <div class="polaroid">
+                    <img src="assets/1.jpg" alt="Recém Nascida 1">
+                    <div class="caption">Os primeiros dias</div>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/6.jpg" alt="Recém Nascida 6">
+                    <div class="caption">Pequenina e linda</div>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/nanababy.jpg" alt="Nana Baby">
+                    <div class="caption">Nossa Baby Nana</div>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/naninha.jpg" alt="Naninha">
+                    <div class="caption">A hora da naninha</div>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/unnamed.jpg" alt="Detalhe">
+                    <div class="caption">Momentos fofos</div>
+                </div>
+            </div>
+
+            <!-- ABA: Brincadeiras -->
+            <div class="gallery-section" id="brincadeiras">
+                <div class="polaroid">
+                    <img src="assets/nanaleoesla.jpg" alt="Leão">
+                    <div class="caption">Brincando com o leão</div>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/Gemini_Generated_Image_39zo8039zo8039zo.png" alt="Desenho Mágico">
+                    <div class="caption">Um desenho mágico</div>
+                </div>
+            </div>
+
+            <!-- ABA: Recentes -->
+            <div class="gallery-section" id="recentes">
+                <div class="polaroid">
+                    <img src="assets/20251025_112128.jpg" alt="Nana 2025">
+                    <div class="caption">Outubro de 2025</div>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/20251025_112134.jpg" alt="Nana 2025">
+                    <div class="caption">Olha o sorriso!</div>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/20251025_112208.jpg" alt="Nana 2025">
+                    <div class="caption">Dia de passeio</div>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/20251025_112348.jpg" alt="Nana 2025">
+                    <div class="caption">Quanta energia</div>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/20251025_112411.jpg" alt="Nana 2025">
+                    <div class="caption">Brincando muito</div>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/20251025_112528.jpg" alt="Nana 2025">
+                    <div class="caption">Pose pra foto</div>
+                </div>
+                <div class="polaroid">
+                    <img src="assets/20251025_113558.jpg" alt="Nana 2025">
+                    <div class="caption">Nossa princesinha</div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            Feito com ❤️ para a Família
+        </footer>
+    </div>
+
+    <!-- Modal para abrir as fotos em tela cheia -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="expandedImg">
+        <div id="modalCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
