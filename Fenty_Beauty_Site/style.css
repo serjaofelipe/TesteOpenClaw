@@ -1,0 +1,235 @@
+:root {
+    --fenty-nude: #e6d5cb;
+    --fenty-dark: #1a1a1a;
+    --fenty-rosegold: #b76e79;
+    --fenty-light: #f9f6f0;
+    --fenty-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--fenty-light);
+    color: var(--fenty-dark);
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5vw;
+    background-color: var(--fenty-light);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--fenty-dark);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.nav-icons span {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5vw;
+    background-color: var(--fenty-nude);
+    min-height: 80vh;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-text h1 {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: var(--fenty-dark);
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #4a4a4a;
+    font-weight: 300;
+}
+
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: var(--fenty-dark);
+    color: var(--fenty-white);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--fenty-rosegold);
+}
+
+.btn-secondary {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid var(--fenty-dark);
+    color: var(--fenty-dark);
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--fenty-dark);
+    color: var(--fenty-white);
+}
+
+/* Products */
+.products-section {
+    padding: 80px 5vw;
+    background-color: var(--fenty-white);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.divider {
+    height: 2px;
+    width: 50px;
+    background-color: var(--fenty-rosegold);
+    margin: 0 auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.product-img-wrapper {
+    background-color: var(--fenty-light);
+    padding: 20px;
+    margin-bottom: 20px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-info h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.product-info .shade {
+    color: var(--fenty-rosegold);
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.product-info .price {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 100px 5vw;
+    background-color: var(--fenty-dark);
+    color: var(--fenty-white);
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.about-content p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #111;
+    color: #666;
+    font-size: 0.9rem;
+}
