@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sérgio Felipe Agar Ribas Pinto | Mural Oficial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="ambient-background"></div>
+    
+    <div class="container">
+        <header>
+            <div class="profile-header">
+                <div class="profile-pic">
+                    <img src="foto1.jpg" alt="Sérgio Felipe" onerror="this.src='https://via.placeholder.com/150'">
+                </div>
+                <div class="profile-info">
+                    <h1>Sérgio Felipe</h1>
+                    <p class="fullname">Agar Ribas Pinto</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/serjao_felipe" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i> @serjao_felipe</a>
+                        <a href="https://facebook.com/search/top?q=sergio%20ribas" target="_blank" class="social-btn facebook"><i class="fab fa-facebook-f"></i> Sergio Ribas</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="gallery-grid">
+            <div class="gallery-item" onclick="openModal('foto1.jpg', 'Momento 1')">
+                <img src="foto1.jpg" alt="Foto 1" onerror="this.src='https://via.placeholder.com/400x400'">
+                <div class="overlay"><span><i class="fas fa-expand"></i> Ampliar</span></div>
+            </div>
+            <div class="gallery-item" onclick="openModal('foto2.jpg', 'Momento 2')">
+                <img src="foto2.jpg" alt="Foto 2" onerror="this.src='https://via.placeholder.com/400x400'">
+                <div class="overlay"><span><i class="fas fa-expand"></i> Ampliar</span></div>
+            </div>
+            <div class="gallery-item" onclick="openModal('foto3.jpg', 'Momento 3')">
+                <img src="foto3.jpg" alt="Foto 3" onerror="this.src='https://via.placeholder.com/400x400'">
+                <div class="overlay"><span><i class="fas fa-expand"></i> Ampliar</span></div>
+            </div>
+            <div class="gallery-item wide" onclick="openModal('foto4.jpg', 'Momento 4')">
+                <img src="foto4.jpg" alt="Foto 4" onerror="this.src='https://via.placeholder.com/800x400'">
+                <div class="overlay"><span><i class="fas fa-expand"></i> Ampliar</span></div>
+            </div>
+            <div class="gallery-item tall" onclick="openModal('foto5.jpg', 'Momento 5')">
+                <img src="foto5.jpg" alt="Foto 5" onerror="this.src='https://via.placeholder.com/400x800'">
+                <div class="overlay"><span><i class="fas fa-expand"></i> Ampliar</span></div>
+            </div>
+            <div class="gallery-item" onclick="openModal('foto6.jpg', 'Momento 6')">
+                <img src="foto6.jpg" alt="Foto 6" onerror="this.src='https://via.placeholder.com/400x400'">
+                <div class="overlay"><span><i class="fas fa-expand"></i> Ampliar</span></div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Desenvolvido pelo Antigravity Gateway | © 2026</p>
+        </footer>
+    </div>
+
+    <!-- Modal para visualização de imagem -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
