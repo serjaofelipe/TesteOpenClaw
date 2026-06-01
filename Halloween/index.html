@@ -1,25 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halloween</title>
+    <title>Halloween Assombrado - Histórias, Receitas e Decoração</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="fog"></div>
     <header>
-        <h1>Halloween</h1>
+        <div class="logo">O Portal do Medo 🦇</div>
+        <nav>
+            <ul>
+                <li><a href="#historias">Histórias</a></li>
+                <li><a href="#receitas">Receitas</a></li>
+                <li><a href="#decoracao">Decoração</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <section class="historias">
-            <h2>Histórias de Terror</h2>
-            <p>...</p>
+        <section id="hero" class="parallax">
+            <h1 class="glitch" data-text="BEM-VINDO AO HALLOWEEN">BEM-VINDO AO HALLOWEEN</h1>
+            <p>Entre por sua conta e risco...</p>
+            <a href="#historias" class="btn-blood">Descer à Cripta</a>
         </section>
-        <section class="curiosidades">
-            <h2>Curiosidades sobre o Halloween</h2>
-            <p>...</p>
+
+        <section id="historias" class="content-section">
+            <h2 class="section-title">Histórias de Terror</h2>
+            <div class="cards-container">
+                <div class="card" data-tilt>
+                    <div class="card-inner">
+                        <h3>A Mulher de Branco</h3>
+                        <p>Dizem que em noites de lua cheia, perto do antigo cemitério, você pode ouvir o choro doloroso. Quem olha em seus olhos vazios, nunca mais volta.</p>
+                        <button class="read-more">Ler Mais</button>
+                    </div>
+                </div>
+                <div class="card" data-tilt>
+                    <div class="card-inner">
+                        <h3>O Retorno de Shape</h3>
+                        <p>Michael Myers está à solta. Ele não corre, ele não fala, ele apenas espera. E a luz vermelha é o sinal de que ele já está dentro da sua casa.</p>
+                        <button class="read-more">Ler Mais</button>
+                    </div>
+                </div>
+                <div class="card" data-tilt>
+                    <div class="card-inner">
+                        <h3>O Pacto das Bruxas</h3>
+                        <p>No final do século XVII, três irmãs fizeram um acordo na floresta. A lenda conta que a cada 31 de Outubro, elas retornam para buscar novos aprendizes.</p>
+                        <button class="read-more">Ler Mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="receitas" class="content-section dark-bg">
+            <h2 class="section-title">Receitas Assustadoras</h2>
+            <div class="recipes-grid">
+                <div class="recipe-item">
+                    <div class="recipe-img img-1"></div>
+                    <div class="recipe-info">
+                        <h3>Ponche de Sangue e Olhos</h3>
+                        <p>Suco de cranbery, refrigerante de limão e lichia recheada com mirtilos imitando olhos.</p>
+                    </div>
+                </div>
+                <div class="recipe-item">
+                    <div class="recipe-img img-2"></div>
+                    <div class="recipe-info">
+                        <h3>Dedos de Bruxa Assados</h3>
+                        <p>Massa amanteigada moldada em forma de dedos com amêndoas torradas na ponta imitando unhas e geleia de morango.</p>
+                    </div>
+                </div>
+                <div class="recipe-item">
+                    <div class="recipe-img img-3"></div>
+                    <div class="recipe-info">
+                        <h3>Cérebros de Gelatina</h3>
+                        <p>Gelatina de morango opaca feita com leite condensado e moldada em formato de cérebros. Delicioso e nojento!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="decoracao" class="content-section">
+            <h2 class="section-title">Decoração Temática</h2>
+            <div class="decor-tips">
+                <div class="tip">
+                    <span class="icon">🕷️</span>
+                    <h4>Teias Falsas e Iluminação</h4>
+                    <p>O segredo está na luz! Use lâmpadas vermelhas e laranjas com muita teia falsa esticada pelos cantos do teto.</p>
+                </div>
+                <div class="tip">
+                    <span class="icon">🎃</span>
+                    <h4>Abóboras Macabras</h4>
+                    <p>Esculpa abóboras clássicas, mas também pinte algumas de preto fosco ou metálico para um ar mais sombrio e elegante.</p>
+                </div>
+                <div class="tip">
+                    <span class="icon">🩸</span>
+                    <h4>Espelhos Ensanguentados</h4>
+                    <p>Use batom vermelho ou tinta guache lavável para escrever mensagens macabras ("Get Out", "I see you") nos espelhos dos banheiros.</p>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2026 O Portal do Medo. Desenvolvido no inferno.</p>
+    </footer>
+
+    <!-- Audio Player (Autoplay bloqueado pelo browser, deve ser iniciado pelo usuário) -->
+    <audio id="bg-music" src="https://www.soundjay.com/misc/sounds/bell-ringing-04.mp3" loop></audio>
+
     <script src="script.js"></script>
 </body>
 </html>
