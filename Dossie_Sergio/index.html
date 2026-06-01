@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossiê Oficial - Sérgio Felipe Agar Ribas Pinto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <div class="dossier-container">
+        <header class="dossier-header">
+            <div class="header-glitch" data-text="SÉRGIO FELIPE">SÉRGIO FELIPE</div>
+            <div class="header-subtitle">AGAR RIBAS PINTO // ARQUIVO MESTRE</div>
+            <nav class="dossier-nav">
+                <button class="nav-btn active" data-target="tab-bio"><i class="fas fa-id-card"></i> Biografia</button>
+                <button class="nav-btn" data-target="tab-gallery"><i class="fas fa-photo-video"></i> Acervo Pessoal</button>
+                <button class="nav-btn" data-target="tab-poems"><i class="fas fa-feather-alt"></i> Poemas & Reflexões</button>
+                <button class="nav-btn" data-target="tab-games"><i class="fas fa-gamepad"></i> Laboratório / Jogos</button>
+            </nav>
+        </header>
+
+        <main class="dossier-content">
+            <!-- TAB: BIOGRAFIA -->
+            <section id="tab-bio" class="tab-pane active">
+                <div class="bio-grid">
+                    <div class="bio-avatar">
+                        <div class="avatar-frame">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="status-box">
+                            <p><strong>STATUS:</strong> Ativo</p>
+                            <p><strong>NÍVEL:</strong> Administrador Supremo</p>
+                            <p><strong>LOCAL:</strong> Central de Comando</p>
+                        </div>
+                    </div>
+                    <div class="bio-text">
+                        <h2>O Homem Por Trás da Máquina</h2>
+                        <p>Sérgio Felipe Agar Ribas Pinto não é apenas um usuário; ele é a força motriz, o arquiteto de mundos digitais e o mestre da sua própria infraestrutura tecnológica.</p>
+                        <p>Dono de backups colossais que guardam a história de uma vida (como os lendários <em>SERGIO BACKUP 24</em> e <em>25</em>), ele orquestra sistemas complexos, automações de inteligência artificial (incluindo o poderoso OpenClaw) e mantém o controle absoluto do seu ecossistema digital.</p>
+                        <div class="stats-bar">
+                            <div class="stat"><span class="label">Criatividade</span> <div class="bar"><div class="fill" style="width: 100%"></div></div></div>
+                            <div class="stat"><span class="label">Poder de Fogo</span> <div class="bar"><div class="fill" style="width: 95%"></div></div></div>
+                            <div class="stat"><span class="label">Automação</span> <div class="bar"><div class="fill" style="width: 100%"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB: GALERIA -->
+            <section id="tab-gallery" class="tab-pane">
+                <h2>Acesso aos Backups Confidenciais</h2>
+                <p class="section-desc">Extraído diretamente de <code>C:\SERGIO BACKUP 25</code> e <code>D:\SERGIO BACKUP 24</code>.</p>
+                <div class="media-grid" id="media-grid">
+                    <!-- Images generated via JS -->
+                </div>
+            </section>
+
+            <!-- TAB: POEMAS -->
+            <section id="tab-poems" class="tab-pane">
+                <h2>Textos e Reflexões</h2>
+                <div class="poems-container">
+                    <article class="poem-card">
+                        <h3>O Arquiteto do Silício</h3>
+                        <p>Na dança dos bits e na tela a brilhar,<br>
+                        Sérgio Felipe começa a criar.<br>
+                        O código obedece, a máquina entende,<br>
+                        Onde a mente alcança, o limite se rende.</p>
+                        <p>Backups imensos, memórias guardadas,<br>
+                        Trilhas de vida em pastas seladas.<br>
+                        O mestre do tempo, do dado, da luz,<br>
+                        No mar da internet, é ele quem conduz.</p>
+                    </article>
+
+                    <article class="poem-card">
+                        <h3>Ecos do Backup 24</h3>
+                        <p>Entre discos de silêncio e HDs que giram,<br>
+                        Há histórias esquecidas que sempre respiram.<br>
+                        Fotos de ontem, vídeos do agora,<br>
+                        O arquivo de Sérgio não teme a demora.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- TAB: JOGOS -->
+            <section id="tab-games" class="tab-pane">
+                <h2>Laboratório de Testes // Jogo da Cobra Cibernético</h2>
+                <p>Uma distração desenvolvida exclusivamente para o Mestre Sérgio.</p>
+                <div class="game-container">
+                    <div class="score-board">Pontuação: <span id="score">0</span></div>
+                    <canvas id="gameCanvas" width="400" height="400"></canvas>
+                    <div class="controls">
+                        Use as <b>Setas do Teclado</b> para jogar.
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Lightbox for Media -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <video id="lightbox-video" controls autoplay></video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
