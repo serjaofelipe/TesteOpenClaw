@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
     // --- Tab Navigation ---
     const navBtns = document.querySelectorAll('.nav-btn');
@@ -36,7 +36,7 @@
     for (let i = 1; i <= 72; i++) {
         mediaFiles.push({
             type: 'img',
-            src: \ile:///C:/Users/USER/OneDrive/noix/imagens/\.jpg\,
+            src: 'file:///C:/Users/USER/OneDrive/noix/imagens/' + i + '.jpg',
             caption: 'Com o amor da vida \u2764\uFE0F',
             category: 'ana'
         });
@@ -50,23 +50,17 @@
     const closeLightboxBtn = document.querySelector('.close-lightbox');
 
     function renderGallery() {
+        if (!mediaGrid) return;
         mediaGrid.innerHTML = '';
         mediaFiles.forEach(media => {
             const item = document.createElement('div');
-            item.className = \media-item \\;
+            item.className = 'media-item ' + media.category;
             
             if (media.type === 'img') {
-                item.innerHTML = \
-                    <img src="\" loading="lazy" alt="Acervo">
-                    <div class="item-caption">\</div>
-                \;
+                item.innerHTML = '<img src="' + media.src + '" loading="lazy" alt="Acervo"><div class="item-caption">' + media.caption + '</div>';
                 item.addEventListener('click', () => openLightbox(media.src, 'img', media.caption));
             } else {
-                item.innerHTML = \
-                    <video src="\" muted></video>
-                    <i class="fas fa-play play-icon"></i>
-                    <div class="item-caption">\</div>
-                \;
+                item.innerHTML = '<video src="' + media.src + '" muted></video><i class="fas fa-play play-icon"></i><div class="item-caption">' + media.caption + '</div>';
                 item.addEventListener('click', () => openLightbox(media.src, 'video', media.caption));
             }
             
@@ -113,57 +107,63 @@
         }
     }
 
-    closeLightboxBtn.addEventListener('click', () => {
-        lightbox.classList.remove('active');
-        lightboxVideo.pause();
-    });
-
-    lightbox.addEventListener('click', (e) => {
-        if (e.target === lightbox) {
+    if (closeLightboxBtn) {
+        closeLightboxBtn.addEventListener('click', () => {
             lightbox.classList.remove('active');
             lightboxVideo.pause();
-        }
-    });
+        });
+    }
+
+    if (lightbox) {
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                lightboxVideo.pause();
+            }
+        });
+    }
 
     // --- Matrix Background Effect ---
     const canvas = document.getElementById('matrixCanvas');
-    const ctx = canvas.getContext('2d');
-    
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    
-    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()';
-    const fontSize = 16;
-    const columns = canvas.width / fontSize;
-    const drops = [];
-    
-    for (let x = 0; x < columns; x++) {
-        drops[x] = 1;
-    }
-    
-    function drawMatrix() {
-        ctx.fillStyle = 'rgba(6, 9, 19, 0.05)';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    if (canvas) {
+        const ctx = canvas.getContext('2d');
         
-        ctx.fillStyle = '#00ffcc';
-        ctx.font = fontSize + 'px Orbitron';
-        
-        for (let i = 0; i < drops.length; i++) {
-            const text = letters.charAt(Math.floor(Math.random() * letters.length));
-            ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-            
-            if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                drops[i] = 0;
-            }
-            drops[i]++;
-        }
-    }
-    
-    setInterval(drawMatrix, 50);
-
-    window.addEventListener('resize', () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-    });
+        
+        const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()';
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = [];
+        
+        for (let x = 0; x < columns; x++) {
+            drops[x] = 1;
+        }
+        
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(6, 9, 19, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.fillStyle = '#00ffcc';
+            ctx.font = fontSize + 'px Orbitron';
+            
+            for (let i = 0; i < drops.length; i++) {
+                const text = letters.charAt(Math.floor(Math.random() * letters.length));
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+        
+        setInterval(drawMatrix, 50);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    }
 
 });
