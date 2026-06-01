@@ -392,6 +392,27 @@ h3 {
     gap: 20px;
 }
 
+.media-item.hide {
+    display: none;
+}
+
+.filter-btn {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--secondary-color);
+    color: var(--text-color);
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.3s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: var(--secondary-color);
+    color: #fff;
+    box-shadow: 0 0 15px var(--secondary-color);
+}
+
 .media-item {
     position: relative;
     border-radius: 8px;
