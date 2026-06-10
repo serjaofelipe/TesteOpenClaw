@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warcraft - A História</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Layer Dinâmico -->
+    <div id="dynamic-bg" class="bg-warcraft1"></div>
+
+    <div class="layout-container">
+        
+        <!-- Menu Vertical (Tabs) -->
+        <nav class="vertical-tabs">
+            <div class="logo">
+                <h2>Warcraft</h2>
+                <p>Legacy</p>
+            </div>
+            <ul>
+                <li class="tab-btn active" data-target="warcraft1">Warcraft: Orcs & Humans</li>
+                <li class="tab-btn" data-target="warcraft2">Warcraft II: Tides of Darkness</li>
+                <li class="tab-btn" data-target="warcraft3-roc">Warcraft III: Reign of Chaos</li>
+                <li class="tab-btn" data-target="warcraft3-tft">Warcraft III: The Frozen Throne</li>
+                <li class="tab-btn" data-target="curiosities">Curiosidades & Legado</li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo Principal -->
+        <main class="content-area">
+            
+            <!-- Warcraft 1 -->
+            <section id="warcraft1" class="tab-content active">
+                <header class="section-header">
+                    <h1>Warcraft: Orcs & Humans</h1>
+                    <p>Onde a eterna guerra começou (1994).</p>
+                </header>
+                <div class="story-box">
+                    <h2>A História</h2>
+                    <p>A primeira grande guerra. Os Orcs, corrompidos por forças demoníacas, fogem de seu mundo moribundo, Draenor, através de um portal escuro e invadem o próspero mundo de Azeroth. Liderados por Llane Wrynn e Anduin Lothar, os humanos do reino de Stormwind lutam desesperadamente para proteger seu lar da Horda violenta.</p>
+                </div>
+                <div class="characters">
+                    <h2>Personagens Principais</h2>
+                    <div class="char-grid" id="char-grid-w1">
+                        <!-- Preenchido por JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Warcraft 2 -->
+            <section id="warcraft2" class="tab-content">
+                <header class="section-header">
+                    <h1>Warcraft II: Tides of Darkness</h1>
+                    <p>As Marés das Trevas (1995).</p>
+                </header>
+                <div class="story-box">
+                    <h2>A História</h2>
+                    <p>Após a destruição de Stormwind, os sobreviventes humanos fogem para o norte, rumo a Lordaeron. Lá, Anduin Lothar forma a Aliança de Lordaeron com elfos e anões para deter a Horda Orc. A guerra se expande para os mares e os céus, culminando com a destruição do Portal Negro original e uma frágil vitória para a Aliança.</p>
+                </div>
+                <div class="characters">
+                    <h2>Personagens Principais</h2>
+                    <div class="char-grid" id="char-grid-w2">
+                        <!-- Preenchido por JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Warcraft 3: RoC -->
+            <section id="warcraft3-roc" class="tab-content">
+                <header class="section-header">
+                    <h1>Warcraft III: Reign of Chaos</h1>
+                    <p>O Reino do Caos (2002).</p>
+                </header>
+                <div class="story-box">
+                    <h2>A História</h2>
+                    <p>A verdadeira ameaça retorna: A Legião Ardente. Liderados por um profeta misterioso, os orcs fogem para Kalimdor. Em Lordaeron, o jovem príncipe Arthas Menethil é corrompido em sua busca para impedir o flagelo dos mortos-vivos, eventualmente se tornando um Cavaleiro da Morte e destruindo seu próprio reino. Humanos, Orcs e Elfos Noturnos precisam se aliar para impedir que Archimonde destrua a Árvore do Mundo.</p>
+                </div>
+                <div class="characters">
+                    <h2>Personagens Principais</h2>
+                    <div class="char-grid" id="char-grid-w3roc">
+                        <!-- Preenchido por JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Warcraft 3: TFT -->
+            <section id="warcraft3-tft" class="tab-content">
+                <header class="section-header">
+                    <h1>Warcraft III: The Frozen Throne</h1>
+                    <p>O Trono de Gelo (2003) - Expansão.</p>
+                </header>
+                <div class="story-box">
+                    <h2>A História</h2>
+                    <p>O mundo de Azeroth está destruído após o fim de Archimonde. Illidan Tempesfúria, libertado, busca poder em Outland. Enquanto isso, Arthas viaja para o deserto gélido de Northrend para proteger e se fundir com seu mestre, o Rei Lich (Lich King), que está aprisionado no Trono de Gelo. Esta jornada culmina na fusão de Arthas e Ner'zhul em uma das entidades mais temíveis da história dos jogos.</p>
+                </div>
+                <div class="characters">
+                    <h2>Personagens Principais</h2>
+                    <div class="char-grid" id="char-grid-w3tft">
+                        <!-- Preenchido por JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Curiosidades -->
+            <section id="curiosities" class="tab-content">
+                <header class="section-header">
+                    <h1>Curiosidades & Legado</h1>
+                    <p>O impacto na indústria dos games.</p>
+                </header>
+                <div class="legacy-box">
+                    <div class="legacy-item">
+                        <h3>Mapas Personalizados (World Editor)</h3>
+                        <p>O editor de mapas (World Editor) do Warcraft III era extremamente poderoso. Ele permitiu que os fãs criassem não apenas novos mapas, mas jogos completamente diferentes dentro do próprio Warcraft. Torres de Defesa (Tower Defense), RPGs cooperativos e modos de arenas nasceram graças a essa liberdade criativa incomparável.</p>
+                    </div>
+                    <div class="legacy-item">
+                        <h3>O Nascimento dos MOBAs (DotA)</h3>
+                        <p>Foi nos mapas customizados de Warcraft III que surgiu o lendário "Defense of the Ancients" (DotA). Modificado por criadores como Eul, Guinsoo e IceFrog, o mod revolucionou a indústria de videogames, popularizando o gênero MOBA. Essa inovação deu origem a gigantes como <strong>Dota 2</strong> e o mundialmente famoso <strong>League of Legends</strong>.</p>
+                    </div>
+                    <div class="legacy-item">
+                        <h3>Euroloader & Servidores Customizados</h3>
+                        <p>Nos tempos de ouro, jogar online requeria uma key original na Battle.net oficial. No entanto, a comunidade de fãs era tão gigantesca que sistemas e "loaders" paralelos foram criados. O <strong>Euroloader</strong> (ou Eurobattle.net) foi um dos mais famosos, permitindo que milhares de jogadores pelo mundo todo se conectassem, jogassem mapas customizados (como DotA e Footmen Frenzy) em servidores privados piratas ou alternativos. Era a época de ouro das Lan Houses e da comunidade online indie.</p>
+                    </div>
+                    <div class="legacy-item">
+                        <h3>Blizzard & World of Warcraft</h3>
+                        <p>O sucesso absurdo da história (lore) e dos personagens do Warcraft 3 impulsionou a Blizzard a criar o World of Warcraft em 2004, o MMORPG mais bem-sucedido e influente de todos os tempos, redefinindo por completo uma era dos PCs.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Modal do Personagem -->
+    <div id="char-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <img id="modal-char-img" src="" alt="Foto">
+                <div class="modal-info">
+                    <h2 id="modal-char-name">Nome do Personagem</h2>
+                    <p id="modal-char-lore">História do personagem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
