@@ -398,3 +398,77 @@ body {
     border-left: 4px solid var(--gold);
     color: var(--gold);
 }
+/* --- RESPONSIVIDADE (MOBILE) --- */
+@media screen and (max-width: 768px) {
+    .glass-nav {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .tab-btn {
+        font-size: 0.9rem;
+    }
+
+    .glow-title {
+        font-size: 2.5rem;
+    }
+
+    .content-area {
+        padding: 20px;
+    }
+
+    .stats-panel {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .flip-card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .char-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .char-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .modal-content {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    #modal-img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .stats-bars {
+        text-align: left;
+    }
+    
+    .controls {
+        flex-direction: column;
+    }
+}
