@@ -32,29 +32,29 @@
             
             <div class="stats-panel glass-panel">
                 <div class="stat-box">
-                    <h3>Anime Episodes</h3>
-                    <p>148 (2011 Series)</p>
+                    <h3>Episódios do Anime</h3>
+                    <p>148 (Série de 2011)</p>
                 </div>
                 <div class="stat-box">
-                    <h3>Manga Chapters</h3>
+                    <h3>Capítulos do Mangá</h3>
                     <p>400+</p>
                 </div>
                 <div class="stat-box">
                     <h3>Status</h3>
-                    <p>Frequent Hiatus</p>
+                    <p>Hiato Frequente</p>
                 </div>
             </div>
 
-            <h2 class="sub-title">Did You Know?</h2>
+            <h2 class="sub-title">Você Sabia?</h2>
             <div class="flip-card-container">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front glass-panel">
-                            <h3>Nen Vows</h3>
-                            <p>Hover to reveal</p>
+                            <h3>Votos de Nen</h3>
+                            <p>Passe o mouse para revelar</p>
                         </div>
                         <div class="flip-card-back glass-panel">
-                            <p>Kurapika's Judgment Chain is powerful because of a strict Nen vow: if he uses it against anyone outside the Phantom Troupe, he will die.</p>
+                            <p>A Corrente do Julgamento de Kurapika é poderosa devido a um rígido voto de Nen: se ele usá-la contra qualquer pessoa fora da Trupe Fantasma, ele morrerá.</p>
                         </div>
                     </div>
                 </div>
@@ -62,10 +62,10 @@
                     <div class="flip-card-inner">
                         <div class="flip-card-front glass-panel">
                             <h3>Greed Island</h3>
-                            <p>Hover to reveal</p>
+                            <p>Passe o mouse para revelar</p>
                         </div>
                         <div class="flip-card-back glass-panel">
-                            <p>The name GREED represents the creators of the game: Ging, Razor, Elena, Eta, and Dwun.</p>
+                            <p>O nome GREED representa os criadores do jogo: Ging, Razor, Elena, Eta e Dwun.</p>
                         </div>
                     </div>
                 </div>
@@ -86,19 +86,20 @@
             <div class="filters">
                 <select id="filter-nen" class="glass-select">
                     <option value="all">Todas as Categorias Nen</option>
-                    <option value="Enhancer">Enhancer</option>
-                    <option value="Transmuter">Transmuter</option>
-                    <option value="Conjurer">Conjurer</option>
-                    <option value="Emitter">Emitter</option>
-                    <option value="Manipulator">Manipulator</option>
-                    <option value="Specialist">Specialist</option>
+                    <option value="Reforço">Reforço</option>
+                    <option value="Transformação">Transformação</option>
+                    <option value="Materialização">Materialização</option>
+                    <option value="Emissão">Emissão</option>
+                    <option value="Manipulação">Manipulação</option>
+                    <option value="Especialização">Especialização</option>
                 </select>
                 <select id="filter-affiliation" class="glass-select">
                     <option value="all">Todas as Afiliações</option>
-                    <option value="Hunter Association">Hunter Association</option>
-                    <option value="Zoldyck Family">Zoldyck Family</option>
-                    <option value="Phantom Troupe">Phantom Troupe</option>
-                    <option value="Chimera Ants">Chimera Ants</option>
+                    <option value="Associação Hunter">Associação Hunter</option>
+                    <option value="Família Zoldyck">Família Zoldyck</option>
+                    <option value="Trupe Fantasma">Trupe Fantasma</option>
+                    <option value="Formigas Quimera">Formigas Quimera</option>
+                    <option value="Zodíacos">Zodíacos</option>
                 </select>
             </div>
             
@@ -145,16 +146,16 @@
                     <div class="stats-bars">
                         <p>Hatsu: <span id="modal-hatsu"></span></p>
                         
-                        <label>Power</label>
+                        <label>Poder</label>
                         <div class="bar-bg"><div class="bar-fill" id="bar-power"></div></div>
                         
-                        <label>Speed</label>
+                        <label>Velocidade</label>
                         <div class="bar-bg"><div class="bar-fill" id="bar-speed"></div></div>
                         
-                        <label>Intelligence</label>
+                        <label>Inteligência</label>
                         <div class="bar-bg"><div class="bar-fill" id="bar-intel"></div></div>
                         
-                        <label>Nen Control</label>
+                        <label>Controle de Nen</label>
                         <div class="bar-bg"><div class="bar-fill" id="bar-nen"></div></div>
                     </div>
                 </div>
@@ -164,6 +165,7 @@
 
     <!-- YouTube IFrame API -->
     <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

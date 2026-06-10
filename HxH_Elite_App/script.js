@@ -12,33 +12,12 @@ tabs.forEach(tab => {
     });
 });
 
-// --- State ---
-let charactersData = [];
-let arcsData = [];
-let tracksData = [];
-
-// --- Initialize App ---
-async function initApp() {
-    try {
-        const [charRes, arcsRes, trackRes] = await Promise.all([
-            fetch('./characters.json'),
-            fetch('./arcs.json'),
-            fetch('./soundtrack.json')
-        ]);
-
-        charactersData = await charRes.json();
-        arcsData = await arcsRes.json();
-        tracksData = await trackRes.json();
-
-        renderCharacters(charactersData);
-        renderArcs();
-        renderTracks();
-
-    } catch (error) {
-        console.error("Error loading JSON data:", error);
-        // Fallback or error UI can go here. For Local File:// protocol in some browsers, fetch might fail.
-        // The prompt dictates Vanilla JS fetch from local .json files without server.
-    }
+// --- Initial Setup ---
+// The data is now loaded from data.js synchronously to bypass CORS issues on local files
+function initApp() {
+    renderCharacters(charactersData);
+    renderArcs();
+    renderTracks();
 }
 
 // --- Render Characters ---
@@ -128,6 +107,7 @@ function renderArcs() {
         arcEl.className = 'arc-item glass-panel';
         arcEl.style.padding = '20px';
         arcEl.innerHTML = `
+            <img src="${arc.image}" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; border: 1px solid var(--gold);">
             <h2>${arc.arc}</h2>
             <p>${arc.synopsis}</p>
             <div class="arc-chars">
