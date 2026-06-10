@@ -1,0 +1,38 @@
+[
+    {
+        "id": "departure",
+        "title": "Departure!",
+        "artist": "Masatoshi Ono",
+        "youtube_id": "faqmNf_fZlE"
+    },
+    {
+        "id": "hunting",
+        "title": "Hunting for Your Dream",
+        "artist": "Galneryus",
+        "youtube_id": "wXJ1vLpAEXI"
+    },
+    {
+        "id": "reason",
+        "title": "Reason",
+        "artist": "Yuzu",
+        "youtube_id": "F5vD2V0Nl9E"
+    },
+    {
+        "id": "hyori",
+        "title": "Hyōri Ittai",
+        "artist": "Yuzu",
+        "youtube_id": "8T_b1sA1N2U"
+    },
+    {
+        "id": "kingdom",
+        "title": "Kingdom of Predators",
+        "artist": "Yoshihisa Hirano",
+        "youtube_id": "kXzP4L0g45s"
+    },
+    {
+        "id": "adventurers",
+        "title": "The World of Adventurers",
+        "artist": "Yoshihisa Hirano",
+        "youtube_id": "Oebp7tI73K4"
+    }
+]

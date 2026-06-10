@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter x Hunter - Elite Database</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Parallax Layer -->
+    <div id="dynamic-bg"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="glass-nav">
+        <div class="logo">H×H Elite</div>
+        <ul class="nav-links">
+            <li class="tab-btn active" data-target="home">Home</li>
+            <li class="tab-btn" data-target="arcs">Arcos</li>
+            <li class="tab-btn" data-target="characters">Personagens</li>
+            <li class="tab-btn" data-target="soundtrack">Trilha Sonora</li>
+        </ul>
+    </nav>
+
+    <!-- Content Sections -->
+    <main class="content-area">
+
+        <!-- HOME -->
+        <section id="home" class="tab-content active">
+            <h1 class="glow-title">HUNTER × HUNTER</h1>
+            
+            <div class="stats-panel glass-panel">
+                <div class="stat-box">
+                    <h3>Anime Episodes</h3>
+                    <p>148 (2011 Series)</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Manga Chapters</h3>
+                    <p>400+</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Status</h3>
+                    <p>Frequent Hiatus</p>
+                </div>
+            </div>
+
+            <h2 class="sub-title">Did You Know?</h2>
+            <div class="flip-card-container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front glass-panel">
+                            <h3>Nen Vows</h3>
+                            <p>Hover to reveal</p>
+                        </div>
+                        <div class="flip-card-back glass-panel">
+                            <p>Kurapika's Judgment Chain is powerful because of a strict Nen vow: if he uses it against anyone outside the Phantom Troupe, he will die.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front glass-panel">
+                            <h3>Greed Island</h3>
+                            <p>Hover to reveal</p>
+                        </div>
+                        <div class="flip-card-back glass-panel">
+                            <p>The name GREED represents the creators of the game: Ging, Razor, Elena, Eta, and Dwun.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ARCOS -->
+        <section id="arcs" class="tab-content">
+            <h1 class="glow-title">Arcos</h1>
+            <div class="timeline" id="arcs-container">
+                <!-- Injected via JS -->
+            </div>
+        </section>
+
+        <!-- PERSONAGENS -->
+        <section id="characters" class="tab-content">
+            <h1 class="glow-title">Personagens</h1>
+            <div class="filters">
+                <select id="filter-nen" class="glass-select">
+                    <option value="all">Todas as Categorias Nen</option>
+                    <option value="Enhancer">Enhancer</option>
+                    <option value="Transmuter">Transmuter</option>
+                    <option value="Conjurer">Conjurer</option>
+                    <option value="Emitter">Emitter</option>
+                    <option value="Manipulator">Manipulator</option>
+                    <option value="Specialist">Specialist</option>
+                </select>
+                <select id="filter-affiliation" class="glass-select">
+                    <option value="all">Todas as Afiliações</option>
+                    <option value="Hunter Association">Hunter Association</option>
+                    <option value="Zoldyck Family">Zoldyck Family</option>
+                    <option value="Phantom Troupe">Phantom Troupe</option>
+                    <option value="Chimera Ants">Chimera Ants</option>
+                </select>
+            </div>
+            
+            <div class="char-grid" id="char-grid">
+                <!-- Injected via JS -->
+            </div>
+        </section>
+
+        <!-- TRILHA SONORA -->
+        <section id="soundtrack" class="tab-content">
+            <h1 class="glow-title">Trilha Sonora</h1>
+            <div class="music-player glass-panel">
+                <div class="player-info">
+                    <h2 id="track-title">Selecione uma faixa</h2>
+                    <p id="track-artist">---</p>
+                </div>
+                
+                <!-- Hidden YT Player -->
+                <div id="yt-player-container" style="display: none;"></div>
+                
+                <div class="controls">
+                    <button class="glass-btn" id="btn-play">▶ Play</button>
+                    <button class="glass-btn" id="btn-pause">⏸ Pause</button>
+                </div>
+
+                <div class="track-list" id="track-list">
+                    <!-- Injected via JS -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Character Modal -->
+    <div id="char-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="Character">
+                <div class="modal-info">
+                    <h2 id="modal-name"></h2>
+                    <p class="tag" id="modal-nen"></p>
+                    <p class="tag" id="modal-affiliation"></p>
+                    <div class="stats-bars">
+                        <p>Hatsu: <span id="modal-hatsu"></span></p>
+                        
+                        <label>Power</label>
+                        <div class="bar-bg"><div class="bar-fill" id="bar-power"></div></div>
+                        
+                        <label>Speed</label>
+                        <div class="bar-bg"><div class="bar-fill" id="bar-speed"></div></div>
+                        
+                        <label>Intelligence</label>
+                        <div class="bar-bg"><div class="bar-fill" id="bar-intel"></div></div>
+                        
+                        <label>Nen Control</label>
+                        <div class="bar-bg"><div class="bar-fill" id="bar-nen"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>

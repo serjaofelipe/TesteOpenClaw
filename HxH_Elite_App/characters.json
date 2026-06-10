@@ -1,0 +1,74 @@
+[
+    {
+        "id": "gon",
+        "name": "Gon Freecss",
+        "nen_type": "Enhancer",
+        "affiliation": "Hunter Association",
+        "image": "./images/gon.png",
+        "hatsu": "Jajanken (Rock, Paper, Scissors)",
+        "stats": { "power": 85, "speed": 80, "intelligence": 70, "nen": 90 }
+    },
+    {
+        "id": "killua",
+        "name": "Killua Zoldyck",
+        "nen_type": "Transmuter",
+        "affiliation": "Zoldyck Family",
+        "image": "./images/killua.png",
+        "hatsu": "Godspeed (Kanmuru)",
+        "stats": { "power": 80, "speed": 98, "intelligence": 85, "nen": 85 }
+    },
+    {
+        "id": "kurapika",
+        "name": "Kurapika",
+        "nen_type": "Conjurer (Specialist with Scarlet Eyes)",
+        "affiliation": "Zodiacs / Nostrade Family",
+        "image": "./images/kurapika.png",
+        "hatsu": "Emperor Time / Judgment Chain",
+        "stats": { "power": 82, "speed": 85, "intelligence": 95, "nen": 90 }
+    },
+    {
+        "id": "leorio",
+        "name": "Leorio Paradinight",
+        "nen_type": "Emitter",
+        "affiliation": "Zodiacs",
+        "image": "./images/leorio.png",
+        "hatsu": "Remote Punch",
+        "stats": { "power": 75, "speed": 70, "intelligence": 80, "nen": 60 }
+    },
+    {
+        "id": "hisoka",
+        "name": "Hisoka Morow",
+        "nen_type": "Transmuter",
+        "affiliation": "Phantom Troupe (Former)",
+        "image": "./images/hisoka.png",
+        "hatsu": "Bungee Gum / Texture Surprise",
+        "stats": { "power": 90, "speed": 92, "intelligence": 90, "nen": 95 }
+    },
+    {
+        "id": "chrollo",
+        "name": "Chrollo Lucilfer",
+        "nen_type": "Specialist",
+        "affiliation": "Phantom Troupe",
+        "image": "./images/chrollo.png",
+        "hatsu": "Skill Hunter (Bandit's Secret)",
+        "stats": { "power": 88, "speed": 90, "intelligence": 98, "nen": 98 }
+    },
+    {
+        "id": "meruem",
+        "name": "Meruem",
+        "nen_type": "Specialist",
+        "affiliation": "Chimera Ants",
+        "image": "./images/meruem.png",
+        "hatsu": "Aura Synthesis",
+        "stats": { "power": 100, "speed": 100, "intelligence": 100, "nen": 100 }
+    },
+    {
+        "id": "netero",
+        "name": "Isaac Netero",
+        "nen_type": "Enhancer",
+        "affiliation": "Hunter Association",
+        "image": "./images/netero.png",
+        "hatsu": "100-Type Guanyin Bodhisattva",
+        "stats": { "power": 98, "speed": 99, "intelligence": 95, "nen": 100 }
+    }
+]

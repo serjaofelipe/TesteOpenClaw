@@ -1,0 +1,47 @@
+[
+    {
+        "arc": "Hunter Exam",
+        "synopsis": "Gon leaves Whale Island to take the grueling Hunter Exam, hoping to find clues about his father, Ging. Along the way, he meets Killua, Kurapika, and Leorio.",
+        "characters_involved": ["gon", "killua", "kurapika", "leorio", "hisoka", "netero"]
+    },
+    {
+        "arc": "Zoldyck Family",
+        "synopsis": "After Killua is forced to return home, Gon, Kurapika, and Leorio travel to the perilous Kukuroo Mountain to rescue their friend from his family of deadly assassins.",
+        "characters_involved": ["gon", "killua", "kurapika", "leorio"]
+    },
+    {
+        "arc": "Heavens Arena",
+        "synopsis": "Gon and Killua head to Heavens Arena to train and earn money. Here they meet Wing, who teaches them the fundamental principles of Nen, the life-energy technique.",
+        "characters_involved": ["gon", "killua", "hisoka"]
+    },
+    {
+        "arc": "Yorknew City",
+        "synopsis": "The main cast reunites in Yorknew City for the world's largest mafia auction. Kurapika hunts down the Phantom Troupe to avenge the Kurta Clan.",
+        "characters_involved": ["gon", "killua", "kurapika", "leorio", "hisoka", "chrollo"]
+    },
+    {
+        "arc": "Greed Island",
+        "synopsis": "Gon and Killua enter the deadly real-world video game created by Ging. They train under Biscuit Krueger to master their Nen and complete the game.",
+        "characters_involved": ["gon", "killua", "hisoka"]
+    },
+    {
+        "arc": "Chimera Ant",
+        "synopsis": "A highly adaptive and terrifying species of ants begins consuming humans and evolving. The Hunter Association mobilizes its strongest members to stop the Ant King.",
+        "characters_involved": ["gon", "killua", "netero", "meruem"]
+    },
+    {
+        "arc": "13th Hunter Chairman Election",
+        "synopsis": "Following Netero's death, the Zodiacs gather to elect a new chairman. Meanwhile, Killua races against time with his sister Alluka to save a dying Gon.",
+        "characters_involved": ["killua", "leorio", "hisoka"]
+    },
+    {
+        "arc": "Dark Continent Expedition (Manga)",
+        "synopsis": "Beyond the known world lies the Dark Continent, a place of ultimate danger and unimaginable resources. Beyond Netero leads an unauthorized expedition, forcing the Zodiacs to act.",
+        "characters_involved": ["kurapika", "leorio", "hisoka", "chrollo"]
+    },
+    {
+        "arc": "Succession Contest (Current Manga)",
+        "synopsis": "Aboard the Black Whale en route to the Dark Continent, the 14 princes of the Kakin Empire engage in a brutal battle royale for the throne. Kurapika is caught in the middle.",
+        "characters_involved": ["kurapika", "hisoka", "chrollo"]
+    }
+]
