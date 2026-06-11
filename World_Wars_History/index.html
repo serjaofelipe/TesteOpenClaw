@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História Global: As Maiores Guerras</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1a1a1a; color: #f0f0f0; line-height: 1.6; }
+        header { background-color: #8b0000; padding: 2rem; text-align: center; border-bottom: 3px solid #ffd700; }
+        h1 { font-size: 2.5rem; text-transform: uppercase; letter-spacing: 2px; }
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 20px; }
+        .war-card { background: #2a2a2a; margin-bottom: 20px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.3); border-left: 5px solid #8b0000; transition: transform 0.3s; }
+        .war-card:hover { transform: scale(1.02); }
+        .war-header { background: #333; padding: 15px 20px; border-bottom: 1px solid #444; }
+        .war-header h2 { color: #ffd700; }
+        .war-body { padding: 20px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; }
+        .stat-box { background: #1a1a1a; padding: 15px; border-radius: 5px; text-align: center; border: 1px solid #333; }
+        .stat-label { font-size: 0.85rem; color: #888; text-transform: uppercase; margin-bottom: 5px; }
+        .stat-value { font-size: 1.2rem; font-weight: bold; color: #fff; }
+        .deaths { color: #ff4444; }
+        .winner { color: #44ff44; }
+        .participant { color: #44aaff; }
+        
+        @media (max-width: 768px) {
+            .war-body { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>As Maiores Guerras do Mundo</h1>
+    <p>Um registro histórico dos conflitos mais devastadores da humanidade</p>
+</header>
+
+<div class="container" id="wars-container">
+    <!-- Populated by JS -->
+</div>
+
+<script>
+    const data = [
+        {Guerra: "Segunda Guerra Mundial", Mortos: "70 - 85 milhões", Vencedor: "Os Aliados", Participante: "Alemanha Nazista / União Soviética"},
+        {Guerra: "Primeira Guerra Mundial", Mortos: "15 - 22 milhões", Vencedor: "Tríplice Entente", Participante: "Império Alemão / Império Russo"},
+        {Guerra: "Rebelião Taiping", Mortos: "20 - 30 milhões", Vencedor: "Dinastia Qing", Participante: "Reino Celestial Taiping"},
+        {Guerra: "Conquista Qing da Dinastia Ming", Mortos: "25 milhões", Vencedor: "Dinastia Qing", Participante: "Dinastia Ming"},
+        {Guerra: "Rebelião de An Lushan", Mortos: "13 - 36 milhões", Vencedor: "Dinastia Tang", Participante: "Rebeldes de An Lushan"},
+        {Guerra: "Revolta Dungan", Mortos: "8 - 12 milhões", Vencedor: "Dinastia Qing", Participante: "Muçulmanos de Hui"},
+        {Guerra: "Guerra Civil Russa", Mortos: "7 - 12 milhões", Vencedor: "Exército Vermelho", Participante: "Exército Branco"},
+        {Guerra: "Guerra dos Trinta Anos", Mortos: "4 - 8 milhões", Vencedor: "Paz de Vestfália", Participante: "Sacro Império Romano-Germânico"},
+        {Guerra: "Guerras Napoleônicas", Mortos: "3.5 - 7 milhões", Vencedor: "Coalizões Antifrancesas", Participante: "Primeiro Império Francês"},
+        {Guerra: "Guerra do Vietnã", Mortos: "1.3 - 3.8 milhões", Vencedor: "Vietnã do Norte", Participante: "Estados Unidos / Vietnã do Sul"}
+    ];
+
+    const container = document.getElementById('wars-container');
+
+    data.forEach(war => {
+        const card = document.createElement('div');
+        card.className = 'war-card';
+        card.innerHTML = `
+            <div class="war-header">
+                <h2>${war.Guerra}</h2>
+            </div>
+            <div class="war-body">
+                <div class="stat-box">
+                    <div class="stat-label">Mortos Estimados</div>
+                    <div class="stat-value deaths">${war.Mortos}</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Vencedor</div>
+                    <div class="stat-value winner">${war.Vencedor}</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Participante Principal</div>
+                    <div class="stat-value participant">${war.Participante}</div>
+                </div>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+</script>
+
+</body>
+</html>
