@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enciclopédia dos Cavaleiros do Zodíaco</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <nav class="navbar">
+        <h1 class="logo">Saint Seiya</h1>
+        <ul class="nav-links">
+            <li><a href="#" class="active" data-target="home">Home</a></li>
+            <li><a href="#" data-target="personagens">Personagens</a></li>
+            <li><a href="#" data-target="arcos">Arcos da Saga</a></li>
+            <li><a href="#" data-target="curiosidades">Curiosidades</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- HOME SECTION -->
+        <section id="home" class="tab-content active">
+            <div class="hero">
+                <h1 class="title">Enciclopédia dos Cavaleiros do Zodíaco</h1>
+                <p class="subtitle">Faça elevar o cosmo no seu coração e descubra todos os segredos da obra-prima de Masami Kurumada.</p>
+                <button class="btn-glow" id="btn-explore">Explorar Enciclopédia</button>
+            </div>
+        </section>
+
+        <!-- PERSONAGENS SECTION -->
+        <section id="personagens" class="tab-content">
+            <h2 class="section-title">Personagens</h2>
+            
+            <div class="category-tabs">
+                <button class="cat-btn active" data-cat="bronze">Cavaleiros de Bronze</button>
+                <button class="cat-btn" data-cat="ouro">Cavaleiros de Ouro</button>
+                <button class="cat-btn" data-cat="prata_deuses">Deuses & Prata</button>
+            </div>
+
+            <div class="character-grid" id="character-grid">
+                <!-- Dynamically populated -->
+            </div>
+        </section>
+
+        <!-- ARCOS SECTION -->
+        <section id="arcos" class="tab-content">
+            <h2 class="section-title">A Linha do Tempo</h2>
+            <div class="timeline" id="timeline">
+                <!-- Dynamically populated -->
+            </div>
+        </section>
+
+        <!-- CURIOSIDADES SECTION -->
+        <section id="curiosidades" class="tab-content">
+            <h2 class="section-title">Segredos Cósmicos</h2>
+            <div class="curiosities-grid" id="curiosities-grid">
+                <!-- Dynamically populated -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Character Modal -->
+    <div id="character-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-img-container">
+                    <img id="modal-img" src="" alt="Character">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-name"></h2>
+                    <h4 id="modal-constellation" class="gold-text"></h4>
+                    <p id="modal-bio" class="bio"></p>
+                    
+                    <div class="attacks-section">
+                        <h4 class="gold-text">Ataques Principais:</h4>
+                        <ul id="modal-attacks"></ul>
+                    </div>
+
+                    <div class="armor-section">
+                        <h4 class="gold-text">Armadura:</h4>
+                        <p id="modal-armor"></p>
+                    </div>
+
+                    <div class="curiosity-section">
+                        <h4 class="gold-text">Curiosidades:</h4>
+                        <ul id="modal-curiosities"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
