@@ -7,7 +7,7 @@ const ISLAND_RADIUS = 15;
 
 function Player({ setGameOver }) {
   const ref = useRef();
-  const [sub] = useKeyboardControls();
+  const [, get] = useKeyboardControls();
   
   // Physics and movement state
   const speed = 10;
@@ -16,7 +16,7 @@ function Player({ setGameOver }) {
   useFrame((state, delta) => {
     if (!ref.current) return;
     
-    const { forward, backward, left, right } = sub();
+    const { forward, backward, left, right } = get();
     
     // Reset velocity
     velocity.current.set(0, 0, 0);
