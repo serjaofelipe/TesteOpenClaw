@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import moviesData from './data/moviesDB.json';
+import moviesData from './data/allMoviesDB.json';
 import charactersData from './data/charactersDB.json';
 import { Skull, Ghost, Search, Star } from 'lucide-react';
 import './index.css';
@@ -43,8 +43,8 @@ function App() {
   if (isLoading) {
     return (
       <div className="app-container" style={{ justifyContent: 'center', alignItems: 'center' }}>
-        <h1 style={{ fontFamily: 'var(--font-title)', color: 'var(--blood-red)', fontSize: '3rem' }}>
-          DESENTERRANDO ARQUIVOS...
+        <h1 style={{ fontFamily: 'var(--font-title)', color: 'var(--blood-red)', fontSize: '3rem', textAlign: 'center' }}>
+          DESENTERRANDO MAIS DE 500 ARQUIVOS...
         </h1>
         <div className="loader"></div>
       </div>

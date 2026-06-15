@@ -1,0 +1,402 @@
+[
+  {
+    "id": 26,
+    "title": "A Morte do Demônio (The Evil Dead)",
+    "year": 1981,
+    "score": 7.4,
+    "isRemake": false,
+    "story": "Cinco amigos viajam para uma cabana isolada na floresta. Lá, eles encontram o 'Naturon Demonto' (Livro dos Mortos) e um gravador que, ao ser tocado, recita feitiços antigos que despertam demônios adormecidos na floresta. Os demônios começam a possuir os jovens um por um.",
+    "curiosities": [
+      "Foi filmado com um orçamento extremamente baixo. O diretor Sam Raimi usou a câmera amarrada a um pedaço de madeira para simular a visão em primeira pessoa do demônio voando.",
+      "O sangue falso era feito de xarope de milho e corante, o que atraiu centenas de insetos para os atores durante as gravações na floresta."
+    ],
+    "characters": ["Ash Williams", "Cheryl", "Demônios Kandarianos"],
+    "inspiration": "O conceito de demônios sumérios e possessão visceral.",
+    "ageRating": "18 Anos",
+    "audience": "Fãs de Gore, Terror B e clássicos absolutos de cabana na floresta."
+  },
+  {
+    "id": 27,
+    "title": "A Morte do Demônio",
+    "year": 2013,
+    "score": 6.5,
+    "isRemake": true,
+    "story": "Uma jovem viciada em drogas é levada para uma cabana na floresta por seu irmão e amigos para passar pela abstinência. Quando um deles lê o Livro dos Mortos, invoca uma força demoníaca que os caça impiedosamente.",
+    "curiosities": [
+      "O filme usou incríveis 50 mil galões de sangue falso (aproximadamente 190.000 litros) apenas para a cena final da chuva de sangue.",
+      "Praticamente não houve uso de CGI; todos os efeitos visuais e gore foram práticos."
+    ],
+    "characters": ["Mia Allen", "David", "O Abominável"],
+    "inspiration": "Remake focado em terror puro e extremo, eliminando a comédia do filme original.",
+    "ageRating": "18 Anos",
+    "audience": "Fãs de Splatter extremo, remake moderno visceral."
+  },
+  {
+    "id": 28,
+    "title": "Corra! (Get Out)",
+    "year": 2017,
+    "score": 8.4,
+    "isRemake": false,
+    "story": "Chris, um jovem fotógrafo negro, viaja para conhecer a família rica de sua namorada branca. Aos poucos, ele percebe um comportamento extremamente bizarro dos pais dela e dos empregados negros, descobrindo um segredo macabro e racista que o coloca em perigo mortal.",
+    "curiosities": [
+      "Ganhou o Oscar de Melhor Roteiro Original.",
+      "O conceito do 'Sunken Place' (Lugar Submerso) tornou-se um fenômeno cultural para descrever a marginalização."
+    ],
+    "characters": ["Chris Washington", "Rose Armitage", "Missy Armitage"],
+    "inspiration": "Tensões raciais na América moderna e clássicos como 'As Esposas de Stepford'.",
+    "ageRating": "16 Anos",
+    "audience": "Terror Psicológico e Crítica Social."
+  },
+  {
+    "id": 29,
+    "title": "Uma Noite de Crime (The Purge)",
+    "year": 2013,
+    "score": 5.7,
+    "isRemake": false,
+    "story": "Numa América distópica, o governo sancionou um evento anual de 12 horas no qual todos os crimes, incluindo assassinato, são legais. Uma família rica se tranca em sua fortaleza, mas a invasão de um homem ferido os torna alvo de um grupo de sádicos mascarados.",
+    "curiosities": [
+      "A máscara com o sorriso exagerado virou um marco no Halloween pelo mundo.",
+      "A premissa gerou uma das franquias mais lucrativas da Blumhouse, gerando diversas sequências e uma série de TV."
+    ],
+    "characters": ["James Sandin", "Mary Sandin", "Líder Mascarado (Polite Leader)"],
+    "inspiration": "O questionamento sobre violência inerente à natureza humana e a desigualdade de classes.",
+    "ageRating": "18 Anos",
+    "audience": "Home Invasion, Distopia e Tensão Constante."
+  },
+  {
+    "id": 30,
+    "title": "O Chamado (The Ring)",
+    "year": 2002,
+    "score": 7.1,
+    "isRemake": true,
+    "story": "A repórter Rachel Keller investiga uma lenda urbana sobre uma fita de vídeo amaldiçoada contendo imagens perturbadoras. A lenda diz que quem assiste à fita recebe um telefonema dizendo 'sete dias' e, exatamente uma semana depois, morre tragicamente.",
+    "curiosities": [
+      "Remake do aclamado filme de terror japonês 'Ringu' (1998).",
+      "O visual distorcido dos rostos das vítimas foi alcançado usando efeitos práticos de maquiagem em vez de puro CGI."
+    ],
+    "characters": ["Rachel Keller", "Samara Morgan", "Aidan Keller"],
+    "inspiration": "O folclore japonês do espírito vingativo Onryō e o romance de Koji Suzuki.",
+    "ageRating": "14 Anos",
+    "audience": "Terror investigativo, lendas urbanas e atmosferas opressivas."
+  },
+  {
+    "id": 31,
+    "title": "A Entidade (Sinister)",
+    "year": 2012,
+    "score": 6.8,
+    "isRemake": false,
+    "story": "Um escritor de crimes reais em decadência muda-se com a família para uma casa onde um assassinato brutal ocorreu. No sótão, ele encontra filmes em Super-8 que mostram diversas famílias sendo mortas de formas sádicas por uma entidade maligna oculta.",
+    "curiosities": [
+      "Em um estudo científico (Science of Scare), 'A Entidade' foi classificado estatisticamente como o filme que mais acelera os batimentos cardíacos do público.",
+      "Os vídeos encontrados (found-footage) foram intencionalmente envelhecidos e distorcidos para aumentar o nível de perturbação."
+    ],
+    "characters": ["Ellison Oswalt", "Bughuul (A Entidade)", "Deputado So & So"],
+    "inspiration": "O pavor inato de gravações caseiras (Snuff films) misturado com entidades devoradoras de almas.",
+    "ageRating": "16 Anos",
+    "audience": "Público que gosta de atmosferas aterrorizantes e o gênero found-footage incorporado na narrativa."
+  },
+  {
+    "id": 32,
+    "title": "Poltergeist - O Fenômeno",
+    "year": 1982,
+    "score": 7.3,
+    "isRemake": false,
+    "story": "A família Freeling passa por experiências bizarras em sua nova casa na Califórnia, culminando no sequestro de sua filha mais nova, Carol Anne, por forças fantasmagóricas que se comunicam através da estática da TV.",
+    "curiosities": [
+      "Houve muitos rumores sobre a 'Maldição de Poltergeist', já que duas das jovens atrizes do filme faleceram tragicamente nos anos seguintes.",
+      "Para economizar, a produção usou esqueletos humanos reais em vez de réplicas de plástico na infame cena da piscina da mãe."
+    ],
+    "characters": ["Carol Anne", "Tangina Barrons", "A Besta"],
+    "inspiration": "Medos suburbanos clássicos e a expansão imobiliária sobre cemitérios antigos.",
+    "ageRating": "12 Anos",
+    "audience": "Terror Clássico Sobrenatural e Assombrações em Família."
+  },
+  {
+    "id": 33,
+    "title": "Sorria (Smile)",
+    "year": 2022,
+    "score": 6.5,
+    "isRemake": false,
+    "story": "Após testemunhar o suicídio bizarro e traumático de uma paciente, a Dra. Rose Cotter passa a ser perseguida por uma entidade malevolente que assume a forma de pessoas exibindo um sorriso macabro e inflexível.",
+    "curiosities": [
+      "O marketing do filme foi genial: atores sorrindo histericamente foram colocados em eventos esportivos reais transmitidos ao vivo na TV americana.",
+      "Baseado no curta-metragem 'Laura Hasn't Slept', do mesmo diretor."
+    ],
+    "characters": ["Rose Cotter", "A Entidade do Sorriso", "Joel"],
+    "inspiration": "O trauma como um ciclo contagioso e o conceito do 'uncanny valley' com expressões faciais forçadas.",
+    "ageRating": "16 Anos",
+    "audience": "Jump-scares psicológicos modernos, ciclo de maldição inquebrável."
+  },
+  {
+    "id": 34,
+    "title": "O Massacre da Serra Elétrica",
+    "year": 1974,
+    "score": 7.4,
+    "isRemake": false,
+    "story": "Cinco jovens viajam pelo interior do Texas para verificar se o túmulo de um parente foi vandalizado. A viagem se torna um pesadelo quando eles cruzam o caminho de uma bizarra e sádica família de canibais liderada pelo imenso Leatherface.",
+    "curiosities": [
+      "Apesar do título extremamente sangrento e da reputação violenta, o filme original quase não tem sangue explícito; o terror vem da direção insana e atmosfera repulsiva.",
+      "A atriz principal se cortou de verdade numa das cenas finais, devido à exaustão e falta de segurança nas filmagens exaustivas."
+    ],
+    "characters": ["Leatherface", "Sally Hardesty", "O Caroneiro", "O Avô"],
+    "inspiration": "Inspirado livremente nos crimes bizarros do assassino real Ed Gein (que fazia móveis com restos mortais).",
+    "ageRating": "18 Anos",
+    "audience": "A Origem do Slasher Brutal e do Horror Gráfico."
+  },
+  {
+    "id": 35,
+    "title": "Psicose (Psycho)",
+    "year": 1960,
+    "score": 8.5,
+    "isRemake": false,
+    "story": "A secretária Marion Crane foge com 40 mil dólares roubados e se hospeda no isolado Motel Bates, gerenciado pelo jovem e tímido Norman Bates, que vive sob a rígida e abusiva influência de sua mãe reclusa.",
+    "curiosities": [
+      "A cena do chuveiro levou uma semana inteira para ser filmada, possuindo mais de 70 ângulos de câmera diferentes e 50 cortes rápidos.",
+      "Para simular o sangue escorrendo no chuveiro num filme preto e branco, Hitchcock usou calda de chocolate."
+    ],
+    "characters": ["Norman Bates", "Marion Crane", "A Mãe (Norma Bates)"],
+    "inspiration": "Também influenciado vagamente pelos crimes psicológicos de Ed Gein.",
+    "ageRating": "14 Anos",
+    "audience": "Obra-Prima do Suspense, Thriller Psicológico Essencial."
+  },
+  {
+    "id": 36,
+    "title": "O Babadook",
+    "year": 2014,
+    "score": 6.8,
+    "isRemake": false,
+    "story": "Uma mãe viúva e deprimida e seu filho problemático encontram um sinistro livro infantil chamado 'Senhor Babadook' em casa. Ao ler a história, o monstro sombrio do livro passa a se manifestar na realidade da família, testando a sanidade da mãe.",
+    "curiosities": [
+      "O monstro Babadook tornou-se inexplicavelmente um ícone do orgulho LGBTQIA+ após a Netflix categorizar o filme erroneamente como filme com temática LGBT em seu catálogo.",
+      "Muitos consideram o monstro uma alegoria perfeita para o luto e a depressão profunda que não se pode simplesmente ignorar."
+    ],
+    "characters": ["Amelia", "Samuel", "O Babadook"],
+    "inspiration": "A depressão clínica, o trauma da perda e contos de fadas expressionistas.",
+    "ageRating": "14 Anos",
+    "audience": "Terror Emocional, Alegorias e Filmes Indie Aclamados."
+  },
+  {
+    "id": 37,
+    "title": "Tubarão (Jaws)",
+    "year": 1975,
+    "score": 8.1,
+    "isRemake": false,
+    "story": "Quando um enorme tubarão-branco começa a aterrorizar os banhistas da tranquila ilha de Amity durante o feriado do 4 de Julho, o chefe de polícia local une forças com um biólogo marinho e um pescador grisalho para caçar a besta.",
+    "curiosities": [
+      "O tubarão mecânico (apelidado de Bruce) quebrava constantemente, forçando Steven Spielberg a sugerir a presença da fera usando a música e câmeras na superfície, o que tornou o filme muito mais aterrorizante do que o previsto.",
+      "Criou o conceito de 'Blockbuster de Verão' no cinema mundial."
+    ],
+    "characters": ["Chefe Brody", "Quint", "Matt Hooper", "Tubarão-Branco (Bruce)"],
+    "inspiration": "Romance de Peter Benchley, que se arrependeu mais tarde devido ao impacto negativo na população de tubarões.",
+    "ageRating": "14 Anos",
+    "audience": "Fãs de Suspense, Terror Aquático, Tensão e Clássicos Intocáveis."
+  },
+  {
+    "id": 38,
+    "title": "Terrifier 2",
+    "year": 2022,
+    "score": 6.2,
+    "isRemake": false,
+    "story": "Ressuscitado por uma entidade sinistra, Art, O Palhaço, retorna ao condado de Miles na noite de Halloween para caçar uma adolescente e seu irmão mais novo. Um massacre grotesco e sádico os aguarda.",
+    "curiosities": [
+      "O filme é notório por relatos de pessoas desmaiando e vomitando nos cinemas americanos devido aos seus requintes sádicos e gráficos absurdos (gore extremo).",
+      "Totalmente independente, financiado via crowdfunding, e arrecadou milhões em bilheteria apenas no boca-a-boca."
+    ],
+    "characters": ["Art The Clown", "Sienna Shaw", "A Garotinha Pálida"],
+    "inspiration": "Slasher cru e sádico dos anos 80 levado ao extremo absoluto da tolerância visual.",
+    "ageRating": "18 Anos",
+    "audience": "Gore Hounds, fãs de estômago forte e ultraviolência gráfica."
+  },
+  {
+    "id": 39,
+    "title": "Nós (Us)",
+    "year": 2019,
+    "score": 6.8,
+    "isRemake": false,
+    "story": "Uma família passa as férias de verão em uma casa de praia e descobre uma horrível verdade: eles são perseguidos por 'Os Amarrados', suas cópias perfeitas (doppelgängers) vestidas de macacões vermelhos empunhando tesouras de ouro.",
+    "curiosities": [
+      "As tesouras foram escolhidas porque simbolizam a dualidade: duas partes idênticas que trabalham juntas para destruir, além de cortarem o cordão umbilical literal e metafórico.",
+      "A música 'I Got 5 On It' é maravilhosamente distorcida num arranjo de cordas de terror."
+    ],
+    "characters": ["Adelaide Wilson", "Red", "Os Amarrados"],
+    "inspiration": "A campanha Hands Across America e o folclore sombrio dos doppelgängers.",
+    "ageRating": "16 Anos",
+    "audience": "Terror Psicológico Moderno, Reflexões Sociais de Jordan Peele."
+  },
+  {
+    "id": 40,
+    "title": "Sobrenatural (Insidious)",
+    "year": 2010,
+    "score": 6.8,
+    "isRemake": false,
+    "story": "A família Lambert procura ajuda sobrenatural quando seu filho entra num estado de coma inexplicável. Eles logo descobrem que não é a casa que está assombrada, mas sim o próprio garoto, que está preso em uma dimensão paralela perigosa conhecida como 'O Além' (The Further).",
+    "curiosities": [
+      "Para manter os baixos custos de produção de apenas US$ 1,5 milhão, os cineastas filmaram em três semanas e não usaram CGI para o famoso demônio de 'rosto vermelho'.",
+      "Consolidou a fórmula moderna da Blumhouse de baixo orçamento e retorno massivo."
+    ],
+    "characters": ["Josh Lambert", "Renai", "Dalton", "O Demônio do Rosto Vermelho (Lipstick-Face)"],
+    "inspiration": "Viagem astral, paralisia do sono e os perigos de almas perdidas.",
+    "ageRating": "14 Anos",
+    "audience": "Suspense denso, Jump-Scares eficazes e fãs de demônios."
+  },
+  {
+    "id": 41,
+    "title": "X - A Marca da Morte",
+    "year": 2022,
+    "score": 6.6,
+    "isRemake": false,
+    "story": "Em 1979, um grupo de jovens cineastas viaja para uma fazenda isolada no Texas para gravar um filme adulto. Mas quando os idosos proprietários do local os pegam no ato, as gravações saem do controle e se transformam em um banho de sangue.",
+    "curiosities": [
+      "A atriz Mia Goth interpreta simultaneamente dois papéis: a jovem Maxine e a assustadora idosa Pearl (usando horas de maquiagem pesada).",
+      "Foi filmado secretamente junto com seu prequel focado na vilã, 'Pearl'."
+    ],
+    "characters": ["Maxine Minx", "Pearl", "Howard"],
+    "inspiration": "Filmes grindhouse e slasher setentistas misturados à pornografia da mesma era.",
+    "ageRating": "18 Anos",
+    "audience": "Fãs de terror cult A24 e Slashers estilizados dos anos 70."
+  },
+  {
+    "id": 42,
+    "title": "A Órfã (Orphan)",
+    "year": 2009,
+    "score": 7.0,
+    "isRemake": false,
+    "story": "Após a perda devastadora do terceiro filho, o casal Kate e John adota a encantadora e educada menina russa Esther, de 9 anos. Mas a menina exibe comportamentos cruéis, manipuladores e conhecimentos perigosos que revelam um dos maiores plot twists do terror moderno.",
+    "curiosities": [
+      "Isabelle Fuhrman, a atriz que interpreta Esther, tinha apenas 11 anos e surpreendeu todos com sua profundidade sombria.",
+      "Baseado (coincidentemente ou não) num quadro real da condição rara hipopituitarismo."
+    ],
+    "characters": ["Esther", "Kate Coleman", "John Coleman"],
+    "inspiration": "Plot twists cruéis, dramas de adoção que viram pesadelo.",
+    "ageRating": "16 Anos",
+    "audience": "Thriller Psicológico Familiar e Reviravoltas Chocantes."
+  },
+  {
+    "id": 43,
+    "title": "O Albergue (Hostel)",
+    "year": 2005,
+    "score": 5.9,
+    "isRemake": false,
+    "story": "Mochileiros americanos buscando aventuras viajam para a Europa Oriental (Eslováquia) para curtir um albergue com mulheres atraentes, mas acabam vendidos em um leilão para um clube macabro onde homens ricos pagam enormes quantias para torturar pessoas à vontade.",
+    "curiosities": [
+      "O diretor Eli Roth teve a ideia após encontrar um suposto site bizarro na deep web tailandesa que oferecia a experiência de atirar na cabeça de uma pessoa em troca de US$ 10.000.",
+      "Causou muita polêmica política, sendo banido e ofendendo a Eslováquia por destruir sua imagem turística."
+    ],
+    "characters": ["Paxton", "Josh", "O Homem de Negócios Holandês"],
+    "inspiration": "Os medos do 'americano feio' viajando fora de sua zona de conforto e rumores sombrios da deep web.",
+    "ageRating": "18 Anos",
+    "audience": "O Pináculo do Torture Porn. Violência crua e sádica."
+  },
+  {
+    "id": 44,
+    "title": "It: A Coisa (It)",
+    "year": 2017,
+    "score": 7.3,
+    "isRemake": true,
+    "story": "No verão de 1989, um grupo de crianças vítimas de bullying na cidade de Derry junta-se no 'Clube dos Otários' para lutar contra um ser diabólico que muda de forma para os seus piores medos, sendo frequentemente visto como Pennywise, O Palhaço Dançarino.",
+    "curiosities": [
+      "Tornou-se o filme de terror de maior bilheteria de todos os tempos nas categorias R-Rated.",
+      "O sorriso de Bill Skarsgård como Pennywise não usou CGI; o próprio ator consegue fazer o sorriso grotesco e apontar um olho para cada direção."
+    ],
+    "characters": ["Pennywise", "Bill Denbrough", "Beverly Marsh", "Clube dos Otários"],
+    "inspiration": "Remake focado nos medos da infância e no clássico de Stephen King.",
+    "ageRating": "16 Anos",
+    "audience": "Terror de Coming-of-Age, Palhaços Macabros."
+  },
+  {
+    "id": 45,
+    "title": "Fale Comigo (Talk to Me)",
+    "year": 2022,
+    "score": 7.1,
+    "isRemake": false,
+    "story": "Um grupo de amigos descobre como invocar espíritos usando uma mão embalsamada macabra e fica viciado no transe e emoção. Quando um deles vai longe demais e ultrapassa as regras do ritual, portas do além são permanentemente escancaradas.",
+    "curiosities": [
+      "Criado pelos irmãos RackaRacka, famigerados YouTubers australianos que usavam seus canais para paródias sangrentas, marcando a transição genial deles pro cinema.",
+      "Uma mão real embalsamada seria ilegal, então o design da mão de cerâmica coberta de assinaturas marcou a identidade do filme."
+    ],
+    "characters": ["Mia", "Riley", "Jade", "O Espírito do Afogado"],
+    "inspiration": "Vícios modernos adolescentes nas redes sociais como metáfora para rituais perigosos.",
+    "ageRating": "16 Anos",
+    "audience": "Terror A24, Sobrenatural Adolescente, Brutalidade e Regras Espirituais."
+  },
+  {
+    "id": 46,
+    "title": "Corrente do Mal (It Follows)",
+    "year": 2014,
+    "score": 6.8,
+    "isRemake": false,
+    "story": "Após uma noite casual, uma garota descobre que adquiriu uma maldição letal que é passada adiante através de relações sexuais. A maldição é uma entidade invisível para o resto do mundo, que caminha incansavelmente em sua direção, assumindo a forma de desconhecidos ou pessoas que ela ama.",
+    "curiosities": [
+      "A estética do filme é anacrônica (um misto de carros dos anos 70, televisões de tubo e smartphones em formato de concha), propositalmente criando a ideia de que o filme se passa 'em um pesadelo temporal'.",
+      "Muitas pessoas o consideram uma clara alegoria para Doenças Sexualmente Transmissíveis (DST)."
+    ],
+    "characters": ["Jay Height", "A Entidade Lenta", "Hugh"],
+    "inspiration": "A angústia inevitável do horror lento, que te persegue infinitamente (It, The Terminator).",
+    "ageRating": "16 Anos",
+    "audience": "Terror Cult Indy. Suspense lento, paranóia iminente."
+  },
+  {
+    "id": 47,
+    "title": "Arraste-me Para o Inferno",
+    "year": 2009,
+    "score": 6.6,
+    "isRemake": false,
+    "story": "A doce analista de crédito Christine Brown nega a extensão da hipoteca a uma velha mulher para agradar seu chefe. Como retaliação, a velha senhora joga uma poderosa maldição cigana nela, que a torturará por 3 dias antes de enviá-la eternamente para o inferno.",
+    "curiosities": [
+      "Dirigido pelo lendário Sam Raimi, marcando seu retorno glorioso ao terror escrachado após as mega produções do Homem-Aranha de Tobey Maguire.",
+      "A cabra demoníaca foi concebida de forma parcialmente digital e animatrônica."
+    ],
+    "characters": ["Christine Brown", "Sra. Ganush", "O Lamia (Demônio)"],
+    "inspiration": "Maldições ciganas clássicas e a fúria implacável do humor negro grotesco (Slapstick Horror).",
+    "ageRating": "14 Anos",
+    "audience": "Gore divertido, sustos exagerados e humor negro de Sam Raimi."
+  },
+  {
+    "id": 48,
+    "title": "Mártires (Martyrs)",
+    "year": 2008,
+    "score": 7.0,
+    "isRemake": false,
+    "story": "Uma jovem gravemente traumatizada tenta se vingar dos responsáveis pelo seu terrível sofrimento na infância, arrastando sua melhor amiga com ela. O que elas encontram é um culto secreto extremamente perturbador, focado em torturar mulheres até encontrar o limite entre a vida e a morte para descobrir o além.",
+    "curiosities": [
+      "Ícone do Movimento 'Nova Extremidade Francesa', que usa a violência para instigar pensamentos filosóficos perturbadores e brutais.",
+      "Inúmeras pessoas abandonaram os cinemas devido à violência psicológica tortuosa da metade final."
+    ],
+    "characters": ["Lucie", "Anna", "A Mademoiselle"],
+    "inspiration": "Fascinação espiritual pela dor extrema e transcender a mortalidade através do sofrimento literal.",
+    "ageRating": "18 Anos",
+    "audience": "Extremamente Perturbador, Tortura Filosófica. Não é para os fracos."
+  },
+  {
+    "id": 49,
+    "title": "O Silêncio dos Inocentes",
+    "year": 1991,
+    "score": 8.6,
+    "isRemake": false,
+    "story": "A brilhante recruta do FBI, Clarice Starling, precisa da ajuda do presidiário, psiquiatra manipulador e canibal Dr. Hannibal Lecter para conseguir traçar o perfil de um novo serial killer, chamado 'Buffalo Bill', que esfola a pele de suas vítimas.",
+    "curiosities": [
+      "Um dos pouquíssimos filmes da história a levar o 'Big Five' no Oscar (Melhor Filme, Diretor, Ator, Atriz e Roteiro).",
+      "Anthony Hopkins só aparece em tela por exatos 16 minutos, tempo suficiente para imortalizar um dos maiores vilões de todos os tempos."
+    ],
+    "characters": ["Clarice Starling", "Hannibal Lecter", "Buffalo Bill"],
+    "inspiration": "O Serial Killer Buffalo Bill é uma colagem de Ed Gein (pele), Ted Bundy (gesso no braço) e Gary Heidnik (cativeiro).",
+    "ageRating": "16 Anos",
+    "audience": "O Suspense definitivo, Investigação Criminal Psicológica."
+  },
+  {
+    "id": 50,
+    "title": "A Bruxa (The Witch)",
+    "year": 2015,
+    "score": 6.9,
+    "isRemake": false,
+    "story": "Na Nova Inglaterra do século 17, uma família profundamente puritana é banida de sua vila. Vivendo isolados próximos a uma floresta negra, eventos sobrenaturais começam a corroer a família: seu bebê recém-nascido desaparece e eles começam a acusar a filha mais velha, Thomasin, de bruxaria.",
+    "curiosities": [
+      "Os diálogos do filme foram escritos diretamente com base em documentos históricos, diários e transcrições dos julgamentos de bruxas da época (como os de Salém).",
+      "O bode Black Phillip, verdadeiro antagonista, atacou severamente o ator Ralph Ineson nos sets."
+    ],
+    "characters": ["Thomasin", "William", "Black Phillip (Bode)"],
+    "inspiration": "Contos folclóricos puritanos americanos reais e pânico religioso severo.",
+    "ageRating": "16 Anos",
+    "audience": "Folk Horror A24 Lento, Opressivo e Cinematografia de Época."
+  }
+]
