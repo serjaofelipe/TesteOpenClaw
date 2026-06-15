@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import moviesData from './data/allMoviesDB.json';
 import charactersData from './data/charactersDB.json';
-import quizTreeData from './data/quizTree.json';
+import { questionPool } from './data/akinatorDB.js';
 import { Skull, Ghost, Search, Star, Film, Flame } from 'lucide-react';
 import './index.css';
 
@@ -12,9 +12,11 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState('Todas');
 
-  // Quiz State
+  // Quiz State (Akinator Engine)
   const [quizStep, setQuizStep] = useState(0);
-  const [currentQuizNode, setCurrentQuizNode] = useState(quizTreeData);
+  const [askedQuestions, setAskedQuestions] = useState([]);
+  const [currentQuestion, setCurrentQuestion] = useState(null);
+  const [candidates, setCandidates] = useState([]);
   const [recommendations, setRecommendations] = useState([]);
 
   // Extrair categorias únicas dos filmes
@@ -52,24 +54,85 @@ function App() {
   );
 
   const handleAnswer = (option) => {
-    if (option.nextNode.isResult) {
-      // Find movies by ID and set recommendations
-      const recs = option.nextNode.movies.map(id => moviesData.find(m => m.id === id)).filter(Boolean);
-      setRecommendations(recs);
-      setQuizStep(prev => prev + 1); // Move to result screen
-    } else {
-      setCurrentQuizNode(option.nextNode);
+    // Boost scores based on chosen tags
+    const newCandidates = candidates.map(movie => {
+      let boost = 0;
+      if (option.boostTags && option.boostTags.length > 0) {
+        option.boostTags.forEach(t => {
+          if (movie.tags && movie.tags.includes(t)) boost += 15; // strong affinity
+        });
+      }
+      return { ...movie, matchScore: movie.matchScore + boost };
+    });
+
+    const newAsked = [...askedQuestions, currentQuestion.id];
+    setAskedQuestions(newAsked);
+    setCandidates(newCandidates);
+
+    if (quizStep + 1 >= 10) {
+      // Game Over: Calculate Final Top 3
+      newCandidates.sort((a, b) => b.matchScore - a.matchScore || Math.random() - 0.5);
+      setRecommendations(newCandidates.slice(0, 3));
       setQuizStep(prev => prev + 1);
+    } else {
+      // Pick next dynamic question
+      const nextQ = calculateNextQuestion(newCandidates, newAsked);
+      if (nextQ) {
+        setCurrentQuestion(nextQ);
+        setQuizStep(prev => prev + 1);
+      } else {
+        // Fallback se faltar perguntas
+        newCandidates.sort((a, b) => b.matchScore - a.matchScore);
+        setRecommendations(newCandidates.slice(0, 3));
+        setQuizStep(10);
+      }
     }
   };
 
+  const calculateNextQuestion = (currentCands, askedIds) => {
+    // Akinator logic: find most prominent tags in top 50 candidates
+    const topCandidates = [...currentCands].sort((a, b) => b.matchScore - a.matchScore).slice(0, 50);
+    const tagCounts = {};
+    topCandidates.forEach(m => {
+      (m.tags || []).forEach(tag => {
+        tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+      });
+    });
+
+    const availableQuestions = questionPool.filter(q => !askedIds.includes(q.id));
+    if (availableQuestions.length === 0) return null;
+
+    availableQuestions.forEach(q => {
+      q.relevanceScore = tagCounts[q.tag] || 0;
+      // Generic tags get a baseline relevance to ensure they are asked
+      if (['era', 'score', 'setting', 'aesthetic'].includes(q.tag)) q.relevanceScore += 15;
+    });
+
+    // Sort by relevance, mix ties randomly
+    availableQuestions.sort((a, b) => b.relevanceScore - a.relevanceScore || Math.random() - 0.5);
+    return availableQuestions[0];
+  };
+
   const restartQuiz = () => {
-    setCurrentQuizNode(quizTreeData);
+    const initCandidates = moviesData.map(m => ({ ...m, matchScore: (m.score / 10) })); // Base score is critic score
+    setCandidates(initCandidates);
+    
+    // Find Root question
+    const rootQ = questionPool.find(q => q.id === "q_root") || questionPool[0];
+    setCurrentQuestion(rootQ);
+    setAskedQuestions([]);
     setQuizStep(0);
     setRecommendations([]);
   };
 
-  let totalQuestionsCount = 5;
+  // Start quiz on mount if needed
+  useEffect(() => {
+    if (candidates.length === 0) {
+      restartQuiz();
+    }
+  }, []);
+
+  let totalQuestionsCount = 10;
 
   if (isLoading) {
     return (
@@ -218,16 +281,16 @@ function App() {
             <p style={{ textAlign: 'center', marginBottom: '2rem', color: 'var(--text-dim)' }}>Caminhos interligados. Sua primeira escolha define sua jornada para o inferno...</p>
             
             <div className="quiz-container">
-              {recommendations.length === 0 ? (
+              {recommendations.length === 0 && currentQuestion ? (
                 <div className="quiz-question-box">
                   <h3>Pergunta {quizStep + 1} de {totalQuestionsCount}</h3>
                   <div className="progress-bar-bg" style={{ background: '#333', height: '4px', marginBottom: '2rem', borderRadius: '2px' }}>
                      <div className="progress-fill" style={{ background: 'var(--blood-red)', height: '100%', width: `${((quizStep) / totalQuestionsCount) * 100}%`, transition: 'width 0.3s' }}></div>
                   </div>
 
-                  <h2>{currentQuizNode.text}</h2>
+                  <h2>{currentQuestion.text}</h2>
                   <div className="quiz-options">
-                    {currentQuizNode.options.map((opt, i) => (
+                    {currentQuestion.options.map((opt, i) => (
                       <button key={i} className="quiz-btn" onClick={() => handleAnswer(opt)}>
                         {opt.text}
                       </button>
