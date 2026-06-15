@@ -58,8 +58,11 @@ function showSection(sectionId) {
     const buttons = document.querySelectorAll('.nav-btn');
     if (sectionId === 'code-analysis') buttons[0].classList.add('active');
     else if (sectionId === 'wifi-scanner') buttons[1].classList.add('active');
-    else if (sectionId === 'wifi-analysis') buttons[2].classList.add('active');
-    else if (sectionId === 'bluetooth-analysis') buttons[3].classList.add('active');
+    else if (sectionId === 'bluetooth-analysis') buttons[2].classList.add('active');
+    else if (sectionId === 'traffic-monitor') buttons[3].classList.add('active');
+    else if (sectionId === 'ping-radar') buttons[4].classList.add('active');
+    else if (sectionId === 'subnet-calc') buttons[5].classList.add('active');
+    else if (sectionId === 'traceroute-map') buttons[6].classList.add('active');
 }
 
 // Network Scanner Logic
@@ -205,4 +208,112 @@ btnBt.addEventListener('click', async () => {
     
     btnBt.textContent = '[ RASTREAR BLUETOOTH ]';
     btnBt.classList.remove('blink');
+});
+
+// --- NOVAS FUNCIONALIDADES ---
+
+// Traffic Monitor Logic
+const dlSpeed = document.getElementById('dl-speed');
+const ulSpeed = document.getElementById('ul-speed');
+
+async function pollTraffic() {
+    try {
+        const res = await fetch('/api/traffic');
+        const data = await res.json();
+        if (data.download_bps !== undefined) {
+            dlSpeed.textContent = (data.download_bps / 1024).toFixed(2);
+            ulSpeed.textContent = (data.upload_bps / 1024).toFixed(2);
+        }
+    } catch (err) {
+        console.error('Traffic poll error:', err);
+    }
+}
+setInterval(pollTraffic, 1000); // Polling 1s
+
+// Ping Radar Logic
+const btnPing = document.getElementById('btn-ping');
+const pingTarget = document.getElementById('ping-target');
+const pingOutput = document.getElementById('ping-output');
+
+btnPing.addEventListener('click', async () => {
+    const target = pingTarget.value.trim();
+    if (!target) return alert("Digite um alvo válido.");
+    
+    pingOutput.textContent = `Disparando ping para ${target}...\n`;
+    btnPing.disabled = true;
+    
+    try {
+        const res = await fetch('/api/ping', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({target: target})
+        });
+        const data = await res.json();
+        pingOutput.textContent += data.output;
+    } catch (err) {
+        pingOutput.textContent += "\nErro: " + err;
+    }
+    btnPing.disabled = false;
+});
+
+// Subnet Calculator Logic
+const btnSubnet = document.getElementById('btn-subnet');
+const subnetTarget = document.getElementById('subnet-target');
+const subNet = document.getElementById('sub-net');
+const subMask = document.getElementById('sub-mask');
+const subBc = document.getElementById('sub-bc');
+const subHosts = document.getElementById('sub-hosts');
+const subRange = document.getElementById('sub-range');
+const subnetOutput = document.getElementById('subnet-output');
+
+btnSubnet.addEventListener('click', async () => {
+    const cidr = subnetTarget.value.trim();
+    if (!cidr) return alert("Digite um bloco CIDR (ex: 10.0.0.0/24).");
+    
+    try {
+        const res = await fetch('/api/subnet', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({cidr: cidr})
+        });
+        const data = await res.json();
+        if (data.status === 'success') {
+            subNet.textContent = data.network;
+            subMask.textContent = data.netmask;
+            subBc.textContent = data.broadcast;
+            subHosts.textContent = data.num_hosts;
+            subRange.textContent = `${data.min_ip} - ${data.max_ip}`;
+            subnetOutput.style.display = 'block';
+        } else {
+            alert("Bloco inválido: " + data.message);
+        }
+    } catch (err) {
+        alert("Erro: " + err);
+    }
+});
+
+// Traceroute Map Logic
+const btnTrace = document.getElementById('btn-trace');
+const traceTarget = document.getElementById('trace-target');
+const traceOutput = document.getElementById('trace-output');
+
+btnTrace.addEventListener('click', async () => {
+    const target = traceTarget.value.trim();
+    if (!target) return alert("Digite um alvo válido para o traceroute.");
+    
+    traceOutput.textContent = `Iniciando rastreamento de rota para ${target}...\n(Aguarde, pode levar até 30 segundos)\n\n`;
+    btnTrace.disabled = true;
+    
+    try {
+        const res = await fetch('/api/traceroute', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({target: target})
+        });
+        const data = await res.json();
+        traceOutput.textContent += data.output;
+    } catch (err) {
+        traceOutput.textContent += "\nErro: " + err;
+    }
+    btnTrace.disabled = false;
 });

@@ -14,41 +14,43 @@
     <div class="container">
         <header>
             <h1>> Network_Insights_Website_</h1>
-            <p class="subtitle">Inicializando protocolos de análise profunda... [OK]</p>
-            <nav>
+            <p class="subtitle">Inicializando protocolos de análise profunda... [OK]</p>            <nav>
                 <button class="nav-btn active" onclick="showSection('code-analysis')">1. SCANNER DE REDE</button>
                 <button class="nav-btn" onclick="showSection('wifi-scanner')">2. REDES PRÓXIMAS</button>
-                <button class="nav-btn" onclick="showSection('wifi-analysis')">3. TEORIA WI-FI</button>
-                <button class="nav-btn" onclick="showSection('bluetooth-analysis')">4. BLUETOOTH</button>
+                <button class="nav-btn" onclick="showSection('bluetooth-analysis')">3. BLUETOOTH</button>
+                <button class="nav-btn" onclick="showSection('traffic-monitor')">4. TRÁFEGO</button>
+                <button class="nav-btn" onclick="showSection('ping-radar')">5. LATÊNCIA</button>
+                <button class="nav-btn" onclick="showSection('subnet-calc')">6. SUB-REDES</button>
+                <button class="nav-btn" onclick="showSection('traceroute-map')">7. MAPA DE ROTAS</button>
             </nav>
         </header>
 
         <main>
-            <!-- SEÇÃO 1: DASHBOARD DO SCANNER -->
+            <!-- SEÇÃO 1: SCANNER DE REDE (MANTIDA) -->
             <section id="code-analysis" class="content-section active">
                 <div class="card">
-                    <h2>> Escaneamento de Rede Ativo</h2>
-                    <p>Controle do script Python em tempo real. Pressione o botão para iniciar a varredura na rede (ARP + Fingerprinting).</p>
+                    <h2>> Mapeamento de Host Local</h2>
+                    <p>Interface de escaneamento em profundidade. Usa <strong>ARP Spoofing passivo</strong> e <strong>ICMP Echo Requests</strong> para descobrir dispositivos na mesma camada 2.</p>
                     
                     <div style="text-align: center; margin-bottom: 20px;">
                         <button id="btn-scan" class="nav-btn" style="font-size: 1.2rem; border-color: #39ff14; color: #39ff14;">
-                            [ INICIAR SCANNER ]
+                            [ INICIAR VARREDURA ]
                         </button>
                     </div>
 
-                    <div id="scan-status-box" style="margin-bottom: 20px; color: var(--accent); display: none;">
-                        <p>> Status: <span id="scan-status" class="blink">Varrendo rede...</span></p>
-                        <p>> Faixa de IP: <span id="scan-range">Determinando...</span></p>
+                    <div id="scan-status-box" style="display: none; background: rgba(0,255,0,0.1); border: 1px solid #39ff14; padding: 15px; margin-bottom: 20px;">
+                        <h3 id="scan-status" class="blink">Inicializando...</h3>
+                        <p>Alvo do Escaneamento: <span id="scan-range" style="color: white;">---</span></p>
                     </div>
 
                     <div style="overflow-x: auto;">
                         <table id="hosts-table" style="width: 100%; text-align: left; border-collapse: collapse; display: none;">
                             <thead>
                                 <tr style="border-bottom: 2px solid var(--border-color); color: var(--accent);">
-                                    <th style="padding: 10px;">IP</th>
-                                    <th style="padding: 10px;">MAC Address</th>
-                                    <th style="padding: 10px;">Fabricante (OUI)</th>
-                                    <th style="padding: 10px;">OS Detectado</th>
+                                    <th style="padding: 10px;">Endereço IP</th>
+                                    <th style="padding: 10px;">Endereço FÍSICO (MAC)</th>
+                                    <th style="padding: 10px;">Fabricante</th>
+                                    <th style="padding: 10px;">Sistema Operacional</th>
                                 </tr>
                             </thead>
                             <tbody id="hosts-body">
@@ -88,33 +90,7 @@
                 </div>
             </section>
 
-            <!-- SEÇÃO 3: WI-FI EDUCATIVA -->
-            <section id="wifi-analysis" class="content-section">
-                <div class="card">
-                    <h2>> Redes Sem Fio (IEEE 802.11)</h2>
-                    <p>O Wi-Fi é a principal via de acesso às LANs modernas. Sua arquitetura traz facilidades, mas expande drasticamente a superfície de ataque.</p>
-                    
-                    <div class="grid-2">
-                        <div class="function-block">
-                            <h3>Segurança e Criptografia</h3>
-                            <ul>
-                                <li><strong>WEP / WPA / TKIP:</strong> Totalmente obsoletos e facilmente quebráveis via ataques estatísticos (Aircrack-ng).</li>
-                                <li><strong>WPA2 (AES-CCMP):</strong> Padrão de mercado atual. Seguro contra quebras matemáticas, mas ainda vulnerável a ataques de dicionário e força-bruta sobre o <i>4-Way Handshake</i> (PMKID).</li>
-                                <li><strong>WPA3 (SAE):</strong> Substitui a PSK por <i>Simultaneous Authentication of Equals</i>. Resiste à força-bruta offline, mesmo se a senha for fraca.</li>
-                            </ul>
-                        </div>
-                        <div class="function-block">
-                            <h3>Bandas e Frequências</h3>
-                            <ul>
-                                <li><strong>2.4 GHz:</strong> Maior alcance e poder de penetração em paredes. Pior velocidade e maior interferência (apenas 3 canais não-sobrepostos: 1, 6 e 11).</li>
-                                <li><strong>5 GHz / 6 GHz:</strong> Velocidades massivas (802.11ac / 802.11ax), menor alcance. Virtualmente livre de interferência vizinha.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SEÇÃO 4: BLUETOOTH -->
+            <!-- SEÇÃO 3: BLUETOOTH -->
             <section id="bluetooth-analysis" class="content-section">
                 <div class="card">
                     <h2>> Rastreamento Bluetooth (BLE)</h2>
@@ -140,6 +116,80 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 4: MONITOR DE TRÁFEGO -->
+            <section id="traffic-monitor" class="content-section">
+                <div class="card">
+                    <h2>> Monitor de Tráfego de Rede</h2>
+                    <p>Análise em tempo real do fluxo de dados entrando e saindo da máquina hospedeira.</p>
+                    
+                    <div class="grid-2" style="text-align: center; margin-top: 30px;">
+                        <div class="function-block" style="border-color: #00ffcc;">
+                            <h3>[ DOWNLOAD ]</h3>
+                            <h1 id="dl-speed" style="color: #00ffcc; font-size: 3rem; margin: 10px 0;">0.00</h1>
+                            <p>KB/s</p>
+                        </div>
+                        <div class="function-block" style="border-color: #ff3366;">
+                            <h3>[ UPLOAD ]</h3>
+                            <h1 id="ul-speed" style="color: #ff3366; font-size: 3rem; margin: 10px 0;">0.00</h1>
+                            <p>KB/s</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 5: RADAR DE LATÊNCIA -->
+            <section id="ping-radar" class="content-section">
+                <div class="card">
+                    <h2>> Radar de Latência (ICMP)</h2>
+                    <p>Dispara solicitações Echo para medir a saúde e a capacidade de resposta da conexão com um alvo específico.</p>
+                    
+                    <div style="margin-bottom: 20px; display: flex; gap: 10px;">
+                        <input type="text" id="ping-target" placeholder="IP ou Domínio (ex: 8.8.8.8)" style="flex: 1; padding: 10px; background: black; color: #39ff14; border: 1px solid var(--border-color); font-family: monospace;">
+                        <button id="btn-ping" class="nav-btn" style="border-color: #39ff14; color: #39ff14;">[ DISPARAR PING ]</button>
+                    </div>
+                    
+                    <pre id="ping-output" style="background: #050505; padding: 15px; border: 1px solid var(--border-color); min-height: 150px; color: #aaa;">Aguardando alvo...</pre>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 6: CALCULADORA DE SUB-REDES -->
+            <section id="subnet-calc" class="content-section">
+                <div class="card">
+                    <h2>> Calculadora de Sub-redes (CIDR)</h2>
+                    <p>Ferramenta de análise de segmentação de redes. Desconstrói um bloco de IP e extrai as faixas utilizáveis.</p>
+                    
+                    <div style="margin-bottom: 20px; display: flex; gap: 10px;">
+                        <input type="text" id="subnet-target" placeholder="Bloco CIDR (ex: 192.168.0.0/24)" style="flex: 1; padding: 10px; background: black; color: #39ff14; border: 1px solid var(--border-color); font-family: monospace;">
+                        <button id="btn-subnet" class="nav-btn" style="border-color: #39ff14; color: #39ff14;">[ CALCULAR ]</button>
+                    </div>
+                    
+                    <div id="subnet-output" style="display: none; background: #050505; padding: 15px; border: 1px solid var(--border-color);">
+                        <p><strong>IP da Rede:</strong> <span id="sub-net" style="color: white;"></span></p>
+                        <p><strong>Máscara:</strong> <span id="sub-mask" style="color: white;"></span></p>
+                        <p><strong>Broadcast:</strong> <span id="sub-bc" style="color: white;"></span></p>
+                        <p><strong>Total de Hosts:</strong> <span id="sub-hosts" style="color: white;"></span></p>
+                        <p><strong>Faixa Útil:</strong> <span id="sub-range" style="color: white;"></span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 7: MAPA DE ROTAS -->
+            <section id="traceroute-map" class="content-section">
+                <div class="card">
+                    <h2>> Mapa de Rotas (Traceroute)</h2>
+                    <p>Traça o caminho percorrido pelos pacotes IP até o destino, listando todos os roteadores intermediários.</p>
+                    
+                    <div style="margin-bottom: 20px; display: flex; gap: 10px;">
+                        <input type="text" id="trace-target" placeholder="IP ou Domínio (ex: google.com)" style="flex: 1; padding: 10px; background: black; color: #39ff14; border: 1px solid var(--border-color); font-family: monospace;">
+                        <button id="btn-trace" class="nav-btn" style="border-color: #39ff14; color: #39ff14;">[ MAPEAR ROTA ]</button>
+                    </div>
+                    
+                    <p style="color: #ff3366; font-size: 0.9em; margin-bottom: 10px;">Atenção: A descoberta de rota pode demorar de 10 a 30 segundos dependendo da distância do alvo.</p>
+                    
+                    <pre id="trace-output" style="background: #050505; padding: 15px; border: 1px solid var(--border-color); min-height: 200px; color: #aaa; overflow-x: auto;">Aguardando início do rastreamento...</pre>
                 </div>
             </section>
 

@@ -168,6 +168,92 @@ def get_wifi():
     except Exception as e:
         return {"status": "error", "message": str(e)}
 
+# --- NOVAS FUNCIONALIDADES ---
+import psutil
+last_net_io = None
+last_net_time = None
+
+@app.get("/api/traffic")
+def get_traffic():
+    global last_net_io, last_net_time
+    import time
+    
+    current_io = psutil.net_io_counters()
+    current_time = time.time()
+    
+    if last_net_io is None:
+        last_net_io = current_io
+        last_net_time = current_time
+        return {"upload_bps": 0, "download_bps": 0}
+        
+    dt = current_time - last_net_time
+    if dt == 0: dt = 1
+    
+    upload_bps = (current_io.bytes_sent - last_net_io.bytes_sent) / dt
+    download_bps = (current_io.bytes_recv - last_net_io.bytes_recv) / dt
+    
+    last_net_io = current_io
+    last_net_time = current_time
+    
+    return {"upload_bps": upload_bps, "download_bps": download_bps}
+
+from pydantic import BaseModel
+
+class TargetRequest(BaseModel):
+    target: str
+
+@app.post("/api/ping")
+def do_ping(req: TargetRequest):
+    import subprocess
+    import platform
+    target = req.target
+    param = '-n' if platform.system().lower() == 'windows' else '-c'
+    command = ['ping', param, '4', target]
+    try:
+        output = subprocess.check_output(command, encoding='cp1252', errors='ignore')
+        return {"status": "success", "output": output}
+    except subprocess.CalledProcessError as e:
+        return {"status": "success", "output": e.output}
+    except Exception as e:
+        return {"status": "error", "output": str(e)}
+
+@app.post("/api/traceroute")
+def do_traceroute(req: TargetRequest):
+    import subprocess
+    target = req.target
+    try:
+        # -h 15: max 15 hops, -w 1000: timeout 1000ms
+        output = subprocess.check_output(['tracert', '-h', '15', '-w', '1000', target], encoding='cp1252', errors='ignore')
+        return {"status": "success", "output": output}
+    except subprocess.CalledProcessError as e:
+        return {"status": "success", "output": e.output}
+    except Exception as e:
+        return {"status": "error", "output": str(e)}
+
+class SubnetRequest(BaseModel):
+    cidr: str
+
+@app.post("/api/subnet")
+def do_subnet(req: SubnetRequest):
+    import ipaddress
+    try:
+        net = ipaddress.ip_network(req.cidr, strict=False)
+        num_hosts = net.num_addresses - 2 if net.num_addresses > 2 else net.num_addresses
+        min_ip = str(net[1]) if net.num_addresses > 2 else str(net[0])
+        max_ip = str(net[-2]) if net.num_addresses > 2 else str(net[-1])
+        return {
+            "status": "success",
+            "network": str(net.network_address),
+            "broadcast": str(net.broadcast_address),
+            "netmask": str(net.netmask),
+            "num_hosts": num_hosts,
+            "min_ip": min_ip,
+            "max_ip": max_ip
+        }
+    except ValueError as e:
+        return {"status": "error", "message": str(e)}
+# -----------------------------
+
 @app.post("/api/start_scan")
 def start_scan():
     global scan_results
