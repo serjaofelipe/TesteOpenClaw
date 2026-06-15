@@ -162,3 +162,47 @@ btnWifi.addEventListener('click', async () => {
     btnWifi.textContent = '[ ATUALIZAR REDES ]';
     btnWifi.classList.remove('blink');
 });
+
+// Bluetooth Scanner Logic
+const btnBt = document.getElementById('btn-bluetooth');
+const btTable = document.getElementById('bt-table');
+const btBody = document.getElementById('bt-body');
+
+btnBt.addEventListener('click', async () => {
+    btnBt.textContent = '[ RASTREANDO BLE... ]';
+    btnBt.classList.add('blink');
+    
+    try {
+        const res = await fetch('/api/bluetooth');
+        const data = await res.json();
+        
+        if (data.status === 'success') {
+            btBody.innerHTML = '';
+            if (data.devices.length > 0) {
+                data.devices.forEach(dev => {
+                    const tr = document.createElement('tr');
+                    let color = "var(--text-main)";
+                    if (parseInt(dev.rssi) < -70) color = "orange";
+                    if (parseInt(dev.rssi) < -90) color = "red";
+                    
+                    tr.innerHTML = `
+                        <td style="color: ${color}"><strong>${dev.name}</strong></td>
+                        <td style="color: ${color}">${dev.address}</td>
+                        <td style="color: ${color}">${dev.rssi} dBm</td>
+                    `;
+                    btBody.appendChild(tr);
+                });
+                btTable.style.display = 'table';
+            } else {
+                alert('Nenhum dispositivo Bluetooth encontrado nas proximidades.');
+            }
+        } else {
+            alert('Erro: ' + data.message);
+        }
+    } catch (err) {
+        alert('Erro ao buscar Bluetooth: ' + err);
+    }
+    
+    btnBt.textContent = '[ RASTREAR BLUETOOTH ]';
+    btnBt.classList.remove('blink');
+});

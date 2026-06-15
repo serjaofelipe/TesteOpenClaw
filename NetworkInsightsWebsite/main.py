@@ -64,7 +64,8 @@ def analisar_host(ip, mac, vendor_pre_definido=None):
         time.sleep(1) # Rate limit for macvendors
         os_guess = "Não respondeu Ping"
         try:
-            resp = scapy.sr1(IP(dst=ip) / ICMP(), timeout=1, verbose=0)
+            # Aumentado timeout de ICMP para buscar mais longe/host mais lentos
+            resp = scapy.sr1(IP(dst=ip) / ICMP(), timeout=2.5, verbose=0)
             if resp:
                 os_guess = f"{identificar_os(resp.ttl)} (TTL={resp.ttl})"
         except:
@@ -78,11 +79,11 @@ def escanear_rede_ultimate_background(ip_range):
     scan_results['hosts'] = []
     
     try:
-        # 1. ARP Discovery
+        # 1. ARP Discovery com timeout maior (5s) para pegar redes mais amplas
         arp = scapy.ARP(pdst=ip_range)
         ether = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
         pacote = ether / arp
-        resultado = scapy.srp(pacote, timeout=2, verbose=0)[0]
+        resultado = scapy.srp(pacote, timeout=5.0, verbose=0)[0]
         
         hosts_temp = []
         meu_pc = pegar_meu_mac_ip()
@@ -107,6 +108,26 @@ def escanear_rede_ultimate_background(ip_range):
 def get_scan():
     global scan_results
     return scan_results
+
+@app.get("/api/bluetooth")
+async def get_bluetooth():
+    try:
+        from bleak import BleakScanner
+        devices = await BleakScanner.discover(timeout=8.0) # Timeout longo para varrer Bluetooth LE longe
+        bt_list = []
+        for d in devices:
+            bt_list.append({
+                "name": d.name or "<Desconhecido>",
+                "address": d.address,
+                "rssi": d.rssi
+            })
+        
+        bt_list.sort(key=lambda x: x['rssi'], reverse=True)
+        return {"status": "success", "devices": bt_list}
+    except ImportError:
+        return {"status": "error", "message": "Biblioteca 'bleak' não instalada. Feche e abra o start.bat."}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
 
 @app.get("/api/wifi")
 def get_wifi():

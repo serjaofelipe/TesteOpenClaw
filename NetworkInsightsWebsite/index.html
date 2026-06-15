@@ -114,28 +114,31 @@
                 </div>
             </section>
 
-            <!-- SEÇÃO 3: BLUETOOTH -->
+            <!-- SEÇÃO 4: BLUETOOTH -->
             <section id="bluetooth-analysis" class="content-section">
                 <div class="card">
-                    <h2>> Análise de Bluetooth (IEEE 802.15.1)</h2>
-                    <p>Embora criado para curtas distâncias (PANs), antenas direcionais podem captar e explorar sinais Bluetooth a quilômetros de distância.</p>
+                    <h2>> Rastreamento Bluetooth (BLE)</h2>
+                    <p>Mapeia sinais e dispositivos Bluetooth Low Energy nas redondezas utilizando antenas locais.</p>
                     
-                    <div class="grid-2">
-                        <div class="function-block">
-                            <h3>Padrões e Evolução</h3>
-                            <ul>
-                                <li><strong>Bluetooth Classic (BR/EDR):</strong> Usado para streaming contínuo (fones de ouvido sem fio, caixas de som, transferência de arquivos antigos). Alto consumo de energia.</li>
-                                <li><strong>Bluetooth Low Energy (BLE / Smart):</strong> Introduzido no BT 4.0. Usado por IoT, smartwatches, tags de localização. Envia dados intermitentes para economizar 99% da bateria.</li>
-                            </ul>
-                        </div>
-                        <div class="function-block">
-                            <h3>Vetores de Ataque Comuns</h3>
-                            <ul>
-                                <li><strong>Bluejacking:</strong> Envio de spam e mensagens irritantes em massa abusando do protocolo de descoberta.</li>
-                                <li><strong>Bluesnarfing:</strong> Falha crítica em pareamentos antigos que permite acessar a agenda telefônica e mensagens sem o PIN.</li>
-                                <li><strong>BlueBorne:</strong> Vulnerabilidade de RCE (Remote Code Execution) gravíssima que afeta as pilhas Bluetooth no Kernel do Windows, Android e Linux, dispensando pareamento.</li>
-                            </ul>
-                        </div>
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <button id="btn-bluetooth" class="nav-btn" style="font-size: 1.2rem; border-color: #39ff14; color: #39ff14;">
+                            [ RASTREAR BLUETOOTH ]
+                        </button>
+                    </div>
+
+                    <div style="overflow-x: auto;">
+                        <table id="bt-table" style="width: 100%; text-align: left; border-collapse: collapse; display: none;">
+                            <thead>
+                                <tr style="border-bottom: 2px solid var(--border-color); color: var(--accent);">
+                                    <th style="padding: 10px;">Nome do Dispositivo</th>
+                                    <th style="padding: 10px;">Endereço Físico (MAC)</th>
+                                    <th style="padding: 10px;">RSSI (Sinal)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="bt-body">
+                                <!-- Preenchido via JS -->
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </section>
