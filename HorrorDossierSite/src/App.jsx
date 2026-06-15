@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import moviesData from './data/allMoviesDB.json';
 import charactersData from './data/charactersDB.json';
-import { rootQuestion, branchQuestions } from './data/quizDB.js';
+import quizTreeData from './data/quizTree.json';
 import { Skull, Ghost, Search, Star, Film, Flame } from 'lucide-react';
 import './index.css';
 
@@ -14,8 +14,7 @@ function App() {
 
   // Quiz State
   const [quizStep, setQuizStep] = useState(0);
-  const [quizPath, setQuizPath] = useState(null); // 'slasher', 'sobrenatural', etc.
-  const [quizAnswers, setQuizAnswers] = useState([]);
+  const [currentQuizNode, setCurrentQuizNode] = useState(quizTreeData);
   const [recommendations, setRecommendations] = useState([]);
 
   // Extrair categorias únicas dos filmes
@@ -53,66 +52,24 @@ function App() {
   );
 
   const handleAnswer = (option) => {
-    const newAnswers = [...quizAnswers, option];
-    setQuizAnswers(newAnswers);
-
-    if (quizStep === 0) {
-      setQuizPath(option.path);
-      setQuizStep(1);
+    if (option.nextNode.isResult) {
+      // Find movies by ID and set recommendations
+      const recs = option.nextNode.movies.map(id => moviesData.find(m => m.id === id)).filter(Boolean);
+      setRecommendations(recs);
+      setQuizStep(prev => prev + 1); // Move to result screen
     } else {
-      const currentBranch = branchQuestions[quizPath];
-      if (quizStep < currentBranch.length) {
-        setQuizStep(prev => prev + 1);
-      } else {
-        // Acabou as perguntas (1 root + 4 branches = 5)
-        calculateRecommendations(newAnswers);
-        setQuizStep(prev => prev + 1); // Move to results
-      }
+      setCurrentQuizNode(option.nextNode);
+      setQuizStep(prev => prev + 1);
     }
   };
 
-  const calculateRecommendations = (answers) => {
-    const scoredMovies = moviesData.map(movie => {
-      let score = 0;
-      
-      answers.forEach(ans => {
-        if (!ans.boost) return;
-        
-        if (ans.boost.category && movie.category === ans.boost.category) score += 5;
-        if (ans.boost.title && movie.title.toLowerCase().includes(ans.boost.title.toLowerCase())) score += 10;
-        if (ans.boost.era) {
-          const [min, max] = ans.boost.era;
-          if (movie.year >= min && movie.year <= max) score += 3;
-        }
-        if (ans.boost.audience && movie.audience.toLowerCase().includes(ans.boost.audience.toLowerCase())) score += 3;
-      });
-      
-      // Bônus base da avaliação crítica do filme (0 a 1 ponto extra)
-      score += (movie.score / 10);
-      
-      return { ...movie, matchScore: score };
-    });
-    
-    // Sort descending by match score, then random to mix ties
-    scoredMovies.sort((a, b) => b.matchScore - a.matchScore || Math.random() - 0.5);
-    setRecommendations(scoredMovies.slice(0, 3));
-  };
-
   const restartQuiz = () => {
-    setQuizAnswers([]);
+    setCurrentQuizNode(quizTreeData);
     setQuizStep(0);
-    setQuizPath(null);
     setRecommendations([]);
   };
 
-  // Determine current question to show
-  let currentQuestion = null;
-  let totalQuestionsCount = 5; // 1 root + 4 branch
-  if (quizStep === 0) {
-    currentQuestion = rootQuestion;
-  } else if (quizPath && quizStep <= branchQuestions[quizPath].length) {
-    currentQuestion = branchQuestions[quizPath][quizStep - 1];
-  }
+  let totalQuestionsCount = 5;
 
   if (isLoading) {
     return (
@@ -261,16 +218,16 @@ function App() {
             <p style={{ textAlign: 'center', marginBottom: '2rem', color: 'var(--text-dim)' }}>Caminhos interligados. Sua primeira escolha define sua jornada para o inferno...</p>
             
             <div className="quiz-container">
-              {currentQuestion ? (
+              {recommendations.length === 0 ? (
                 <div className="quiz-question-box">
                   <h3>Pergunta {quizStep + 1} de {totalQuestionsCount}</h3>
                   <div className="progress-bar-bg" style={{ background: '#333', height: '4px', marginBottom: '2rem', borderRadius: '2px' }}>
                      <div className="progress-fill" style={{ background: 'var(--blood-red)', height: '100%', width: `${((quizStep) / totalQuestionsCount) * 100}%`, transition: 'width 0.3s' }}></div>
                   </div>
 
-                  <h2>{currentQuestion.text}</h2>
+                  <h2>{currentQuizNode.text}</h2>
                   <div className="quiz-options">
-                    {currentQuestion.options.map((opt, i) => (
+                    {currentQuizNode.options.map((opt, i) => (
                       <button key={i} className="quiz-btn" onClick={() => handleAnswer(opt)}>
                         {opt.text}
                       </button>
@@ -281,14 +238,11 @@ function App() {
                 <div className="quiz-results-box">
                   <h2 style={{ color: 'var(--blood-red)', marginBottom: '2rem', textAlign: 'center' }}>SUAS RECOMENDAÇÕES MALDITAS</h2>
                   <div className="recommendations-grid">
-                    {recommendations.map((movie, index) => (
+                    {recommendations.slice(0,3).map((movie, index) => (
                       <div key={movie.id} className={`card rec-card rank-${index + 1}`} onClick={() => setSelectedMovie(movie)}>
                         <div className="rank-badge">{index + 1}º LUGAR</div>
                         <h3 style={{ marginTop: '2rem' }}>{movie.title} {movie.isRemake && <span className="remake-badge">REMAKE</span>}</h3>
                         <div className="year">{movie.year} | {movie.category}</div>
-                        <p style={{ color: 'var(--text-dim)', marginTop: '1rem' }}>
-                          Intensidade: {(movie.matchScore * 10).toFixed(0)}%
-                        </p>
                         <div className="score" style={{ marginTop: '1rem' }}>
                           <Star size={16} fill="#ffd700" color="#ffd700" />
                           <span>{movie.score}/10</span>
