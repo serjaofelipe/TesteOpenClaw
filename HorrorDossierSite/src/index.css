@@ -1,0 +1,294 @@
+:root {
+  --blood-red: #8a0303;
+  --dark-blood: #4a0000;
+  --black: #0a0a0a;
+  --text-light: #e0e0e0;
+  --font-horror: 'Nosifer', cursive;
+  --font-title: 'Creepster', cursive;
+  --font-body: 'Oswald', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--text-light);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Fundo Animado com Sangue */
+.blood-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: radial-gradient(circle at center, #1a0000 0%, #000000 100%);
+  overflow: hidden;
+}
+
+.drip {
+  position: absolute;
+  top: -100px;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(138, 3, 3, 0), var(--blood-red));
+  opacity: 0.6;
+  animation: dripAnimation linear infinite;
+}
+
+.drip::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--blood-red);
+  border-radius: 50%;
+}
+
+@keyframes dripAnimation {
+  0% { transform: translateY(-100px); }
+  100% { transform: translateY(120vh); }
+}
+
+/* Container Principal */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  border-bottom: 3px solid var(--dark-blood);
+  background: linear-gradient(to bottom, rgba(138,3,3,0.2), transparent);
+}
+
+header h1 {
+  font-family: var(--font-horror);
+  font-size: 4rem;
+  color: var(--blood-red);
+  text-shadow: 0 0 20px var(--blood-red), 2px 2px 0px #000;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.nav-btn {
+  background: transparent;
+  color: var(--text-light);
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  border: 2px solid var(--dark-blood);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 2px;
+}
+
+.nav-btn:hover, .nav-btn.active {
+  background: var(--dark-blood);
+  color: #fff;
+  box-shadow: 0 0 15px var(--blood-red);
+  transform: scale(1.05);
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-title {
+  font-family: var(--font-title);
+  font-size: 3rem;
+  color: var(--blood-red);
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 5px #000;
+  text-align: center;
+}
+
+/* Grid de Filmes e Personagens */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: rgba(20, 0, 0, 0.8);
+  border: 1px solid var(--dark-blood);
+  border-radius: 8px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--blood-red);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(138, 3, 3, 0.4);
+  background: rgba(40, 0, 0, 0.9);
+}
+
+.card h3 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.card .year {
+  color: #aaa;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Modal de Detalhes do Filme */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: #111;
+  border: 2px solid var(--blood-red);
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 0 50px rgba(138, 3, 3, 0.5);
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  color: var(--blood-red);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg) scale(1.2);
+  color: #ff3333;
+}
+
+.modal-title {
+  font-family: var(--font-horror);
+  font-size: 2.5rem;
+  color: var(--blood-red);
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+  line-height: 1.2;
+}
+
+.modal-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.meta-badge {
+  background: var(--dark-blood);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.modal-section {
+  margin-bottom: 1.5rem;
+}
+
+.modal-section h4 {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--dark-blood);
+  padding-bottom: 0.3rem;
+}
+
+.modal-section p, .modal-section ul {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+.modal-section ul {
+  margin-left: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--dark-blood);
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: auto;
+}
+
+/* Scrollbar Personalizada */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--dark-blood);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blood-red);
+}
