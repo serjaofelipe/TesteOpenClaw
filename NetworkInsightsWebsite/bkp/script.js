@@ -63,7 +63,6 @@ function showSection(sectionId) {
     else if (sectionId === 'ping-radar') buttons[4].classList.add('active');
     else if (sectionId === 'subnet-calc') buttons[5].classList.add('active');
     else if (sectionId === 'traceroute-map') buttons[6].classList.add('active');
-    else if (sectionId === 'port-scanner') buttons[7].classList.add('active');
 }
 
 // Network Scanner Logic
@@ -211,6 +210,8 @@ btnBt.addEventListener('click', async () => {
     btnBt.classList.remove('blink');
 });
 
+// --- NOVAS FUNCIONALIDADES ---
+
 // Traffic Monitor Logic
 const dlSpeed = document.getElementById('dl-speed');
 const ulSpeed = document.getElementById('ul-speed');
@@ -227,7 +228,7 @@ async function pollTraffic() {
         console.error('Traffic poll error:', err);
     }
 }
-setInterval(pollTraffic, 1000); 
+setInterval(pollTraffic, 1000); // Polling 1s
 
 // Ping Radar Logic
 const btnPing = document.getElementById('btn-ping');
@@ -315,72 +316,4 @@ btnTrace.addEventListener('click', async () => {
         traceOutput.textContent += "\nErro: " + err;
     }
     btnTrace.disabled = false;
-});
-
-// --- PORT SCANNER LOGIC ---
-const btnPortScan = document.getElementById('btn-port-scan');
-const portTarget = document.getElementById('port-target');
-const portOutputContainer = document.getElementById('port-output-container');
-const portBody = document.getElementById('port-body');
-const portRisks = document.getElementById('port-risks');
-const riskList = document.getElementById('risk-list');
-
-btnPortScan.addEventListener('click', async () => {
-    const target = portTarget.value.trim();
-    if (!target) return alert("Digite um IP ou Domínio válido para escanear portas.");
-    
-    btnPortScan.textContent = '[ ESCANEANDO... ]';
-    btnPortScan.classList.add('blink');
-    btnPortScan.disabled = true;
-    
-    portOutputContainer.style.display = 'none';
-    portBody.innerHTML = '';
-    riskList.innerHTML = '';
-    portRisks.style.display = 'none';
-    
-    try {
-        const res = await fetch('/api/scan_ports', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({target: target})
-        });
-        const data = await res.json();
-        
-        if (data.status === 'success') {
-            if (data.resultados && data.resultados.length > 0) {
-                data.resultados.forEach(item => {
-                    const tr = document.createElement('tr');
-                    let stateColor = item.estado === 'ABERTA' ? 'var(--accent)' : (item.estado === 'FECHADA' ? 'red' : 'orange');
-                    
-                    tr.innerHTML = `
-                        <td><strong>${item.porta}</strong></td>
-                        <td>${item.servico}</td>
-                        <td style="color: ${stateColor}; font-weight: bold;">${item.estado}</td>
-                        <td style="font-size: 0.9em; color: var(--text-dim);">${item.banner || '---'}</td>
-                    `;
-                    portBody.appendChild(tr);
-                });
-                portOutputContainer.style.display = 'block';
-            } else {
-                alert("Nenhuma porta pôde ser lida.");
-            }
-            
-            if (data.riscos && data.riscos.length > 0) {
-                data.riscos.forEach(risco => {
-                    const li = document.createElement('li');
-                    li.textContent = risco;
-                    riskList.appendChild(li);
-                });
-                portRisks.style.display = 'block';
-            }
-        } else {
-            alert("Erro do servidor: " + data.message);
-        }
-    } catch (err) {
-        alert("Erro na conexão: " + err);
-    }
-    
-    btnPortScan.textContent = '[ ESCANEAR PORTAS ]';
-    btnPortScan.classList.remove('blink');
-    btnPortScan.disabled = false;
 });

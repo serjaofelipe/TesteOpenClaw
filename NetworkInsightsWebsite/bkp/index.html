@@ -14,8 +14,7 @@
     <div class="container">
         <header>
             <h1>> Network_Insights_Website_</h1>
-            <p class="subtitle">Inicializando protocolos de análise profunda... [OK]</p>
-            <nav>
+            <p class="subtitle">Inicializando protocolos de análise profunda... [OK]</p>            <nav>
                 <button class="nav-btn active" onclick="showSection('code-analysis')">1. SCANNER DE REDE</button>
                 <button class="nav-btn" onclick="showSection('wifi-scanner')">2. REDES PRÓXIMAS</button>
                 <button class="nav-btn" onclick="showSection('bluetooth-analysis')">3. BLUETOOTH</button>
@@ -23,11 +22,11 @@
                 <button class="nav-btn" onclick="showSection('ping-radar')">5. LATÊNCIA</button>
                 <button class="nav-btn" onclick="showSection('subnet-calc')">6. SUB-REDES</button>
                 <button class="nav-btn" onclick="showSection('traceroute-map')">7. MAPA DE ROTAS</button>
-                <button class="nav-btn" onclick="showSection('port-scanner')">8. PORTAS</button>
             </nav>
         </header>
 
         <main>
+            <!-- SEÇÃO 1: SCANNER DE REDE (MANTIDA) -->
             <section id="code-analysis" class="content-section active">
                 <div class="card">
                     <h2>> Mapeamento de Host Local</h2>
@@ -55,12 +54,14 @@
                                 </tr>
                             </thead>
                             <tbody id="hosts-body">
-                                </tbody>
+                                <!-- Preenchido via JS -->
+                            </tbody>
                         </table>
                     </div>
                 </div>
             </section>
 
+            <!-- SEÇÃO 2: REDES PRÓXIMAS (WI-FI) -->
             <section id="wifi-scanner" class="content-section">
                 <div class="card">
                     <h2>> Escaneamento de Espectro Wi-Fi</h2>
@@ -82,12 +83,14 @@
                                 </tr>
                             </thead>
                             <tbody id="wifi-body">
-                                </tbody>
+                                <!-- Preenchido via JS -->
+                            </tbody>
                         </table>
                     </div>
                 </div>
             </section>
 
+            <!-- SEÇÃO 3: BLUETOOTH -->
             <section id="bluetooth-analysis" class="content-section">
                 <div class="card">
                     <h2>> Rastreamento Bluetooth (BLE)</h2>
@@ -109,12 +112,14 @@
                                 </tr>
                             </thead>
                             <tbody id="bt-body">
-                                </tbody>
+                                <!-- Preenchido via JS -->
+                            </tbody>
                         </table>
                     </div>
                 </div>
             </section>
 
+            <!-- SEÇÃO 4: MONITOR DE TRÁFEGO -->
             <section id="traffic-monitor" class="content-section">
                 <div class="card">
                     <h2>> Monitor de Tráfego de Rede</h2>
@@ -135,6 +140,7 @@
                 </div>
             </section>
 
+            <!-- SEÇÃO 5: RADAR DE LATÊNCIA -->
             <section id="ping-radar" class="content-section">
                 <div class="card">
                     <h2>> Radar de Latência (ICMP)</h2>
@@ -149,6 +155,7 @@
                 </div>
             </section>
 
+            <!-- SEÇÃO 6: CALCULADORA DE SUB-REDES -->
             <section id="subnet-calc" class="content-section">
                 <div class="card">
                     <h2>> Calculadora de Sub-redes (CIDR)</h2>
@@ -169,6 +176,7 @@
                 </div>
             </section>
 
+            <!-- SEÇÃO 7: MAPA DE ROTAS -->
             <section id="traceroute-map" class="content-section">
                 <div class="card">
                     <h2>> Mapa de Rotas (Traceroute)</h2>
@@ -182,41 +190,6 @@
                     <p style="color: #ff3366; font-size: 0.9em; margin-bottom: 10px;">Atenção: A descoberta de rota pode demorar de 10 a 30 segundos dependendo da distância do alvo.</p>
                     
                     <pre id="trace-output" style="background: #050505; padding: 15px; border: 1px solid var(--border-color); min-height: 200px; color: #aaa; overflow-x: auto;">Aguardando início do rastreamento...</pre>
-                </div>
-            </section>
-
-            <section id="port-scanner" class="content-section">
-                <div class="card">
-                    <h2>> Scanner de Portas TCP</h2>
-                    <p>Verifica portas abertas e serviços comuns em um alvo, identificando possíveis riscos.</p>
-                    
-                    <div style="margin-bottom: 20px; display: flex; gap: 10px;">
-                        <input type="text" id="port-target" placeholder="IP ou Domínio (ex: 127.0.0.1 ou google.com)" style="flex: 1; padding: 10px; background: black; color: #39ff14; border: 1px solid var(--border-color); font-family: monospace;">
-                        <button id="btn-port-scan" class="nav-btn" style="border-color: #39ff14; color: #39ff14;">[ ESCANEAR PORTAS ]</button>
-                    </div>
-                    
-                    <div id="port-output-container" style="display: none;">
-                        <div style="overflow-x: auto;">
-                            <table id="port-table" style="width: 100%; text-align: left; border-collapse: collapse;">
-                                <thead>
-                                    <tr style="border-bottom: 2px solid var(--border-color); color: var(--accent);">
-                                        <th style="padding: 10px;">Porta</th>
-                                        <th style="padding: 10px;">Serviço</th>
-                                        <th style="padding: 10px;">Estado</th>
-                                        <th style="padding: 10px;">Banner / Detalhes</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="port-body">
-                                    </tbody>
-                            </table>
-                        </div>
-                        
-                        <div id="port-risks" style="margin-top: 20px; padding: 15px; background: rgba(255, 0, 0, 0.1); border: 1px solid red; display: none;">
-                            <h3 style="color: #ff3366; margin-bottom: 10px;">⚠️ Riscos Identificados:</h3>
-                            <ul id="risk-list" style="color: #ff3366; margin-left: 20px;">
-                                </ul>
-                        </div>
-                    </div>
                 </div>
             </section>
 

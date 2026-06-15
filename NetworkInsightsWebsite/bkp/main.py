@@ -1,22 +1,13 @@
-import socket
-import sys
-import threading
-from threading import Thread, Semaphore
-import concurrent.futures
 import scapy.all as scapy
 from scapy.layers.inet import IP, TCP, ICMP
+import socket
 import requests
 import time
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
-import psutil
-from pydantic import BaseModel
-
-# =====================================================================
-# API DE REDE FASTAPI
-# =====================================================================
+import threading
 
 app = FastAPI()
 
@@ -68,10 +59,12 @@ def analisar_host(ip, mac, vendor_pre_definido=None):
         vendor = vendor_pre_definido
         os_guess = "Windows/Linux (Host Local)"
     else:
+        # Avoid blocking for too long on API limit
         vendor = get_mac_vendor(mac)
-        time.sleep(1) 
+        time.sleep(1) # Rate limit for macvendors
         os_guess = "Não respondeu Ping"
         try:
+            # Aumentado timeout de ICMP para buscar mais longe/host mais lentos
             resp = scapy.sr1(IP(dst=ip) / ICMP(), timeout=2.5, verbose=0)
             if resp:
                 os_guess = f"{identificar_os(resp.ttl)} (TTL={resp.ttl})"
@@ -86,6 +79,7 @@ def escanear_rede_ultimate_background(ip_range):
     scan_results['hosts'] = []
     
     try:
+        # 1. ARP Discovery com timeout maior (5s) para pegar redes mais amplas
         arp = scapy.ARP(pdst=ip_range)
         ether = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
         pacote = ether / arp
@@ -119,6 +113,7 @@ def get_scan():
 async def get_bluetooth():
     try:
         from bleak import BleakScanner
+        # Usando return_adv=True retorna um dict { address: (BLEDevice, AdvertisementData) }
         devices_dict = await BleakScanner.discover(timeout=8.0, return_adv=True) 
         bt_list = []
         for address, (device, adv_data) in devices_dict.items():
@@ -161,8 +156,9 @@ def get_wifi():
                 if len(parts) > 1 and current_ssid:
                     signal = parts[1].strip()
                     networks.append({"ssid": current_ssid, "auth": current_auth, "signal": signal})
-                    current_ssid = None 
+                    current_ssid = None # Evita duplicar se houver múltiplos BSSIDs
         
+        # Ordenar por sinal decrescente (ex: "99%" -> 99)
         def parse_signal(s):
             try: return int(s.replace('%', ''))
             except: return 0
@@ -172,6 +168,8 @@ def get_wifi():
     except Exception as e:
         return {"status": "error", "message": str(e)}
 
+# --- NOVAS FUNCIONALIDADES ---
+import psutil
 last_net_io = None
 last_net_time = None
 
@@ -199,6 +197,8 @@ def get_traffic():
     
     return {"upload_bps": upload_bps, "download_bps": download_bps}
 
+from pydantic import BaseModel
+
 class TargetRequest(BaseModel):
     target: str
 
@@ -222,6 +222,7 @@ def do_traceroute(req: TargetRequest):
     import subprocess
     target = req.target
     try:
+        # -h 15: max 15 hops, -w 1000: timeout 1000ms
         output = subprocess.check_output(['tracert', '-h', '15', '-w', '1000', target], encoding='cp1252', errors='ignore')
         return {"status": "success", "output": output}
     except subprocess.CalledProcessError as e:
@@ -251,6 +252,7 @@ def do_subnet(req: SubnetRequest):
         }
     except ValueError as e:
         return {"status": "error", "message": str(e)}
+# -----------------------------
 
 @app.post("/api/start_scan")
 def start_scan():
@@ -272,144 +274,6 @@ def start_scan():
     thread.start()
     return {"message": "Scan iniciado com sucesso", "range": base_ip, "status": "started"}
 
-class PortScanRequest(BaseModel):
-    target: str
-
-@app.post("/api/scan_ports")
-def api_scan_ports(req: PortScanRequest):
-    target = req.target.replace("http://", "").replace("https://", "").strip("/")
-    try:
-        target_ip = socket.gethostbyname(target)
-    except socket.gaierror:
-        return {"status": "error", "message": "Host inválido. Verifique o nome do site/IP."}
-
-    servicos_comuns = {
-        21: "FTP", 22: "SSH", 23: "TELNET", 25: "SMTP", 
-        53: "DNS", 80: "HTTP", 110: "POP3", 143: "IMAP", 443: "HTTPS"
-    }
-    portas_teste = [21, 22, 23, 25, 53, 80, 110, 143, 443]
-    
-    resultados = []
-    riscos = []
-
-    def checar_porta(port):
-        try:
-            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            sock.settimeout(2)
-            res = sock.connect_ex((target_ip, port))
-            servico = servicos_comuns.get(port, "Desconhecido")
-            
-            estado = "FECHADA"
-            banner = ""
-            
-            if res == 0:
-                estado = "ABERTA"
-                if port == 21: riscos.append("FTP aberto (possível acesso não seguro)")
-                elif port == 23: riscos.append("TELNET aberto (protocolo inseguro)")
-                elif port == 25: riscos.append("SMTP aberto (possível abuso de email)")
-                
-                if port in [80, 443]:
-                    try:
-                        sock.send(b"GET / HTTP/1.1\r\nHost: " + target.encode() + b"\r\nUser-Agent: Mozilla/5.0\r\nConnection: close\r\n\r\n")
-                    except: pass
-                
-                try:
-                    banner = sock.recv(1024).decode(errors="ignore").strip()
-                except:
-                    banner = "Sem resposta"
-                    
-            elif res != 111:
-                estado = "FILTRADA"
-                
-            sock.close()
-            return {"porta": port, "servico": servico, "estado": estado, "banner": banner}
-        except Exception as e:
-            return {"porta": port, "servico": servicos_comuns.get(port, "Desconhecido"), "estado": "ERRO", "banner": str(e)}
-
-    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
-        resultados = list(executor.map(checar_porta, portas_teste))
-        
-    return {
-        "status": "success", 
-        "ip_resolvido": target_ip, 
-        "resultados": resultados, 
-        "riscos": riscos
-    }
-
-# =====================================================================
-# PARTE 1: SCANNER PROFISSIONAL DE VULNERABILIDADES (Antigo Terminal)
-# =====================================================================
-# A função abaixo guarda o seu código original. Ela não roda sozinha 
-# para não travar o Uvicorn, mas não foi apagada.
-def rodar_scanner_terminal_antigo():
-    print("=" * 50)
-    print("   SCANNER PROFISSIONAL DE VULNERABILIDADES")
-    print("=" * 50)
-
-    target = input("Digite o site ou IP: ").strip()
-
-    if target.startswith("http://"):
-        target = target.replace("http://", "")
-    elif target.startswith("https://"):
-        target = target.replace("https://", "")
-
-    target = target.strip("/")
-
-    try:
-        target_ip = socket.gethostbyname(target)
-    except socket.gaierror:
-        print("\n[ERRO] Host inválido. Verifique o nome do site.")
-        sys.exit()
-
-    print(f"\nIP resolvido: {target_ip}")
-    print(f"Escaneando {target}...\n")
-
-    max_threads = 100
-    semaforo = Semaphore(max_threads)
-    arquivo = open("resultado_scan.txt", "w")
-    portas_abertas = []
-    riscos = []
-
-    def scan(port):
-        semaforo.acquire()
-        try:
-            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            sock.settimeout(3)
-            resultado = sock.connect_ex((target_ip, port))
-            servico = {21: "FTP", 22: "SSH", 23: "TELNET", 25: "SMTP", 53: "DNS", 80: "HTTP", 110: "POP3", 143: "IMAP", 443: "HTTPS"}.get(port, "Desconhecido")
-
-            if resultado == 0:
-                estado = "ABERTA"
-                portas_abertas.append(port)
-                saida = f"[{estado}] Porta {port} ({servico})\n"
-            elif resultado == 111:
-                estado = "FECHADA"
-                saida = f"[{estado}] Porta {port} ({servico})\n"
-            else:
-                estado = "FILTRADA"
-                saida = f"[{estado}] Porta {port} ({servico})\n"
-
-            print(saida)
-            arquivo.write(saida + "\n")
-            sock.close()
-        except Exception as e:
-            print(f"[ERRO] Porta {port}: {e}")
-        finally:
-            semaforo.release()
-
-    threads = []
-    for port in [21, 22, 23, 25, 53, 80, 110, 143, 443]:
-        t = Thread(target=scan, args=(port,))
-        t.start()
-        threads.append(t)
-
-    for t in threads:
-        t.join()
-
-    print("\nScan finalizado no terminal!")
-    arquivo.close()
-
-# Rota Estática para a Interface Gráfica
 app.mount("/", StaticFiles(directory=".", html=True), name="static")
 
 if __name__ == "__main__":
