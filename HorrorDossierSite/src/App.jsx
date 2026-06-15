@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import moviesData from './data/allMoviesDB.json';
 import charactersData from './data/charactersDB.json';
+import { rootQuestion, branchQuestions } from './data/quizDB.js';
 import { Skull, Ghost, Search, Star, Film, Flame } from 'lucide-react';
 import './index.css';
 
@@ -13,7 +14,8 @@ function App() {
 
   // Quiz State
   const [quizStep, setQuizStep] = useState(0);
-  const [quizAnswers, setQuizAnswers] = useState({});
+  const [quizPath, setQuizPath] = useState(null); // 'slasher', 'sobrenatural', etc.
+  const [quizAnswers, setQuizAnswers] = useState([]);
   const [recommendations, setRecommendations] = useState([]);
 
   // Extrair categorias únicas dos filmes
@@ -50,48 +52,22 @@ function App() {
     char.source.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const quizQuestions = [
-    {
-      id: "fear",
-      question: "Qual é o seu maior medo?",
-      options: [
-        { label: "Assassinos implacáveis e brutais", tags: ["Slasher / Serial Killer"] },
-        { label: "O sobrenatural e coisas que não posso ver", tags: ["Sobrenatural / Fantasmas", "Demônios / Possessão"] },
-        { label: "Violência extrema e sofrimento", tags: ["Gore / Tortura"] },
-        { label: "A perda da minha própria sanidade", tags: ["Terror Psicológico"] },
-        { label: "Monstros, bruxas e criaturas", tags: ["Monstros Clássicos / Bruxaria", "Aliens / Sci-Fi Horror"] }
-      ]
-    },
-    {
-      id: "era",
-      question: "Qual é a sua época favorita para o terror?",
-      options: [
-        { label: "Clássicos Cults e Origens (Antes de 1980)", yearRange: [1900, 1979] },
-        { label: "A Era de Ouro do Slasher e Efeitos Práticos (1980 - 1999)", yearRange: [1980, 1999] },
-        { label: "O Renascimento Sangrento e Assombrações (2000 - 2014)", yearRange: [2000, 2014] },
-        { label: "O Terror Moderno, Indie e A24 (2015 em diante)", yearRange: [2015, 2025] },
-        { label: "Qualquer época, desde que me dê pesadelos!", yearRange: [1900, 2025] }
-      ]
-    },
-    {
-      id: "style",
-      question: "O que NÃO PODE faltar no seu filme perfeito?",
-      options: [
-        { label: "Banho de sangue e mortes criativas.", tags: ["Gore / Tortura", "Slasher / Serial Killer"], boost: 2 },
-        { label: "Sustos repentinos que me façam gritar (Jump Scares).", tags: ["Sobrenatural / Fantasmas", "Demônios / Possessão"], boost: 2 },
-        { label: "Uma história perturbadora que me deixe pensando depois.", tags: ["Terror Psicológico", "Suspense Macabro"], boost: 2 },
-        { label: "Câmeras tremidas e realismo assustador.", tags: ["Found Footage"], boost: 3 }
-      ]
-    }
-  ];
+  const handleAnswer = (option) => {
+    const newAnswers = [...quizAnswers, option];
+    setQuizAnswers(newAnswers);
 
-  const handleAnswer = (questionId, option) => {
-    setQuizAnswers(prev => ({ ...prev, [questionId]: option }));
-    if (quizStep < quizQuestions.length - 1) {
-      setQuizStep(prev => prev + 1);
+    if (quizStep === 0) {
+      setQuizPath(option.path);
+      setQuizStep(1);
     } else {
-      calculateRecommendations({ ...quizAnswers, [questionId]: option });
-      setQuizStep(prev => prev + 1); // Move to results
+      const currentBranch = branchQuestions[quizPath];
+      if (quizStep < currentBranch.length) {
+        setQuizStep(prev => prev + 1);
+      } else {
+        // Acabou as perguntas (1 root + 4 branches = 5)
+        calculateRecommendations(newAnswers);
+        setQuizStep(prev => prev + 1); // Move to results
+      }
     }
   };
 
@@ -99,34 +75,44 @@ function App() {
     const scoredMovies = moviesData.map(movie => {
       let score = 0;
       
-      // Checar Medo
-      if (answers.fear.tags.includes(movie.category)) score += 3;
+      answers.forEach(ans => {
+        if (!ans.boost) return;
+        
+        if (ans.boost.category && movie.category === ans.boost.category) score += 5;
+        if (ans.boost.title && movie.title.toLowerCase().includes(ans.boost.title.toLowerCase())) score += 10;
+        if (ans.boost.era) {
+          const [min, max] = ans.boost.era;
+          if (movie.year >= min && movie.year <= max) score += 3;
+        }
+        if (ans.boost.audience && movie.audience.toLowerCase().includes(ans.boost.audience.toLowerCase())) score += 3;
+      });
       
-      // Checar Era
-      const [minY, maxY] = answers.era.yearRange;
-      if (movie.year >= minY && movie.year <= maxY) score += 2;
-      
-      // Checar Estilo
-      if (answers.style.tags.includes(movie.category)) {
-        score += answers.style.boost;
-      }
-      
-      // Bônus para filmes melhores avaliados (0 a 1)
+      // Bônus base da avaliação crítica do filme (0 a 1 ponto extra)
       score += (movie.score / 10);
       
       return { ...movie, matchScore: score };
     });
     
-    // Sort descending
-    scoredMovies.sort((a, b) => b.matchScore - a.matchScore);
+    // Sort descending by match score, then random to mix ties
+    scoredMovies.sort((a, b) => b.matchScore - a.matchScore || Math.random() - 0.5);
     setRecommendations(scoredMovies.slice(0, 3));
   };
 
   const restartQuiz = () => {
-    setQuizAnswers({});
+    setQuizAnswers([]);
     setQuizStep(0);
+    setQuizPath(null);
     setRecommendations([]);
   };
+
+  // Determine current question to show
+  let currentQuestion = null;
+  let totalQuestionsCount = 5; // 1 root + 4 branch
+  if (quizStep === 0) {
+    currentQuestion = rootQuestion;
+  } else if (quizPath && quizStep <= branchQuestions[quizPath].length) {
+    currentQuestion = branchQuestions[quizPath][quizStep - 1];
+  }
 
   if (isLoading) {
     return (
@@ -170,7 +156,7 @@ function App() {
           </button>
           <button 
             className={`nav-btn ${activeTab === 'myhorror' ? 'active' : ''}`}
-            onClick={() => { setActiveTab('myhorror'); setSearchTerm(''); }}
+            onClick={() => { setActiveTab('myhorror'); setSearchTerm(''); restartQuiz(); }}
             style={{ border: '1px solid var(--blood-red)' }}
           >
             <Flame size={24} style={{ display: 'inline', verticalAlign: 'text-bottom', marginRight: '8px', color: 'var(--blood-red)' }}/>
@@ -272,24 +258,28 @@ function App() {
         {activeTab === 'myhorror' && (
           <section className="quiz-section">
             <h2 className="section-title" style={{ textAlign: 'center', fontSize: '3rem', textShadow: '0 0 20px var(--blood-red)' }}>MY HORROR</h2>
-            <p style={{ textAlign: 'center', marginBottom: '2rem', color: 'var(--text-dim)' }}>Não sabe o que assistir? Deixe a escuridão escolher o filme perfeito para você.</p>
+            <p style={{ textAlign: 'center', marginBottom: '2rem', color: 'var(--text-dim)' }}>Caminhos interligados. Sua primeira escolha define sua jornada para o inferno...</p>
             
             <div className="quiz-container">
-              {quizStep < quizQuestions.length ? (
+              {currentQuestion ? (
                 <div className="quiz-question-box">
-                  <h3>Pergunta {quizStep + 1} de {quizQuestions.length}</h3>
-                  <h2>{quizQuestions[quizStep].question}</h2>
+                  <h3>Pergunta {quizStep + 1} de {totalQuestionsCount}</h3>
+                  <div className="progress-bar-bg" style={{ background: '#333', height: '4px', marginBottom: '2rem', borderRadius: '2px' }}>
+                     <div className="progress-fill" style={{ background: 'var(--blood-red)', height: '100%', width: `${((quizStep) / totalQuestionsCount) * 100}%`, transition: 'width 0.3s' }}></div>
+                  </div>
+
+                  <h2>{currentQuestion.text}</h2>
                   <div className="quiz-options">
-                    {quizQuestions[quizStep].options.map((opt, i) => (
-                      <button key={i} className="quiz-btn" onClick={() => handleAnswer(quizQuestions[quizStep].id, opt)}>
-                        {opt.label}
+                    {currentQuestion.options.map((opt, i) => (
+                      <button key={i} className="quiz-btn" onClick={() => handleAnswer(opt)}>
+                        {opt.text}
                       </button>
                     ))}
                   </div>
                 </div>
               ) : (
                 <div className="quiz-results-box">
-                  <h2 style={{ color: 'var(--blood-red)', marginBottom: '2rem' }}>SUAS RECOMENDAÇÕES MALDITAS</h2>
+                  <h2 style={{ color: 'var(--blood-red)', marginBottom: '2rem', textAlign: 'center' }}>SUAS RECOMENDAÇÕES MALDITAS</h2>
                   <div className="recommendations-grid">
                     {recommendations.map((movie, index) => (
                       <div key={movie.id} className={`card rec-card rank-${index + 1}`} onClick={() => setSelectedMovie(movie)}>
@@ -297,7 +287,7 @@ function App() {
                         <h3 style={{ marginTop: '2rem' }}>{movie.title} {movie.isRemake && <span className="remake-badge">REMAKE</span>}</h3>
                         <div className="year">{movie.year} | {movie.category}</div>
                         <p style={{ color: 'var(--text-dim)', marginTop: '1rem' }}>
-                          Match Rating: {(movie.matchScore * 10).toFixed(0)}%
+                          Intensidade: {(movie.matchScore * 10).toFixed(0)}%
                         </p>
                         <div className="score" style={{ marginTop: '1rem' }}>
                           <Star size={16} fill="#ffd700" color="#ffd700" />
@@ -306,9 +296,11 @@ function App() {
                       </div>
                     ))}
                   </div>
-                  <button className="quiz-btn" style={{ marginTop: '3rem', width: 'auto', padding: '1rem 3rem' }} onClick={restartQuiz}>
-                    INVOCAR NOVAMENTE
-                  </button>
+                  <div style={{ textAlign: 'center' }}>
+                    <button className="quiz-btn" style={{ marginTop: '3rem', width: 'auto', padding: '1rem 3rem' }} onClick={restartQuiz}>
+                      TENTAR SOBREVIVER OUTRA VEZ
+                    </button>
+                  </div>
                 </div>
               )}
             </div>
