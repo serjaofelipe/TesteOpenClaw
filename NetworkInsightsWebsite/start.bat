@@ -3,7 +3,7 @@ title Network Scanner Hub
 color 0A
 
 echo Inicializando servidor do Network Scanner Hub...
-start /b uvicorn main:app --host 127.0.0.1 --port 8090
+start /b python -m uvicorn main:app --host 127.0.0.1 --port 8090
 
 echo Aguardando inicializacao do servidor...
 timeout /t 3 /nobreak >nul
