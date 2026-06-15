@@ -46,27 +46,23 @@ window.addEventListener('resize', () => {
 
 // Navigation Logic
 function showSection(sectionId) {
-    // Hide all sections
     document.querySelectorAll('.content-section').forEach(section => {
         section.classList.remove('active');
     });
-    
-    // Deactivate all buttons
     document.querySelectorAll('.nav-btn').forEach(btn => {
         btn.classList.remove('active');
     });
     
-    // Show selected section
     document.getElementById(sectionId).classList.add('active');
     
-    // Activate clicked button
     const buttons = document.querySelectorAll('.nav-btn');
     if (sectionId === 'code-analysis') buttons[0].classList.add('active');
-    else if (sectionId === 'wifi-analysis') buttons[1].classList.add('active');
-    else if (sectionId === 'bluetooth-analysis') buttons[2].classList.add('active');
+    else if (sectionId === 'wifi-scanner') buttons[1].classList.add('active');
+    else if (sectionId === 'wifi-analysis') buttons[2].classList.add('active');
+    else if (sectionId === 'bluetooth-analysis') buttons[3].classList.add('active');
 }
 
-// Scanner Logic
+// Network Scanner Logic
 const btnScan = document.getElementById('btn-scan');
 const statusBox = document.getElementById('scan-status-box');
 const statusText = document.getElementById('scan-status');
@@ -86,7 +82,6 @@ btnScan.addEventListener('click', async () => {
         table.style.display = 'table';
         rangeText.textContent = data.range || 'Determinando...';
         
-        // Começa a pesquisar
         pollingInterval = setInterval(pollScan, 1500);
     } catch (err) {
         alert('Erro ao contatar servidor: ' + err);
@@ -100,7 +95,6 @@ async function pollScan() {
         
         if (data.range) rangeText.textContent = data.range;
         
-        // Atualiza a tabela
         tbody.innerHTML = '';
         data.hosts.forEach(host => {
             const tr = document.createElement('tr');
@@ -128,3 +122,43 @@ async function pollScan() {
         console.error(err);
     }
 }
+
+// Wi-Fi Scanner Logic
+const btnWifi = document.getElementById('btn-wifi');
+const wifiTable = document.getElementById('wifi-table');
+const wifiBody = document.getElementById('wifi-body');
+
+btnWifi.addEventListener('click', async () => {
+    btnWifi.textContent = '[ RASTREANDO... ]';
+    btnWifi.classList.add('blink');
+    
+    try {
+        const res = await fetch('/api/wifi');
+        const data = await res.json();
+        
+        wifiBody.innerHTML = '';
+        if (data.status === 'success' && data.networks.length > 0) {
+            data.networks.forEach(net => {
+                const tr = document.createElement('tr');
+                let color = "var(--text-main)";
+                if (parseInt(net.signal) < 40) color = "orange";
+                if (parseInt(net.signal) < 20) color = "red";
+                
+                tr.innerHTML = `
+                    <td style="color: ${color}"><strong>${net.ssid}</strong></td>
+                    <td style="color: ${color}">${net.auth}</td>
+                    <td style="color: ${color}">${net.signal}</td>
+                `;
+                wifiBody.appendChild(tr);
+            });
+            wifiTable.style.display = 'table';
+        } else {
+            alert('Nenhuma rede encontrada ou comando falhou.');
+        }
+    } catch (err) {
+        alert('Erro ao buscar redes: ' + err);
+    }
+    
+    btnWifi.textContent = '[ ATUALIZAR REDES ]';
+    btnWifi.classList.remove('blink');
+});

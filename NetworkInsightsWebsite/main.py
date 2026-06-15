@@ -108,6 +108,44 @@ def get_scan():
     global scan_results
     return scan_results
 
+@app.get("/api/wifi")
+def get_wifi():
+    import subprocess
+    try:
+        output = subprocess.check_output(["netsh", "wlan", "show", "network", "mode=bssid"], encoding='cp1252', errors='ignore')
+        networks = []
+        current_ssid = None
+        current_auth = "Desconhecido"
+        
+        for line in output.split('\n'):
+            line = line.strip()
+            if line.startswith("SSID "):
+                parts = line.split(":", 1)
+                if len(parts) > 1:
+                    current_ssid = parts[1].strip()
+                    if current_ssid == "":
+                        current_ssid = "<Oculto>"
+            elif line.startswith("Autentica") or line.startswith("Authentication"):
+                parts = line.split(":", 1)
+                if len(parts) > 1:
+                    current_auth = parts[1].strip()
+            elif line.startswith("Sinal") or line.startswith("Signal"):
+                parts = line.split(":", 1)
+                if len(parts) > 1 and current_ssid:
+                    signal = parts[1].strip()
+                    networks.append({"ssid": current_ssid, "auth": current_auth, "signal": signal})
+                    current_ssid = None # Evita duplicar se houver múltiplos BSSIDs
+        
+        # Ordenar por sinal decrescente (ex: "99%" -> 99)
+        def parse_signal(s):
+            try: return int(s.replace('%', ''))
+            except: return 0
+        networks.sort(key=lambda x: parse_signal(x['signal']), reverse=True)
+        
+        return {"status": "success", "networks": networks}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
+
 @app.post("/api/start_scan")
 def start_scan():
     global scan_results

@@ -16,9 +16,10 @@
             <h1>> Network_Insights_Website_</h1>
             <p class="subtitle">Inicializando protocolos de análise profunda... [OK]</p>
             <nav>
-                <button class="nav-btn active" onclick="showSection('code-analysis')">1. ANÁLISE DE CÓDIGO PYTHON</button>
-                <button class="nav-btn" onclick="showSection('wifi-analysis')">2. REDES WI-FI</button>
-                <button class="nav-btn" onclick="showSection('bluetooth-analysis')">3. BLUETOOTH</button>
+                <button class="nav-btn active" onclick="showSection('code-analysis')">1. SCANNER DE REDE</button>
+                <button class="nav-btn" onclick="showSection('wifi-scanner')">2. REDES PRÓXIMAS</button>
+                <button class="nav-btn" onclick="showSection('wifi-analysis')">3. TEORIA WI-FI</button>
+                <button class="nav-btn" onclick="showSection('bluetooth-analysis')">4. BLUETOOTH</button>
             </nav>
         </header>
 
@@ -58,7 +59,36 @@
                 </div>
             </section>
 
-            <!-- SEÇÃO 2: WI-FI -->
+            <!-- SEÇÃO 2: REDES PRÓXIMAS (WI-FI) -->
+            <section id="wifi-scanner" class="content-section">
+                <div class="card">
+                    <h2>> Escaneamento de Espectro Wi-Fi</h2>
+                    <p>Mapeia redes sem fio próximas interceptando <i>Beacon Frames</i> através da interface de rede do hospedeiro.</p>
+                    
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <button id="btn-wifi" class="nav-btn" style="font-size: 1.2rem; border-color: #39ff14; color: #39ff14;">
+                            [ RASTREAR REDES ]
+                        </button>
+                    </div>
+
+                    <div style="overflow-x: auto;">
+                        <table id="wifi-table" style="width: 100%; text-align: left; border-collapse: collapse; display: none;">
+                            <thead>
+                                <tr style="border-bottom: 2px solid var(--border-color); color: var(--accent);">
+                                    <th style="padding: 10px;">SSID (Nome)</th>
+                                    <th style="padding: 10px;">Autenticação</th>
+                                    <th style="padding: 10px;">Sinal / Potência</th>
+                                </tr>
+                            </thead>
+                            <tbody id="wifi-body">
+                                <!-- Preenchido via JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 3: WI-FI EDUCATIVA -->
             <section id="wifi-analysis" class="content-section">
                 <div class="card">
                     <h2>> Redes Sem Fio (IEEE 802.11)</h2>
