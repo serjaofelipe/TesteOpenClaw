@@ -207,6 +207,33 @@ footer {
     color: #000;
 }
 
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+table {
+    background: rgba(0, 20, 0, 0.4);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+table th {
+    background: rgba(0, 50, 0, 0.6);
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+table tr:hover {
+    background: rgba(0, 255, 0, 0.1);
+}
+
 @media (max-width: 768px) {
     .grid-2 {
         grid-template-columns: 1fr;

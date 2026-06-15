@@ -23,48 +23,37 @@
         </header>
 
         <main>
-            <!-- SEÇÃO 1: CÓDIGO PYTHON -->
+            <!-- SEÇÃO 1: DASHBOARD DO SCANNER -->
             <section id="code-analysis" class="content-section active">
                 <div class="card">
-                    <h2>> Escaneamento de Rede com Scapy</h2>
-                    <p>Abaixo detalhamos a estrutura do código Python fornecido, que realiza uma varredura passiva e ativa na rede local, combinando <strong>Scapy</strong> para pacotes personalizados e manipulação de Sockets.</p>
+                    <h2>> Escaneamento de Rede Ativo</h2>
+                    <p>Controle do script Python em tempo real. Pressione o botão para iniciar a varredura na rede (ARP + Fingerprinting).</p>
                     
-                    <div class="code-container">
-                        <pre><code>import scapy.all as scapy
-from scapy.layers.inet import IP, TCP, ICMP
-import socket
-import requests
-import time</code></pre>
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <button id="btn-scan" class="nav-btn" style="font-size: 1.2rem; border-color: #39ff14; color: #39ff14;">
+                            [ INICIAR SCANNER ]
+                        </button>
                     </div>
 
-                    <div class="function-block">
-                        <h3>def get_mac_vendor(mac_address)</h3>
-                        <p><strong>Propósito:</strong> Converter o MAC (camada física) no nome legível da fabricante (OUI).</p>
-                        <p><strong>Detalhes:</strong> Geralmente faz uma requisição para APIs públicas (como <code>macvendors.com</code>) usando os primeiros 6 caracteres hexadecimais do MAC para descobrir se é um dispositivo Apple, Samsung, Intel, etc.</p>
+                    <div id="scan-status-box" style="margin-bottom: 20px; color: var(--accent); display: none;">
+                        <p>> Status: <span id="scan-status" class="blink">Varrendo rede...</span></p>
+                        <p>> Faixa de IP: <span id="scan-range">Determinando...</span></p>
                     </div>
 
-                    <div class="function-block">
-                        <h3>def identificar_os(ttl)</h3>
-                        <p><strong>Propósito:</strong> Realizar <i>Fingerprinting</i> passivo baseando-se no Time-To-Live (TTL).</p>
-                        <p><strong>Detalhes:</strong> Dispositivos na rede iniciam seus pacotes IP com valores de TTL padrão. Linux e Android usam 64. Windows usa 128. Roteadores Cisco costumam usar 255. O script intercepta o TTL do pacote de resposta e supõe o SO hospedeiro com alta precisão.</p>
-                    </div>
-
-                    <div class="function-block">
-                        <h3>def pegar_meu_mac_ip()</h3>
-                        <p><strong>Propósito:</strong> Coletar credenciais do host atual sem depender de comandos <code>ipconfig</code> / <code>ifconfig</code>.</p>
-                        <p><strong>Detalhes:</strong> Usa o <code>scapy.get_if_hwaddr()</code> para ler o próprio endereço MAC e estabelece uma rota UDP falsa (socket) direcionada ao Google DNS (8.8.8.8) apenas para forçar o Sistema Operacional a revelar qual IP de interface local foi usado para essa rota.</p>
-                    </div>
-
-                    <div class="function-block">
-                        <h3>def analisar_host(ip, mac, vendor_pre_definido=None)</h3>
-                        <p><strong>Propósito:</strong> Construir um dossiê sobre o nó específico da rede.</p>
-                        <p><strong>Detalhes:</strong> Emite um pacote ICMP (Ping) construído do zero via Scapy: <code>scapy.sr1(IP(dst=ip)/ICMP())</code>. Aguarda 1 segundo e passa o TTL da resposta para <code>identificar_os()</code>. Exibe de forma centralizada os resultados no terminal.</p>
-                    </div>
-
-                    <div class="function-block">
-                        <h3>def escanear_rede_ultimate(ip_range)</h3>
-                        <p><strong>Propósito:</strong> A função motriz de toda a varredura.</p>
-                        <p><strong>Detalhes:</strong> Gera um <i>ARP Request</i> em Broadcast (MAC <code>ff:ff:ff:ff:ff:ff</code>) gritando "Quem tem esse IP?". Todos os aparelhos vivos respondem com seus endereços MAC reais. Ele varre o range (como <code>192.168.1.1/24</code>), injeta o próprio dispositivo no índice inicial da lista, e logo depois delega cada resposta interceptada para o <code>analisar_host()</code>.</p>
+                    <div style="overflow-x: auto;">
+                        <table id="hosts-table" style="width: 100%; text-align: left; border-collapse: collapse; display: none;">
+                            <thead>
+                                <tr style="border-bottom: 2px solid var(--border-color); color: var(--accent);">
+                                    <th style="padding: 10px;">IP</th>
+                                    <th style="padding: 10px;">MAC Address</th>
+                                    <th style="padding: 10px;">Fabricante (OUI)</th>
+                                    <th style="padding: 10px;">OS Detectado</th>
+                                </tr>
+                            </thead>
+                            <tbody id="hosts-body">
+                                <!-- Preenchido via JS -->
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </section>

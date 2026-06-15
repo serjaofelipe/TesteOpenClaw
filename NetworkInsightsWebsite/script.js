@@ -65,3 +65,66 @@ function showSection(sectionId) {
     else if (sectionId === 'wifi-analysis') buttons[1].classList.add('active');
     else if (sectionId === 'bluetooth-analysis') buttons[2].classList.add('active');
 }
+
+// Scanner Logic
+const btnScan = document.getElementById('btn-scan');
+const statusBox = document.getElementById('scan-status-box');
+const statusText = document.getElementById('scan-status');
+const rangeText = document.getElementById('scan-range');
+const table = document.getElementById('hosts-table');
+const tbody = document.getElementById('hosts-body');
+
+let pollingInterval;
+
+btnScan.addEventListener('click', async () => {
+    try {
+        const response = await fetch('/api/start_scan', { method: 'POST' });
+        const data = await response.json();
+        
+        btnScan.style.display = 'none';
+        statusBox.style.display = 'block';
+        table.style.display = 'table';
+        rangeText.textContent = data.range || 'Determinando...';
+        
+        // Começa a pesquisar
+        pollingInterval = setInterval(pollScan, 1500);
+    } catch (err) {
+        alert('Erro ao contatar servidor: ' + err);
+    }
+});
+
+async function pollScan() {
+    try {
+        const res = await fetch('/api/scan');
+        const data = await res.json();
+        
+        if (data.range) rangeText.textContent = data.range;
+        
+        // Atualiza a tabela
+        tbody.innerHTML = '';
+        data.hosts.forEach(host => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${host.ip || '---'}</td>
+                <td>${host.mac || '---'}</td>
+                <td>${host.vendor || '---'}</td>
+                <td>${host.os || '---'}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+        
+        if (data.status === 'completed') {
+            clearInterval(pollingInterval);
+            statusText.textContent = 'Varredura Concluída!';
+            statusText.classList.remove('blink');
+            btnScan.style.display = 'inline-block';
+            btnScan.textContent = '[ REINICIAR SCAN ]';
+        } else if (data.status === 'scanning') {
+            statusText.textContent = 'Varrendo rede...';
+            statusText.classList.add('blink');
+        }
+        
+    } catch (err) {
+        console.error(err);
+    }
+}
