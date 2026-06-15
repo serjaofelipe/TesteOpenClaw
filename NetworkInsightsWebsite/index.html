@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Insights Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="matrix-bg"></canvas>
+    <div class="overlay"></div>
+    
+    <div class="container">
+        <header>
+            <h1>> Network_Insights_Website_</h1>
+            <p class="subtitle">Inicializando protocolos de análise profunda... [OK]</p>
+            <nav>
+                <button class="nav-btn active" onclick="showSection('code-analysis')">1. ANÁLISE DE CÓDIGO PYTHON</button>
+                <button class="nav-btn" onclick="showSection('wifi-analysis')">2. REDES WI-FI</button>
+                <button class="nav-btn" onclick="showSection('bluetooth-analysis')">3. BLUETOOTH</button>
+            </nav>
+        </header>
+
+        <main>
+            <!-- SEÇÃO 1: CÓDIGO PYTHON -->
+            <section id="code-analysis" class="content-section active">
+                <div class="card">
+                    <h2>> Escaneamento de Rede com Scapy</h2>
+                    <p>Abaixo detalhamos a estrutura do código Python fornecido, que realiza uma varredura passiva e ativa na rede local, combinando <strong>Scapy</strong> para pacotes personalizados e manipulação de Sockets.</p>
+                    
+                    <div class="code-container">
+                        <pre><code>import scapy.all as scapy
+from scapy.layers.inet import IP, TCP, ICMP
+import socket
+import requests
+import time</code></pre>
+                    </div>
+
+                    <div class="function-block">
+                        <h3>def get_mac_vendor(mac_address)</h3>
+                        <p><strong>Propósito:</strong> Converter o MAC (camada física) no nome legível da fabricante (OUI).</p>
+                        <p><strong>Detalhes:</strong> Geralmente faz uma requisição para APIs públicas (como <code>macvendors.com</code>) usando os primeiros 6 caracteres hexadecimais do MAC para descobrir se é um dispositivo Apple, Samsung, Intel, etc.</p>
+                    </div>
+
+                    <div class="function-block">
+                        <h3>def identificar_os(ttl)</h3>
+                        <p><strong>Propósito:</strong> Realizar <i>Fingerprinting</i> passivo baseando-se no Time-To-Live (TTL).</p>
+                        <p><strong>Detalhes:</strong> Dispositivos na rede iniciam seus pacotes IP com valores de TTL padrão. Linux e Android usam 64. Windows usa 128. Roteadores Cisco costumam usar 255. O script intercepta o TTL do pacote de resposta e supõe o SO hospedeiro com alta precisão.</p>
+                    </div>
+
+                    <div class="function-block">
+                        <h3>def pegar_meu_mac_ip()</h3>
+                        <p><strong>Propósito:</strong> Coletar credenciais do host atual sem depender de comandos <code>ipconfig</code> / <code>ifconfig</code>.</p>
+                        <p><strong>Detalhes:</strong> Usa o <code>scapy.get_if_hwaddr()</code> para ler o próprio endereço MAC e estabelece uma rota UDP falsa (socket) direcionada ao Google DNS (8.8.8.8) apenas para forçar o Sistema Operacional a revelar qual IP de interface local foi usado para essa rota.</p>
+                    </div>
+
+                    <div class="function-block">
+                        <h3>def analisar_host(ip, mac, vendor_pre_definido=None)</h3>
+                        <p><strong>Propósito:</strong> Construir um dossiê sobre o nó específico da rede.</p>
+                        <p><strong>Detalhes:</strong> Emite um pacote ICMP (Ping) construído do zero via Scapy: <code>scapy.sr1(IP(dst=ip)/ICMP())</code>. Aguarda 1 segundo e passa o TTL da resposta para <code>identificar_os()</code>. Exibe de forma centralizada os resultados no terminal.</p>
+                    </div>
+
+                    <div class="function-block">
+                        <h3>def escanear_rede_ultimate(ip_range)</h3>
+                        <p><strong>Propósito:</strong> A função motriz de toda a varredura.</p>
+                        <p><strong>Detalhes:</strong> Gera um <i>ARP Request</i> em Broadcast (MAC <code>ff:ff:ff:ff:ff:ff</code>) gritando "Quem tem esse IP?". Todos os aparelhos vivos respondem com seus endereços MAC reais. Ele varre o range (como <code>192.168.1.1/24</code>), injeta o próprio dispositivo no índice inicial da lista, e logo depois delega cada resposta interceptada para o <code>analisar_host()</code>.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 2: WI-FI -->
+            <section id="wifi-analysis" class="content-section">
+                <div class="card">
+                    <h2>> Redes Sem Fio (IEEE 802.11)</h2>
+                    <p>O Wi-Fi é a principal via de acesso às LANs modernas. Sua arquitetura traz facilidades, mas expande drasticamente a superfície de ataque.</p>
+                    
+                    <div class="grid-2">
+                        <div class="function-block">
+                            <h3>Segurança e Criptografia</h3>
+                            <ul>
+                                <li><strong>WEP / WPA / TKIP:</strong> Totalmente obsoletos e facilmente quebráveis via ataques estatísticos (Aircrack-ng).</li>
+                                <li><strong>WPA2 (AES-CCMP):</strong> Padrão de mercado atual. Seguro contra quebras matemáticas, mas ainda vulnerável a ataques de dicionário e força-bruta sobre o <i>4-Way Handshake</i> (PMKID).</li>
+                                <li><strong>WPA3 (SAE):</strong> Substitui a PSK por <i>Simultaneous Authentication of Equals</i>. Resiste à força-bruta offline, mesmo se a senha for fraca.</li>
+                            </ul>
+                        </div>
+                        <div class="function-block">
+                            <h3>Bandas e Frequências</h3>
+                            <ul>
+                                <li><strong>2.4 GHz:</strong> Maior alcance e poder de penetração em paredes. Pior velocidade e maior interferência (apenas 3 canais não-sobrepostos: 1, 6 e 11).</li>
+                                <li><strong>5 GHz / 6 GHz:</strong> Velocidades massivas (802.11ac / 802.11ax), menor alcance. Virtualmente livre de interferência vizinha.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 3: BLUETOOTH -->
+            <section id="bluetooth-analysis" class="content-section">
+                <div class="card">
+                    <h2>> Análise de Bluetooth (IEEE 802.15.1)</h2>
+                    <p>Embora criado para curtas distâncias (PANs), antenas direcionais podem captar e explorar sinais Bluetooth a quilômetros de distância.</p>
+                    
+                    <div class="grid-2">
+                        <div class="function-block">
+                            <h3>Padrões e Evolução</h3>
+                            <ul>
+                                <li><strong>Bluetooth Classic (BR/EDR):</strong> Usado para streaming contínuo (fones de ouvido sem fio, caixas de som, transferência de arquivos antigos). Alto consumo de energia.</li>
+                                <li><strong>Bluetooth Low Energy (BLE / Smart):</strong> Introduzido no BT 4.0. Usado por IoT, smartwatches, tags de localização. Envia dados intermitentes para economizar 99% da bateria.</li>
+                            </ul>
+                        </div>
+                        <div class="function-block">
+                            <h3>Vetores de Ataque Comuns</h3>
+                            <ul>
+                                <li><strong>Bluejacking:</strong> Envio de spam e mensagens irritantes em massa abusando do protocolo de descoberta.</li>
+                                <li><strong>Bluesnarfing:</strong> Falha crítica em pareamentos antigos que permite acessar a agenda telefônica e mensagens sem o PIN.</li>
+                                <li><strong>BlueBorne:</strong> Vulnerabilidade de RCE (Remote Code Execution) gravíssima que afeta as pilhas Bluetooth no Kernel do Windows, Android e Linux, dispensando pareamento.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Criado pelo Antigravity Master © 2026</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
