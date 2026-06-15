@@ -1,0 +1,138 @@
+:root {
+    --matrix-green: #0f0;
+    --matrix-dark: #020202;
+    --matrix-dim: #003300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--matrix-dark);
+    color: var(--matrix-green);
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Matrix Background Canvas */
+#matrix-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.15;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid var(--matrix-dim);
+    padding-bottom: 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px var(--matrix-green);
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: transparent;
+    color: var(--matrix-green);
+    border: 1px solid var(--matrix-green);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: var(--matrix-green);
+    color: var(--matrix-dark);
+    box-shadow: 0 0 15px var(--matrix-green);
+}
+
+.section {
+    background: rgba(0, 10, 0, 0.85);
+    border: 1px solid var(--matrix-dim);
+    border-left: 4px solid var(--matrix-green);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px var(--matrix-green);
+}
+
+.section h3 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #8f8;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Code Block Styling */
+pre {
+    background: #000;
+    border: 1px solid var(--matrix-dim);
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #aaffaa;
+}
+
+/* Syntax Highlighting Mock */
+.keyword { color: #55ff55; font-weight: bold; }
+.string { color: #ddffdd; }
+.comment { color: #008800; font-style: italic; }
+.function { color: #88ff88; }
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--matrix-dim);
+    font-size: 0.9rem;
+}

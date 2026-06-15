@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Network Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="matrix-canvas"></canvas>
+
+    <div class="container">
+        <header>
+            <h1>>_ SYS_NET_ANALYSIS</h1>
+            <p>Protocolos de Reconhecimento e Teoria de Redes sem Fio</p>
+        </header>
+
+        <nav>
+            <button class="btn" onclick="document.getElementById('code-analysis').scrollIntoView({behavior: 'smooth'})">[ ANÁLISE DE CÓDIGO ]</button>
+            <button class="btn" onclick="document.getElementById('wireless-theory').scrollIntoView({behavior: 'smooth'})">[ REDES SEM FIO ]</button>
+        </nav>
+
+        <main>
+            <!-- SEÇÃO 1: Análise de Código -->
+            <section id="code-analysis" class="section">
+                <h2>> Análise de Código: ARP Scanner com Scapy</h2>
+                <p>O script Python abaixo utiliza a biblioteca <code>scapy</code> para realizar o descobrimento de hosts em uma rede local através do protocolo ARP, além de tentar inferir o Sistema Operacional através de pacotes ICMP (Ping).</p>
+                
+                <pre><code><span class="keyword">import</span> scapy.all <span class="keyword">as</span> scapy
+<span class="keyword">from</span> scapy.layers.inet <span class="keyword">import</span> IP, TCP, ICMP
+<span class="keyword">import</span> socket
+<span class="keyword">import</span> requests
+<span class="keyword">import</span> time
+
+<span class="comment"># --- FUNÇÕES AUXILIARES (MANTER IGUAL) ---</span>
+<span class="keyword">def</span> <span class="function">get_mac_vendor</span>(mac_address):
+    <span class="comment"># (Sua função original de API aqui...)</span>
+    <span class="keyword">return</span> <span class="string">"Fabricante Local"</span>
+
+<span class="keyword">def</span> <span class="function">identificar_os</span>(ttl):
+    <span class="keyword">if</span> ttl <= 64:
+        <span class="keyword">return</span> <span class="string">"Linux/Android/Mac"</span>
+    <span class="keyword">elif</span> ttl <= 128:
+        <span class="keyword">return</span> <span class="string">"Windows"</span>
+    <span class="keyword">else</span>:
+        <span class="keyword">return</span> <span class="string">"Desconhecido"</span>
+
+<span class="comment"># --- NOVIDADE: PEGAR DADOS DA PRÓPRIA MÁQUINA ---</span>
+<span class="keyword">def</span> <span class="function">pegar_meu_mac_ip</span>():
+    <span class="keyword">try</span>:
+        <span class="comment"># Pega a interface padrão que o Scapy está usando</span>
+        mac = scapy.get_if_hwaddr(scapy.conf.iface)
+
+        <span class="comment"># Pega o IP local (truque do socket UDP)</span>
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect((<span class="string">'8.8.8.8'</span>, 1))
+        ip = s.getsockname()[0]
+        s.close()
+
+        <span class="keyword">return</span> {<span class="string">'ip'</span>: ip, <span class="string">'mac'</span>: mac, <span class="string">'vendor'</span>: <span class="string">'ESTE DISPOSITIVO (HOST)'</span>}
+    <span class="keyword">except</span>:
+        <span class="keyword">return</span> <span class="keyword">None</span>
+
+<span class="keyword">def</span> <span class="function">analisar_host</span>(ip, mac, vendor_pre_definido=<span class="keyword">None</span>):
+    print(<span class="string">f"\n[+] Analisando: {ip} ({mac})"</span>)
+
+    <span class="keyword">if</span> vendor_pre_definido:
+        vendor = vendor_pre_definido
+        os_guess = <span class="string">"Windows/Linux (Host Local)"</span>
+    <span class="keyword">else</span>:
+        vendor = get_mac_vendor(mac)
+        os_guess = <span class="string">"Não respondeu Ping"</span>
+        <span class="keyword">try</span>:
+            resp = scapy.sr1(IP(dst=ip) / ICMP(), timeout=1, verbose=0)
+            <span class="keyword">if</span> resp:
+                os_guess = <span class="string">f"{identificar_os(resp.ttl)} (TTL={resp.ttl})"</span>
+        <span class="keyword">except</span>:
+            <span class="keyword">pass</span>
+
+    print(<span class="string">f"    ► Fabricante: {vendor}"</span>)
+    print(<span class="string">f"    ► Sistema: {os_guess}"</span>)
+    print(<span class="string">"-"</span> * 50)
+
+<span class="keyword">def</span> <span class="function">escanear_rede_ultimate</span>(ip_range):
+    print(<span class="string">f"\n🚀 SCAPY SCANNER - Iniciando em {ip_range}"</span>)
+    print(<span class="string">"="</span> * 60)
+
+    <span class="comment"># 1. ARP Discovery (Vê os Vizinhos)</span>
+    arp = scapy.ARP(pdst=ip_range)
+    ether = scapy.Ether(dst=<span class="string">"ff:ff:ff:ff:ff:ff"</span>)
+    pacote = ether / arp
+    resultado = scapy.srp(pacote, timeout=2, verbose=0)[0]
+
+    hosts = []
+
+    <span class="comment"># --- AQUI ESTÁ A CORREÇÃO: ADICIONA O PRÓPRIO PC ---</span>
+    meu_pc = pegar_meu_mac_ip()
+    <span class="keyword">if</span> meu_pc:
+        hosts.append(meu_pc)
+        print(<span class="string">f"✓ (Eu mesmo) {meu_pc['ip']} detectado."</span>)
+
+    <span class="comment"># Adiciona os vizinhos encontrados</span>
+    <span class="keyword">for</span> sent, received <span class="keyword">in</span> resultado:
+        hosts.append({<span class="string">'ip'</span>: received.psrc, <span class="string">'mac'</span>: received.hwsrc, <span class="string">'vendor'</span>: <span class="keyword">None</span>})
+
+    print(<span class="string">f"✓ Total de {len(hosts)} dispositivos. Detalhando...\n"</span>)
+
+    <span class="keyword">for</span> host <span class="keyword">in</span> hosts:
+        analisar_host(host[<span class="string">'ip'</span>], host[<span class="string">'mac'</span>], host[<span class="string">'vendor'</span>])
+
+<span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:
+    <span class="keyword">try</span>:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect((<span class="string">'8.8.8.8'</span>, 1))
+        meu_ip = s.getsockname()[0]
+        s.close()
+
+        base_ip = <span class="string">"."</span>.join(meu_ip.split(<span class="string">'.'</span>)[:3]) + <span class="string">".1/24"</span>
+        escanear_rede_ultimate(base_ip)
+    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:
+        print(<span class="string">"Erro de rede:"</span>, e)</code></pre>
+
+                <h3>Explicação das Etapas Chave</h3>
+                <ul>
+                    <li><strong>ARP Spoofing/Discovery:</strong> A função <code>scapy.ARP()</code> é configurada com um IP de destino (ou faixa de IPs) e envelopada em um quadro Ethernet em modo <i>Broadcast</i> (<code>ff:ff:ff:ff:ff:ff</code>). Quando enviado (<code>scapy.srp</code>), todos os dispositivos da sub-rede que possuem aquele IP respondem com seus endereços MAC, confirmando sua existência na rede local.</li>
+                    <li><strong>Inferência de Sistema Operacional (TTL):</strong> A função <code>identificar_os()</code> analisa o valor de <i>Time-To-Live</i> (TTL) de respostas ICMP. Geralmente, sistemas Linux inicializam seus pacotes com TTL de 64, enquanto sistemas Windows utilizam 128. Essa é uma heurística passiva e útil para adivinhar a família do SO.</li>
+                    <li><strong>Coleta do Host Local:</strong> O truque do <code>socket.SOCK_DGRAM</code> enviando dados para o Google DNS (8.8.8.8) obriga o sistema operacional do host a escolher a interface de rede ativa que tem rota para a internet. O IP atribuído a essa interface é então capturado por <code>getsockname()[0]</code>, evitando capturar interfaces de loopback ou virtuais adormecidas.</li>
+                </ul>
+            </section>
+
+            <!-- SEÇÃO 2: Teoria Wireless -->
+            <section id="wireless-theory" class="section">
+                <h2>> Redes Wi-Fi e Bluetooth: Fundamentos e Segurança</h2>
+                <p>O espectro sem fio (RF) transformou a maneira como nos conectamos, substituindo cabos por ondas eletromagnéticas invisíveis. Abaixo, exploramos os dois protocolos dominantes de curto/médio alcance.</p>
+                
+                <h3>1. IEEE 802.11 (Wi-Fi)</h3>
+                <p>O Wi-Fi utiliza transmissões de rádio nas bandas de 2.4 GHz, 5 GHz e, mais recentemente, 6 GHz. Operar através do "ar" significa que a infraestrutura não tem barreiras físicas; qualquer antena na vizinhança pode interceptar os pacotes de dados. A segurança depende inteiramente da criptografia aplicada aos pacotes.</p>
+                <ul>
+                    <li><strong>Vantagens:</strong> Altas taxas de transferência de dados (especialmente nos padrões AC e AX/Wi-Fi 6), longo alcance relativo (até 100m) e forte interoperabilidade.</li>
+                    <li><strong>Desvantagens:</strong> Vulnerável a interferências de outros eletrônicos, paredes espessas e ataques de negação de serviço (Deauthentication).</li>
+                    <li><strong>Segurança:</strong> Antigos padrões como WEP e WPA são considerados quebrados. O <strong>WPA2 (AES)</strong> continua sendo o padrão de fato da indústria, porém requer senhas fortes devido à vulnerabilidade no seu <i>4-Way Handshake</i>. O mais recente, <strong>WPA3</strong>, utiliza SAE (Simultaneous Authentication of Equals) tornando ataques de dicionário offline virtualmente impossíveis.</li>
+                </ul>
+
+                <h3>2. Bluetooth & BLE (Bluetooth Low Energy)</h3>
+                <p>Bluetooth é voltado para Personal Area Networks (PANs). Enquanto a versão clássica lida com streaming contínuo (áudio, fones), o <strong>Bluetooth Low Energy (BLE)</strong> foi projetado para pequenos bursts de dados, permitindo que dispositivos operem por meses com baterias minúsculas.</p>
+                <ul>
+                    <li><strong>Vantagens:</strong> Consumo de energia extremamente eficiente, pareamento rápido, excelente para sensores IoT, smartwatches e teclados.</li>
+                    <li><strong>Desvantagens:</strong> Baixo alcance prático (cerca de 10 a 30 metros), taxa de transmissão muito baixa, não serve para roteamento pesado de internet.</li>
+                    <li><strong>Segurança:</strong> Sujeito a ataques de interceptação na fase de pareamento (MITM) e ataques de "Spoofing", caso os perfis GATT não exijam criptografia e autenticação estrita (Pin Code ou Just Works). Dispositivos BLE costumam alternar seus endereços MAC aleatoriamente para evitar rastreamento de localização.</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>>_ SYSTEM OFFLINE. Disconnecting...</p>
+        </footer>
+    </div>
+
+    <!-- Script do Efeito Matrix -->
+    <script>
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレゲゼデベペオォコソトノホモヨョロゴゾドボポヴッン';
+        const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const nums = '0123456789';
+
+        const alphabet = katakana + latin + nums;
+
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+
+        const rainDrops = [];
+
+        for( let x = 0; x < columns; x++ ) {
+            rainDrops[x] = 1;
+        }
+
+        const draw = () => {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = '#0F0';
+            ctx.font = fontSize + 'px monospace';
+
+            for(let i = 0; i < rainDrops.length; i++) {
+                const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+                ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
+
+                if(rainDrops[i] * fontSize > canvas.height && Math.random() > 0.97){
+                    rainDrops[i] = 0;
+                }
+                rainDrops[i]++;
+            }
+        };
+
+        setInterval(draw, 30);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
