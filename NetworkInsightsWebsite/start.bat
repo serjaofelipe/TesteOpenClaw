@@ -3,7 +3,7 @@ title Network Scanner Hub
 color 0A
 
 echo Verificando dependencias (scapy, requests, fastapi, uvicorn)...
-python -m pip install scapy requests fastapi uvicorn --quiet
+python -m pip install scapy requests fastapi uvicorn --user --quiet
 
 echo Inicializando servidor do Network Scanner Hub...
 start /b python -m uvicorn main:app --host 127.0.0.1 --port 8090
