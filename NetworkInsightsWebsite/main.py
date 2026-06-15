@@ -113,13 +113,14 @@ def get_scan():
 async def get_bluetooth():
     try:
         from bleak import BleakScanner
-        devices = await BleakScanner.discover(timeout=8.0) # Timeout longo para varrer Bluetooth LE longe
+        # Usando return_adv=True retorna um dict { address: (BLEDevice, AdvertisementData) }
+        devices_dict = await BleakScanner.discover(timeout=8.0, return_adv=True) 
         bt_list = []
-        for d in devices:
+        for address, (device, adv_data) in devices_dict.items():
             bt_list.append({
-                "name": d.name or "<Desconhecido>",
-                "address": d.address,
-                "rssi": d.rssi
+                "name": device.name or "<Desconhecido>",
+                "address": address,
+                "rssi": adv_data.rssi
             })
         
         bt_list.sort(key=lambda x: x['rssi'], reverse=True)
