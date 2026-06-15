@@ -1,32 +1,212 @@
 [
-  { "name": "Drácula / Conde Orlok", "source": "Nosferatu (1922) / Drácula (1931)", "type": "Vampiro", "description": "O arquétipo do bebedor de sangue, aristocrático ou monstruoso, seduzindo ou aterrorizando suas vítimas." },
-  { "name": "Monstro de Frankenstein", "source": "Frankenstein (1931)", "type": "Morto-Vivo / Criação Científica", "description": "A criatura trágica feita de pedaços de cadáveres, incompreendida pela humanidade." },
-  { "name": "A Múmia (Imhotep)", "source": "A Múmia (1932)", "type": "Morto-Vivo Amaldiçoado", "description": "Um antigo sacerdote egípcio revivido após milênios para buscar seu amor perdido." },
-  { "name": "O Lobisomem (Larry Talbot)", "source": "O Lobisomem (1941)", "type": "Licantropo", "description": "Um homem comum amaldiçoado a se transformar em uma besta assassina nas noites de lua cheia." },
-  { "name": "Norman Bates", "source": "Psicose (1960)", "type": "Assassino Psicológico", "description": "O dono do Motel Bates, que sofre de transtorno de dupla personalidade, assumindo a identidade de sua falecida mãe." },
-  { "name": "Leatherface", "source": "O Massacre da Serra Elétrica (1974)", "type": "Slasher / Canibal", "description": "Usa uma máscara de pele humana e empunha uma serra elétrica; o músculo de uma família canibal no Texas." },
-  { "name": "Pazuzu", "source": "O Exorcista (1973)", "type": "Demônio Ancão", "description": "Uma antiga entidade demoníaca assíria que possui a jovem Regan MacNeil." },
-  { "name": "Michael Myers (The Shape)", "source": "Halloween (1978)", "type": "Slasher (O Mal Encarnado)", "description": "Mudo, sem emoções e imparável. Mata no Halloween usando uma faca de cozinha e uma máscara branca inexpressiva." },
-  { "name": "Xenomorfo", "source": "Alien, o Oitavo Passageiro (1979)", "type": "Alienígena Parasita", "description": "A máquina de matar perfeita: sangue ácido, dupla mandíbula e um ciclo de vida parasita aterrorizante." },
-  { "name": "Jason Voorhees", "source": "Sexta-Feira 13 (1980-)", "type": "Slasher Imortal", "description": "O garoto vingativo do Lago Crystal. Famoso por sua máscara de hóquei e machete." },
-  { "name": "Jack Torrance", "source": "O Iluminado (1980)", "type": "Humano Corrompido", "description": "Escritor levado à loucura pelas forças sobrenaturais do Hotel Overlook, caçando sua família com um machado." },
-  { "name": "Freddy Krueger", "source": "A Hora do Pesadelo (1984)", "type": "Entidade dos Sonhos", "description": "Assassino de crianças que foi queimado vivo e agora retorna para matar os jovens da Elm Street em seus pesadelos." },
-  { "name": "Pinhead (O Sacerdote do Inferno)", "source": "Hellraiser (1987)", "type": "Cenobita", "description": "Líder dos Cenobitas, demônios dimensionais que não diferenciam dor e prazer." },
-  { "name": "Chucky (Charles Lee Ray)", "source": "Brinquedo Assassino (1988)", "type": "Boneco Possuído", "description": "Um serial killer que transferiu sua alma para um boneco 'Good Guys' usando vodu." },
-  { "name": "Pennywise (A Coisa)", "source": "It: A Coisa (1990)", "type": "Entidade Cósmica Mimetista", "description": "Um ser ancestral que acorda a cada 27 anos em Derry para se alimentar dos medos das crianças." },
-  { "name": "Hannibal Lecter", "source": "O Silêncio dos Inocentes (1991)", "type": "Serial Killer / Canibal", "description": "Um psiquiatra brilhante, refinado e manipulador que aprecia comer órgãos de suas vítimas com um bom Chianti." },
-  { "name": "Candyman (Daniel Robitaille)", "source": "O Mistério de Candyman (1992)", "type": "Espírito Vingativo", "description": "Invocado ao dizer seu nome 5 vezes no espelho, ataca com um gancho ensanguentado." },
-  { "name": "Ghostface", "source": "Pânico (1996)", "type": "Assassino(s) Mascarado(s)", "description": "Não é uma única pessoa, mas um manto adotado por diversos serial killers obcecados por filmes de terror." },
-  { "name": "Samara Morgan / Sadako", "source": "O Chamado / Ringu (1998)", "type": "Fantasma Vingativo Onryō", "description": "Menina jogada em um poço que mata 7 dias após alguém assistir sua fita de vídeo amaldiçoada." },
-  { "name": "Jigsaw (John Kramer)", "source": "Jogos Mortais (2004)", "type": "Mestre de Armadilhas", "description": "Um homem com câncer terminal que testa a vontade de viver de suas vítimas em jogos macabros de tortura." },
-  { "name": "A Coisa (The Thing)", "source": "O Enigma de Outro Mundo (1982)", "type": "Parasita Alienígena Transmorfo", "description": "Organismo capaz de assimilar e imitar perfeitamente qualquer ser vivo com quem entra em contato." },
-  { "name": "Pyramid Head", "source": "Terror em Silent Hill (2006)", "type": "Manifestação Psicológica", "description": "Um executor massivo com um capacete piramidal gigante, representando a culpa e o desejo de punição." },
-  { "name": "A Bruxa de Blair (Elly Kedward)", "source": "A Bruxa de Blair (1999)", "type": "Bruxa / Força Invisível", "description": "Entidade maligna que assombra a floresta de Black Hills, distorcendo o tempo e o espaço." },
-  { "name": "Babadook", "source": "O Babadook (2014)", "type": "Monstro Literário / Alegoria", "description": "Personagem de um livro infantil que se manifesta na realidade, simbolizando o luto reprimido." },
-  { "name": "Valak (A Freira)", "source": "Invocação do Mal 2 (2016)", "type": "Marquês dos Infernos", "description": "Um demônio poderoso que frequentemente adota a forma de uma freira profanada para escarnecer da fé." },
-  { "name": "Annabelle", "source": "Annabelle (2014)", "type": "Boneca Hospedeira", "description": "Uma boneca usada como conduíte por espíritos demoníacos para buscar uma alma humana." },
-  { "name": "Paimon", "source": "Hereditário (2018)", "type": "Rei Demônio", "description": "Uma das entidades infernais que exige um corpo masculino vulnerável (geralmente da linhagem familiar) para governar." },
-  { "name": "Art, O Palhaço", "source": "Terrifier (2016)", "type": "Slasher Demoníaco", "description": "Um palhaço silencioso, incrivelmente sádico e brutal, que esquarteja pessoas por pura diversão doentia." },
-  { "name": "Tall Man", "source": "Fantasma (1979)", "type": "Coveiro Interdimensional", "description": "Um agente fúnebre sinistro que transforma cadáveres em anões escravos em seu mundo natal." },
-  { "name": "Djinn", "source": "O Mestre dos Desejos (1997)", "type": "Demônio das Sombras", "description": "Concede desejos, mas distorce as palavras de forma grotesca para ceifar as almas das vítimas." }
+  {
+    "name": "Drácula / Conde Orlok",
+    "source": "Nosferatu (1922) / Drácula (1931)",
+    "type": "Vampiro",
+    "description": "O arquétipo do bebedor de sangue, aristocrático ou monstruoso, seduzindo ou aterrorizando suas vítimas.",
+    "year": 1922
+  },
+  {
+    "name": "Monstro de Frankenstein",
+    "source": "Frankenstein (1931)",
+    "type": "Morto-Vivo / Criação Científica",
+    "description": "A criatura trágica feita de pedaços de cadáveres, incompreendida pela humanidade.",
+    "year": 1931
+  },
+  {
+    "name": "A Múmia (Imhotep)",
+    "source": "A Múmia (1932)",
+    "type": "Morto-Vivo Amaldiçoado",
+    "description": "Um antigo sacerdote egípcio revivido após milênios para buscar seu amor perdido.",
+    "year": 1932
+  },
+  {
+    "name": "O Lobisomem (Larry Talbot)",
+    "source": "O Lobisomem (1941)",
+    "type": "Licantropo",
+    "description": "Um homem comum amaldiçoado a se transformar em uma besta assassina nas noites de lua cheia.",
+    "year": 1941
+  },
+  {
+    "name": "Norman Bates",
+    "source": "Psicose (1960)",
+    "type": "Assassino Psicológico",
+    "description": "O dono do Motel Bates, que sofre de transtorno de dupla personalidade, assumindo a identidade de sua falecida mãe.",
+    "year": 1960
+  },
+  {
+    "name": "Pazuzu",
+    "source": "O Exorcista (1973)",
+    "type": "Demônio Ancão",
+    "description": "Uma antiga entidade demoníaca assíria que possui a jovem Regan MacNeil.",
+    "year": 1973
+  },
+  {
+    "name": "Leatherface",
+    "source": "O Massacre da Serra Elétrica (1974)",
+    "type": "Slasher / Canibal",
+    "description": "Usa uma máscara de pele humana e empunha uma serra elétrica; o músculo de uma família canibal no Texas.",
+    "year": 1974
+  },
+  {
+    "name": "Michael Myers (The Shape)",
+    "source": "Halloween (1978)",
+    "type": "Slasher (O Mal Encarnado)",
+    "description": "Mudo, sem emoções e imparável. Mata no Halloween usando uma faca de cozinha e uma máscara branca inexpressiva.",
+    "year": 1978
+  },
+  {
+    "name": "Xenomorfo",
+    "source": "Alien, o Oitavo Passageiro (1979)",
+    "type": "Alienígena Parasita",
+    "description": "A máquina de matar perfeita: sangue ácido, dupla mandíbula e um ciclo de vida parasita aterrorizante.",
+    "year": 1979
+  },
+  {
+    "name": "Tall Man",
+    "source": "Fantasma (1979)",
+    "type": "Coveiro Interdimensional",
+    "description": "Um agente fúnebre sinistro que transforma cadáveres em anões escravos em seu mundo natal.",
+    "year": 1979
+  },
+  {
+    "name": "Jason Voorhees",
+    "source": "Sexta-Feira 13 (1980-)",
+    "type": "Slasher Imortal",
+    "description": "O garoto vingativo do Lago Crystal. Famoso por sua máscara de hóquei e machete.",
+    "year": 1980
+  },
+  {
+    "name": "Jack Torrance",
+    "source": "O Iluminado (1980)",
+    "type": "Humano Corrompido",
+    "description": "Escritor levado à loucura pelas forças sobrenaturais do Hotel Overlook, caçando sua família com um machado.",
+    "year": 1980
+  },
+  {
+    "name": "A Coisa (The Thing)",
+    "source": "O Enigma de Outro Mundo (1982)",
+    "type": "Parasita Alienígena Transmorfo",
+    "description": "Organismo capaz de assimilar e imitar perfeitamente qualquer ser vivo com quem entra em contato.",
+    "year": 1982
+  },
+  {
+    "name": "Freddy Krueger",
+    "source": "A Hora do Pesadelo (1984)",
+    "type": "Entidade dos Sonhos",
+    "description": "Assassino de crianças que foi queimado vivo e agora retorna para matar os jovens da Elm Street em seus pesadelos.",
+    "year": 1984
+  },
+  {
+    "name": "Pinhead (O Sacerdote do Inferno)",
+    "source": "Hellraiser (1987)",
+    "type": "Cenobita",
+    "description": "Líder dos Cenobitas, demônios dimensionais que não diferenciam dor e prazer.",
+    "year": 1987
+  },
+  {
+    "name": "Chucky (Charles Lee Ray)",
+    "source": "Brinquedo Assassino (1988)",
+    "type": "Boneco Possuído",
+    "description": "Um serial killer que transferiu sua alma para um boneco 'Good Guys' usando vodu.",
+    "year": 1988
+  },
+  {
+    "name": "Pennywise (A Coisa)",
+    "source": "It: A Coisa (1990)",
+    "type": "Entidade Cósmica Mimetista",
+    "description": "Um ser ancestral que acorda a cada 27 anos em Derry para se alimentar dos medos das crianças.",
+    "year": 1990
+  },
+  {
+    "name": "Hannibal Lecter",
+    "source": "O Silêncio dos Inocentes (1991)",
+    "type": "Serial Killer / Canibal",
+    "description": "Um psiquiatra brilhante, refinado e manipulador que aprecia comer órgãos de suas vítimas com um bom Chianti.",
+    "year": 1991
+  },
+  {
+    "name": "Candyman (Daniel Robitaille)",
+    "source": "O Mistério de Candyman (1992)",
+    "type": "Espírito Vingativo",
+    "description": "Invocado ao dizer seu nome 5 vezes no espelho, ataca com um gancho ensanguentado.",
+    "year": 1992
+  },
+  {
+    "name": "Ghostface",
+    "source": "Pânico (1996)",
+    "type": "Assassino(s) Mascarado(s)",
+    "description": "Não é uma única pessoa, mas um manto adotado por diversos serial killers obcecados por filmes de terror.",
+    "year": 1996
+  },
+  {
+    "name": "Djinn",
+    "source": "O Mestre dos Desejos (1997)",
+    "type": "Demônio das Sombras",
+    "description": "Concede desejos, mas distorce as palavras de forma grotesca para ceifar as almas das vítimas.",
+    "year": 1997
+  },
+  {
+    "name": "Samara Morgan / Sadako",
+    "source": "O Chamado / Ringu (1998)",
+    "type": "Fantasma Vingativo Onryō",
+    "description": "Menina jogada em um poço que mata 7 dias após alguém assistir sua fita de vídeo amaldiçoada.",
+    "year": 1998
+  },
+  {
+    "name": "A Bruxa de Blair (Elly Kedward)",
+    "source": "A Bruxa de Blair (1999)",
+    "type": "Bruxa / Força Invisível",
+    "description": "Entidade maligna que assombra a floresta de Black Hills, distorcendo o tempo e o espaço.",
+    "year": 1999
+  },
+  {
+    "name": "Jigsaw (John Kramer)",
+    "source": "Jogos Mortais (2004)",
+    "type": "Mestre de Armadilhas",
+    "description": "Um homem com câncer terminal que testa a vontade de viver de suas vítimas em jogos macabros de tortura.",
+    "year": 2004
+  },
+  {
+    "name": "Pyramid Head",
+    "source": "Terror em Silent Hill (2006)",
+    "type": "Manifestação Psicológica",
+    "description": "Um executor massivo com um capacete piramidal gigante, representando a culpa e o desejo de punição.",
+    "year": 2006
+  },
+  {
+    "name": "Babadook",
+    "source": "O Babadook (2014)",
+    "type": "Monstro Literário / Alegoria",
+    "description": "Personagem de um livro infantil que se manifesta na realidade, simbolizando o luto reprimido.",
+    "year": 2014
+  },
+  {
+    "name": "Annabelle",
+    "source": "Annabelle (2014)",
+    "type": "Boneca Hospedeira",
+    "description": "Uma boneca usada como conduíte por espíritos demoníacos para buscar uma alma humana.",
+    "year": 2014
+  },
+  {
+    "name": "Valak (A Freira)",
+    "source": "Invocação do Mal 2 (2016)",
+    "type": "Marquês dos Infernos",
+    "description": "Um demônio poderoso que frequentemente adota a forma de uma freira profanada para escarnecer da fé.",
+    "year": 2016
+  },
+  {
+    "name": "Art, O Palhaço",
+    "source": "Terrifier (2016)",
+    "type": "Slasher Demoníaco",
+    "description": "Um palhaço silencioso, incrivelmente sádico e brutal, que esquarteja pessoas por pura diversão doentia.",
+    "year": 2016
+  },
+  {
+    "name": "Paimon",
+    "source": "Hereditário (2018)",
+    "type": "Rei Demônio",
+    "description": "Uma das entidades infernais que exige um corpo masculino vulnerável (geralmente da linhagem familiar) para governar.",
+    "year": 2018
+  }
 ]
