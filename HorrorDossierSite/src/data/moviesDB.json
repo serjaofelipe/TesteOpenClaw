@@ -1,0 +1,396 @@
+[
+  {
+    "id": 1,
+    "title": "Nosferatu",
+    "year": 1922,
+    "score": 9.0,
+    "isRemake": false,
+    "story": "O corretor de imóveis Hutter precisa vender um castelo cujo proprietário é o excêntrico conde Graf Orlock. Ao chegar ao local, Hutter descobre que Orlock é um vampiro milenar que espalha o terror e a peste na região de Bremen, na Alemanha.",
+    "curiosities": [
+      "Primeira adaptação não oficial do livro 'Drácula' de Bram Stoker.",
+      "A viúva de Bram Stoker processou o estúdio por direitos autorais e ganhou, ordenando a destruição de todas as cópias. Algumas sobreviveram, salvando o filme."
+    ],
+    "characters": ["Conde Orlok", "Thomas Hutter", "Ellen Hutter"],
+    "inspiration": "O livro 'Drácula' de Bram Stoker.",
+    "ageRating": "12 Anos",
+    "audience": "Fãs de expressionismo alemão e clássicos mudos."
+  },
+  {
+    "id": 2,
+    "title": "O Homem de Palha (The Wicker Man)",
+    "year": 1973,
+    "score": 8.5,
+    "isRemake": false,
+    "story": "O sargento de polícia Howie viaja até a remota ilha escocesa de Summerisle para investigar o desaparecimento de uma jovem garota. Lá, ele se depara com uma comunidade adepta de rituais pagãos celtas assustadores e de sacrifícios.",
+    "curiosities": [
+      "Considerado o 'Cidadão Kane' dos filmes de terror britânicos.",
+      "A cena final é uma das mais perturbadoras e icônicas do cinema."
+    ],
+    "characters": ["Sargento Howie", "Lord Summerisle", "Willow MacGregor"],
+    "inspiration": "O romance 'Ritual' de David Pinner e tradições pagãs reais.",
+    "ageRating": "16 Anos",
+    "audience": "Fãs de folk horror e cultos religiosos."
+  },
+  {
+    "id": 3,
+    "title": "O Homem de Palha (The Wicker Man) - O Sacrifício",
+    "year": 2006,
+    "score": 3.0,
+    "isRemake": true,
+    "story": "Um policial americano investiga uma comunidade matriarcal neopagã em uma ilha isolada para encontrar uma garota desaparecida.",
+    "curiosities": [
+      "Tornou-se mais famoso por ser não intencionalmente hilário, especialmente a cena icônica onde Nicolas Cage grita sobre abelhas ('Not the bees!')."
+    ],
+    "characters": ["Edward Malus", "Sister Summersisle"],
+    "inspiration": "Remake direto do clássico de 1973.",
+    "ageRating": "14 Anos",
+    "audience": "Fãs do Nicolas Cage em atuações bizarras (Terror B/Comédia Involuntária)."
+  },
+  {
+    "id": 4,
+    "title": "Brinquedo Assassino (Child's Play)",
+    "year": 1988,
+    "score": 7.5,
+    "isRemake": false,
+    "story": "O serial killer Charles Lee Ray é baleado em uma loja de brinquedos e usa um ritual vodu para transferir sua alma para um boneco 'Good Guys'. O boneco é dado ao jovem Andy Barclay, que descobre o segredo fatal e sangrento de seu novo melhor amigo.",
+    "curiosities": [
+      "O design do boneco Chucky foi influenciado por bonecas famosas da época, como os Cabbage Patch Kids e My Buddy.",
+      "Na ideia original, Chucky seria a manifestação do subconsciente agressivo de Andy, e não um serial killer encarnado."
+    ],
+    "characters": ["Chucky", "Andy Barclay", "Karen Barclay"],
+    "inspiration": "Consumismo desenfreado dos anos 80 misturado a rituais vodu urbanos.",
+    "ageRating": "16 Anos",
+    "audience": "Slasher, humor negro, terror de bonecos possuídos."
+  },
+  {
+    "id": 5,
+    "title": "Brinquedo Assassino (Child's Play)",
+    "year": 2019,
+    "score": 5.8,
+    "isRemake": true,
+    "story": "Uma nova versão moderna, onde a inteligência artificial (e não magia vodu) de um boneco ultra-tecnológico sofre um defeito nas diretrizes de segurança, tornando o boneco Buddi extremamente violento.",
+    "curiosities": [
+      "A voz do Chucky neste filme é feita por Mark Hamill (Luke Skywalker / Coringa animado).",
+      "O criador original (Don Mancini) rejeitou essa versão, pois o conceito muda completamente de sobrenatural para sci-fi."
+    ],
+    "characters": ["Chucky (I.A.)", "Andy Barclay", "Karen Barclay"],
+    "inspiration": "A série de TV original e os medos sobre casas inteligentes e Inteligência Artificial (Alexa/Google Home).",
+    "ageRating": "16 Anos",
+    "audience": "Fãs de ficção científica, Slasher tecnológico e releituras."
+  },
+  {
+    "id": 6,
+    "title": "Atividade Paranormal",
+    "year": 2007,
+    "score": 7.0,
+    "isRemake": false,
+    "story": "O jovem casal Katie e Micah começa a ser assombrado por uma presença noturna em sua nova casa na área suburbana. Micah compra câmeras para capturar evidências enquanto eles dormem, mas apenas agrava a fúria da entidade invisível.",
+    "curiosities": [
+      "Produzido com míseros US$ 15.000, arrecadou incríveis US$ 193 milhões, tornando-se um dos filmes mais lucrativos da história.",
+      "Steven Spielberg teve que parar de assistir a fita de exibição original sozinho à noite porque ficou com muito medo."
+    ],
+    "characters": ["Katie", "Micah", "Demônio 'Toby'"],
+    "inspiration": "A popularização do found-footage iniciada por Bruxa de Blair, adaptada para o terror doméstico.",
+    "ageRating": "14 Anos",
+    "audience": "Fãs de found-footage, sustos construídos lentamente e tensão crescente."
+  },
+  {
+    "id": 7,
+    "title": "A Bruxa de Blair",
+    "year": 1999,
+    "score": 8.0,
+    "isRemake": false,
+    "story": "Três estudantes de cinema embrenham-se na floresta de Black Hills, Maryland, para gravar um documentário sobre a lenda da Bruxa de Blair. Eles se perdem e passam a ser perseguidos por uma força invisível macabra, desaparecendo misteriosamente e deixando apenas suas fitas para trás.",
+    "curiosities": [
+      "A campanha de marketing original foi feita puramente na internet, com cartazes de 'desaparecidos' fazendo muitos acreditarem que as fitas eram 100% reais.",
+      "A direção dava pouquíssima comida aos atores e limitava o sono deles para causar irritação e exaustão autêntica."
+    ],
+    "characters": ["Heather Donahue", "Michael C. Williams", "Joshua Leonard"],
+    "inspiration": "Falta de recursos da produtora e o folclore americano das bruxas locais (apesar da lenda ter sido inventada para o filme).",
+    "ageRating": "14 Anos",
+    "audience": "O Marco Zero do Found-Footage moderno, suspense puramente psicológico."
+  },
+  {
+    "id": 8,
+    "title": "Bruxa de Blair (Blair Witch)",
+    "year": 2016,
+    "score": 5.0,
+    "isRemake": false,
+    "story": "O irmão de Heather (do primeiro filme) vai à mesma floresta anos depois, equipado com drones, GPS e câmeras digitais para tentar achar respostas sobre o desaparecimento de sua irmã.",
+    "curiosities": [
+      "É uma sequência direta do original, ignorando o Livro das Sombras (2000). Foi mantido em segredo e anunciado sob o título falso 'The Woods'.",
+      "Expande as regras de como a floresta funciona, manipulando diretamente o fluxo do tempo e os ciclos do dia e da noite."
+    ],
+    "characters": ["James Donahue", "Lisa Arlington", "A Bruxa"],
+    "inspiration": "Sequência moderna usando as tecnologias da geração atual (drones/câmeras de cabeça).",
+    "ageRating": "14 Anos",
+    "audience": "Fãs do filme original em busca de um encerramento."
+  },
+  {
+    "id": 9,
+    "title": "[REC]",
+    "year": 2007,
+    "score": 8.2,
+    "isRemake": false,
+    "story": "A repórter de TV Ángela Vidal e seu cinegrafista acompanham uma rotina de bombeiros em Barcelona, mas ao chegarem a um prédio, as saídas são trancadas pela polícia e eles percebem que os moradores estão infectados com um vírus raivoso inexplicável, documentando tudo pela câmera.",
+    "curiosities": [
+      "A icônica Menina Medeiros no final do filme foi interpretada pelo ator masculino Javier Botet, que sofre de síndrome de Marfan, dando a ele seus braços e pernas longos e estranhos sem usar CGI."
+    ],
+    "characters": ["Ángela Vidal", "Manu", "Tristana Medeiros"],
+    "inspiration": "Found footage de contaminação e zumbis confinados.",
+    "ageRating": "18 Anos",
+    "audience": "Fãs de Zumbis claustrofóbicos e espanhóis."
+  },
+  {
+    "id": 10,
+    "title": "Quarentena (Quarantine)",
+    "year": 2008,
+    "score": 6.0,
+    "isRemake": true,
+    "story": "Remake americano exato de '[REC]'. Uma equipe de repórteres segue bombeiros até um prédio em Los Angeles, e descobrem que os moradores estão raivosos por um super vírus ligado à raiva, e o prédio é isolado pelo exército.",
+    "curiosities": [
+      "Cópia cena a cena de REC. A diferença principal é que o remake descarta as origens religiosas/demoníacas de REC e culpa os eventos estritamente num surto de raiva biológica de laboratório."
+    ],
+    "characters": ["Angela Vidal", "Scott", "Thin Infected Man"],
+    "inspiration": "O filme espanhol original [REC].",
+    "ageRating": "18 Anos",
+    "audience": "Público americano que não gosta de legendas e prefere terror puramente sci-fi sem demônios."
+  },
+  {
+    "id": 11,
+    "title": "O Exorcista",
+    "year": 1973,
+    "score": 9.5,
+    "isRemake": false,
+    "story": "Uma atriz percebe comportamentos assustadores em sua filha de 12 anos. Após exames médicos falharem, ela pede ajuda à Igreja Católica, que determina que a jovem está possuída pelo demônio Pazuzu.",
+    "curiosities": [
+      "Muitos desmaiavam nos cinemas originais.",
+      "A famosa cena do pescoço virando 360 graus foi feita por um boneco robótico tão bem moldado que aterrorizou a equipe técnica."
+    ],
+    "characters": ["Regan MacNeil", "Padre Karras", "Pazuzu"],
+    "inspiration": "Caso real do exorcismo de Roland Doe em 1949.",
+    "ageRating": "18 Anos",
+    "audience": "O pai moderno do terror sobrenatural de possessão."
+  },
+  {
+    "id": 12,
+    "title": "Halloween - A Noite do Terror",
+    "year": 1978,
+    "score": 8.7,
+    "isRemake": false,
+    "story": "O prisioneiro psiquiátrico Michael Myers escapa de uma clínica após 15 anos de sua primeira morte e volta à cidade de Haddonfield para perseguir a babá Laurie Strode na noite do Dia das Bruxas.",
+    "curiosities": [
+      "A máscara original de Michael Myers é uma máscara comprada em uma loja de artigos para festa do Capitão Kirk (William Shatner de Star Trek), mas foi pintada de branco e alargada."
+    ],
+    "characters": ["Michael Myers", "Laurie Strode", "Dr. Sam Loomis"],
+    "inspiration": "A ideia de um bicho-papão que não pode ser morto ou raciocinado.",
+    "ageRating": "16 Anos",
+    "audience": "Amantes de Slasher clássico."
+  },
+  {
+    "id": 13,
+    "title": "Halloween - O Início",
+    "year": 2007,
+    "score": 6.1,
+    "isRemake": true,
+    "story": "Dirigido por Rob Zombie, esta versão reconta a história do assassino Michael Myers, mas dedicando grande parte do filme ao seu passado na infância e às causas violentas e psicológicas que o levaram à loucura na instituição.",
+    "curiosities": [
+      "Rob Zombie tentou humanizar o assassino, uma decisão altamente divisiva entre os fãs que preferiam Myers como o 'mal inexplicável'.",
+      "É extremamente mais brutal e gore que o clássico de 1978."
+    ],
+    "characters": ["Michael Myers", "Laurie Strode", "Dr. Loomis"],
+    "inspiration": "O estilo White-trash/Grindhouse brutal típico de Rob Zombie.",
+    "ageRating": "18 Anos",
+    "audience": "Fãs de Splatter, Gore e origens psicológicas aprofundadas."
+  },
+  {
+    "id": 14,
+    "title": "Pânico (Scream)",
+    "year": 1996,
+    "score": 8.3,
+    "isRemake": false,
+    "story": "Um ano após a morte de sua mãe, a estudante Sidney Prescott e seus amigos tornam-se alvos de um serial killer mascarado que usa filmes de terror (como Halloween e Sexta-Feira 13) como base de seu jogo sádico de adivinhação telefônica.",
+    "curiosities": [
+      "O uso do identificador de chamadas disparou nos EUA logo após o filme, devido à cena inicial icônica com Drew Barrymore.",
+      "A famosa voz americana no telefone foi feita por Roger L. Jackson, que foi escondido do elenco nos sets de gravação para garantir reações assustadas genuínas dos atores."
+    ],
+    "characters": ["Sidney Prescott", "Ghostface", "Dewey Riley", "Gale Weathers"],
+    "inspiration": "Os casos de serial killers e a metalinguagem satirizando as regras exaustivas do Slasher dos anos 80.",
+    "ageRating": "16 Anos",
+    "audience": "Terror Adolescente Metalinguístico e focado no gênero 'whodunit'."
+  },
+  {
+    "id": 15,
+    "title": "A Hora do Pesadelo (A Nightmare on Elm Street)",
+    "year": 1984,
+    "score": 8.0,
+    "isRemake": false,
+    "story": "A jovem Nancy Thompson e seus vizinhos de bairro começam a morrer bizarramente em seus sonos, massacrados nos pesadelos pelo espírito queimado de Freddy Krueger, o zelador vingativo da cidade.",
+    "curiosities": [
+      "Foi o primeiro filme do lendário ator Johnny Depp. Ele foi ao teste acompanhar um amigo e foi escolhido por acidente.",
+      "Foi um sucesso que salvou a gravadora New Line Cinema da falência total, apelidada de 'A Casa Que Freddy Construiu'."
+    ],
+    "characters": ["Freddy Krueger", "Nancy Thompson", "Glen Lantz"],
+    "inspiration": "Série de reportagens sobre refugiados cambojanos morrendo de síndrome da morte súbita enquanto dormiam.",
+    "ageRating": "16 Anos",
+    "audience": "Terror Sobrenatural, Dream Horror."
+  },
+  {
+    "id": 16,
+    "title": "A Hora do Pesadelo",
+    "year": 2010,
+    "score": 5.2,
+    "isRemake": true,
+    "story": "Nova versão tentando levar Freddy Krueger para um tom de terror hiper-realista e extremamente sombrio, substituindo Robert Englund por Jackie Earle Haley no papel principal.",
+    "curiosities": [
+      "O roteiro buscou os instintos primordiais originais de Freddy, ignorando totalmente a vertente 'comediante' que a franquia adotou nos anos 90.",
+      "Foi brutalmente criticado por depender muito do CGI em vez dos efeitos práticos criativos do primeiro filme."
+    ],
+    "characters": ["Freddy Krueger", "Nancy Holbrook", "Quentin Smith"],
+    "inspiration": "Re-boot das franquias Slasher do final dos anos 2000.",
+    "ageRating": "16 Anos",
+    "audience": "Nova Geração querendo sustos diretos, sem humor."
+  },
+  {
+    "id": 17,
+    "title": "O Iluminado (The Shining)",
+    "year": 1980,
+    "score": 9.2,
+    "isRemake": false,
+    "story": "O escritor Jack Torrance enlouquece gradualmente após assumir o cargo de zelador de inverno num gigantesco e isolado hotel no Colorado, enquanto o hotel assombrado tenta corrompê-lo para matar sua mulher e seu filho telepata, Danny.",
+    "curiosities": [
+      "Stephen King odeia a adaptação, pois Kubrick transformou Jack em alguém doente e abusivo desde o começo da história, em vez de um bom pai vítima das circunstâncias paranormais.",
+      "As meninas gêmeas da lenda do hotel foram influenciadas por fotos artísticas clássicas, e a icônica cena do elevador sangrando envolveu milhares de litros de xarope."
+    ],
+    "characters": ["Jack Torrance", "Wendy Torrance", "Danny Torrance"],
+    "inspiration": "O livro clássico de Stephen King (embora o filme mude tudo o que ele significava).",
+    "ageRating": "16 Anos",
+    "audience": "Terror Psicológico denso e cinematografia de vanguarda."
+  },
+  {
+    "id": 18,
+    "title": "A Coisa (The Thing)",
+    "year": 1982,
+    "score": 9.1,
+    "isRemake": true,
+    "story": "Uma equipe de expedição do governo americano no meio do gélido e paranoico continente Antártico desenterra uma forma de vida alienígena capaz de imitar perfeitamente o DNA de outros organismos, espalhando uma desconfiança mortal onde não se pode acreditar em ninguém.",
+    "curiosities": [
+      "O filme é um remake do clássico em preto e branco 'O Monstro do Ártico' de 1951, e apesar da avaliação ruim na época (ofuscado por ET - O Extraterrestre), virou a obra-prima máxima do mestre John Carpenter.",
+      "Efeitos práticos lendários concebidos por Rob Bottin (que tinha apenas 22 anos na época)."
+    ],
+    "characters": ["MacReady", "Childs", "A Coisa"],
+    "inspiration": "O conto 'Who Goes There?' de John W. Campbell.",
+    "ageRating": "18 Anos",
+    "audience": "Fãs do Body Horror supremo, Gore artístico e claustrofobia."
+  },
+  {
+    "id": 19,
+    "title": "Hereditário",
+    "year": 2018,
+    "score": 8.7,
+    "isRemake": false,
+    "story": "Quando a idosa matriarca e líder do clã falece, a família Graham passa a ser alvo de entidades esotéricas perturbadoras, lidando simultaneamente com o doloroso luto familiar e um pacto demoníaco inquebrável atrelado à genética da casa.",
+    "curiosities": [
+      "A inesquecível e perturbadora performance de Toni Collette. Há cenas baseadas puramente nos medos infantis de destruição do diretor.",
+      "As minuciosas casas de miniaturas foram construídas lado a lado à escala da casa original para que a transição e câmera fosse perfeita."
+    ],
+    "characters": ["Annie Graham", "Peter", "Paimon"],
+    "inspiration": "Os rituais de evocação do selo do demônio 'Paimon' do livro A Chave Menor de Salomão.",
+    "ageRating": "18 Anos",
+    "audience": "Terror Psicológico Pesado, Modern A24, Drama Familiar Destrutivo."
+  },
+  {
+    "id": 20,
+    "title": "Midsommar: O Mal Não Espera a Noite",
+    "year": 2019,
+    "score": 8.4,
+    "isRemake": false,
+    "story": "Para superar o devastador suicídio de sua família, a jovem Dani acompanha seu namorado disfuncional e colegas dele para um retiro antropológico num belíssimo vilarejo na Suécia. O problema é que o festival de verão celebra a vida por intermédio da morte brutal.",
+    "curiosities": [
+      "O diretor Ari Aster chama de um 'filme de término de relacionamento travestido num filme de folk horror ao sol.'",
+      "É um dos poucos filmes de terror contemporâneos que ocorre inteiramente à luz do dia deslumbrante (Folk Horror escandinavo)."
+    ],
+    "characters": ["Dani Ardor", "Christian", "A Seita de Hårga"],
+    "inspiration": "Os festivais nórdicos reais do solstício de verão e a mitologia do 'The Wicker Man'.",
+    "ageRating": "18 Anos",
+    "audience": "Cultos Diurnos, Tensão crescente e ansiedade visual."
+  },
+  {
+    "id": 21,
+    "title": "Madrugada dos Mortos (Dawn of the Dead)",
+    "year": 1978,
+    "score": 8.5,
+    "isRemake": false,
+    "story": "Após a epidemia zumbi inicial tomar proporções massivas, os sobreviventes se isolam e buscam abrigo num vasto e vazio Shopping Center, logo percebendo que a maior ameaça interna é a ganância dos outros humanos.",
+    "curiosities": [
+      "Pai dos filmes clássicos de mortos-vivos (junto a Night of the Living Dead) de George Romero. Romero usou o shopping center como crítica ao consumismo (os mortos voltam ao shopping porque era o lugar preferido deles quando vivos)."
+    ],
+    "characters": ["Francine", "Peter", "Stephen"],
+    "inspiration": "Crítica ferrenha e sarcástica ao consumismo americano e ao modo de vida burguês.",
+    "ageRating": "18 Anos",
+    "audience": "Clássico Zumbi fundamental do subgênero de cerco."
+  },
+  {
+    "id": 22,
+    "title": "Madrugada dos Mortos",
+    "year": 2004,
+    "score": 7.3,
+    "isRemake": true,
+    "story": "Zumbis frenéticos que correm substituem as hordas lentas originais neste violento e cinético filme de Zack Snyder e James Gunn. Sobreviventes se trancam num shopping e lutam por armas num cenário de ação muito mais visceral.",
+    "curiosities": [
+      "Foi o filme de estreia do diretor Zack Snyder no cinema, com um roteiro escrito pelo atual CEO da DC Studios, James Gunn.",
+      "Romero odiou a ideia de 'Zumbis que Correm' (implantada antes pelo hit Extermínio/28 Days Later)."
+    ],
+    "characters": ["Ana", "Kenneth", "CJ"],
+    "inspiration": "O formato visual dos clipes de ação combinados com o clássico original.",
+    "ageRating": "18 Anos",
+    "audience": "Zumbis de Ação, Tensão Acelerada e Gore Altamente Divertido."
+  },
+  {
+    "id": 23,
+    "title": "O Exorcismo de Emily Rose",
+    "year": 2005,
+    "score": 6.8,
+    "isRemake": false,
+    "story": "Misto de terror e drama de tribunal, que investiga a condenação criminal de um padre após uma garota alemã sofrer um destino terrível e morrer durante sessões cruéis de exorcismo em sua casa interiorana.",
+    "curiosities": [
+      "Baseado (com certa licença poética) na famosa tragédia da vida real da alemã Anneliese Michel (1976), morta por desnutrição nas mãos dos padres em possessão documentada com fitas de áudio pavorosas."
+    ],
+    "characters": ["Emily Rose", "Padre Moore", "Erin Bruner"],
+    "inspiration": "O pavoroso caso jurídico da vida real de Anneliese Michel na Alemanha dos anos 70.",
+    "ageRating": "14 Anos",
+    "audience": "Julgamentos e Possessão Religiosa Baseada em Fatos Reais."
+  },
+  {
+    "id": 24,
+    "title": "Invocação do Mal (The Conjuring)",
+    "year": 2013,
+    "score": 8.0,
+    "isRemake": false,
+    "story": "Em 1971, o devoto casal de investigadores de atividade demoníaca (Os Warrens) é convocado para ajudar a família Perron, atormentados na zona rural de Rhode Island pelo antigo espírito de uma bruxa acusada de sacrifícios.",
+    "curiosities": [
+      "Tão eficaz que a MPAA (Associação de Classificação de Cinema Americana) deu classificação máxima restrita não porque o filme tem nudez ou sangue, mas pelo fato do suspense em si ser 'assustador demais para menores'.",
+      "Gatilho para o maior universo interconectado de franquias do terror: O Conjuring Universe."
+    ],
+    "characters": ["Ed Warren", "Lorraine Warren", "Bathsheba (Bruxa)"],
+    "inspiration": "Os relatos dos lendários Ed e Lorraine Warren sobre a fazenda de Perron.",
+    "ageRating": "14 Anos",
+    "audience": "Jump-Scares Absolutos, Casal Clássico e Casas Mal-Assombradas."
+  },
+  {
+    "id": 25,
+    "title": "Jogos Mortais (Saw)",
+    "year": 2004,
+    "score": 7.6,
+    "isRemake": false,
+    "story": "Dois homens sem conexão acordam acorrentados aos encanamentos num sujo banheiro abandonado com um cadáver e um serrote. Cúmplices do doentio assassino moralista conhecido por Jigsaw, eles têm que derramar o próprio sangue para descobrir como e se vão sobreviver.",
+    "curiosities": [
+      "O icônico filme foi filmado em impressionantes 18 dias num galpão único pelo genial diretor (e estudante universitário na época) James Wan.",
+      "Criou essencialmente a era do subgênero 'Torture Porn' da década de 2000."
+    ],
+    "characters": ["Jigsaw (John Kramer)", "Dr. Lawrence Gordon", "Adam", "Billy The Puppet"],
+    "inspiration": "Suspenses pesados, enigmas de câmara fechada e dilemas de sobrevivência extrema.",
+    "ageRating": "18 Anos",
+    "audience": "Torture Porn e Plot Twists Magistrais."
+  }
+]
