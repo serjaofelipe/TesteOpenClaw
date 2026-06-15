@@ -20,18 +20,14 @@
     "audience": "Fãs de expressionismo alemão e clássicos mudos.",
     "category": "Monstros Clássicos / Bruxaria",
     "tags": [
-      "classico",
-      "obra_prima",
-      "monstro",
-      "criatura",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "animal",
-      "vampiro",
-      "besta",
+      "possessao",
       "bruxaria",
-      "possessao"
+      "obra_prima",
+      "vampiro",
+      "demonio",
+      "classico",
+      "monstro",
+      "criatura"
     ]
   },
   {
@@ -55,12 +51,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "classico",
+      "slasher",
       "obra_prima",
-      "serial_killer",
-      "humano",
-      "assassino",
-      "slasher"
+      "classico"
     ]
   },
   {
@@ -84,17 +77,13 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Monstros Clássicos / Bruxaria",
     "tags": [
+      "possessao",
+      "bruxaria",
+      "trash_b_movie",
+      "demonio",
       "classico",
       "monstro",
-      "criatura",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "animal",
-      "trash_b_movie",
-      "besta",
-      "bruxaria",
-      "possessao"
+      "criatura"
     ]
   },
   {
@@ -118,13 +107,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "classico",
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "classico"
     ]
   },
   {
@@ -148,12 +133,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "classico",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "classico"
     ]
   },
   {
@@ -177,13 +159,10 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "classico",
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
-      "lobisomem"
+      "lobisomem",
+      "trash_b_movie",
+      "classico"
     ]
   },
   {
@@ -207,13 +186,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "classico",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
+      "aclamado",
       "tortura",
-      "aclamado"
+      "gore",
+      "classico"
     ]
   },
   {
@@ -237,12 +213,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "classico",
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "assassino",
-      "slasher"
+      "classico"
     ]
   },
   {
@@ -266,12 +239,9 @@
     "audience": "Obra-Prima do Suspense, Thriller Psicológico Essencial.",
     "category": "Terror Psicológico",
     "tags": [
-      "classico",
-      "obra_prima",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura"
+      "obra_prima",
+      "classico"
     ]
   },
   {
@@ -295,13 +265,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "classico",
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "classico"
     ]
   },
   {
@@ -325,14 +291,10 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "classico",
       "casa_assombrada",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
-      "confinamento"
+      "trash_b_movie",
+      "classico"
     ]
   },
   {
@@ -356,12 +318,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "classico",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "classico"
     ]
   },
   {
@@ -385,12 +344,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "classico",
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
-      "slasher"
+      "slasher",
+      "classico"
     ]
   },
   {
@@ -414,13 +369,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "classico",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "classico"
     ]
   },
   {
@@ -444,12 +396,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "classico",
-      "armadilha",
-      "sangue",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "classico"
     ]
   },
   {
@@ -473,13 +422,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "classico",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
-      "crianca_macabra",
       "psicologico",
-      "loucura"
+      "crianca",
+      "classico"
     ]
   },
   {
@@ -503,16 +448,11 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Gore / Tortura",
     "tags": [
-      "classico",
-      "obra_prima",
       "casa_assombrada",
-      "armadilha",
-      "sangue",
-      "vampiro",
-      "gore",
-      "sadismo",
+      "obra_prima",
       "tortura",
-      "confinamento"
+      "gore",
+      "classico"
     ]
   },
   {
@@ -536,11 +476,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "classico",
-      "serial_killer",
-      "humano",
-      "assassino",
-      "slasher"
+      "slasher",
+      "classico"
     ]
   },
   {
@@ -564,15 +501,11 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "classico",
       "casa_assombrada",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
-      "confinamento"
+      "gore",
+      "classico"
     ]
   },
   {
@@ -596,14 +529,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "classico",
       "casa_assombrada",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
-      "confinamento"
+      "gore",
+      "classico"
     ]
   },
   {
@@ -627,12 +556,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "classico",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
-      "aclamado"
+      "aclamado",
+      "classico"
     ]
   },
   {
@@ -656,12 +582,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "classico",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
-      "aclamado"
+      "aclamado",
+      "classico"
     ]
   },
   {
@@ -685,12 +608,9 @@
     "audience": "Fãs de folk horror e cultos religiosos.",
     "category": "Suspense Macabro",
     "tags": [
-      "classico",
-      "obra_prima",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura"
+      "obra_prima",
+      "classico"
     ]
   },
   {
@@ -714,16 +634,17 @@
     "audience": "O pai moderno do terror sobrenatural de possessão.",
     "category": "Demônios / Possessão",
     "tags": [
-      "classico",
-      "obra_prima",
-      "religioso",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "exorcismo",
-      "crianca_macabra",
+      "possessao",
       "bruxaria",
-      "possessao"
+      "crianca",
+      "obra_prima",
+      "padre",
+      "demonio",
+      "classico",
+      "sobrenatural",
+      "igreja",
+      "menina",
+      "anos_70"
     ]
   },
   {
@@ -747,13 +668,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "classico",
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "vampiro",
-      "assassino",
-      "slasher"
+      "slasher",
+      "classico"
     ]
   },
   {
@@ -777,12 +693,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "classico",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
-      "aclamado"
+      "aclamado",
+      "classico"
     ]
   },
   {
@@ -807,13 +720,15 @@
     "audience": "A Origem do Slasher Brutal e do Horror Gráfico.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "classico",
-      "serial_killer",
-      "humano",
-      "drama_familiar",
-      "assassino",
       "slasher",
-      "aclamado"
+      "aclamado",
+      "classico",
+      "gore",
+      "motosserra",
+      "familia_canibal",
+      "texas",
+      "rural",
+      "anos_70"
     ]
   },
   {
@@ -837,12 +752,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "classico",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
-      "aclamado"
+      "aclamado",
+      "classico"
     ]
   },
   {
@@ -866,12 +778,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "classico",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "classico"
     ]
   },
   {
@@ -896,13 +804,9 @@
     "audience": "Fãs de Suspense, Terror Aquático, Tensão e Clássicos Intocáveis.",
     "category": "Suspense Macabro",
     "tags": [
-      "classico",
-      "obra_prima",
-      "paranóia",
-      "mente",
       "psicologico",
-      "lobisomem",
-      "loucura"
+      "obra_prima",
+      "classico"
     ]
   },
   {
@@ -926,12 +830,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "classico",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
-      "aclamado"
+      "aclamado",
+      "classico"
     ]
   },
   {
@@ -955,12 +856,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "classico",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "classico"
     ]
   },
   {
@@ -984,13 +882,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "classico",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
+      "aclamado",
       "tortura",
-      "aclamado"
+      "gore",
+      "classico"
     ]
   },
   {
@@ -1014,11 +909,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "classico",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura"
+      "classico"
     ]
   },
   {
@@ -1042,11 +934,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "classico",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura"
+      "classico"
     ]
   },
   {
@@ -1070,14 +959,11 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "classico",
-      "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
       "vinganca",
-      "sadismo",
-      "tortura"
+      "obra_prima",
+      "tortura",
+      "gore",
+      "classico"
     ]
   },
   {
@@ -1101,12 +987,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "classico",
-      "armadilha",
-      "sangue",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "classico"
     ]
   },
   {
@@ -1129,12 +1012,15 @@
     "audience": "Amantes de Slasher clássico.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "classico",
+      "slasher",
       "obra_prima",
+      "classico",
       "serial_killer",
-      "humano",
-      "assassino",
-      "slasher"
+      "mascara",
+      "faca",
+      "baba",
+      "suburbio",
+      "anos_70"
     ]
   },
   {
@@ -1157,13 +1043,14 @@
     "audience": "Clássico Zumbi fundamental do subgênero de cerco.",
     "category": "Zumbis",
     "tags": [
+      "zumbi",
       "classico",
       "obra_prima",
       "virus",
-      "infeccao",
-      "zumbi",
+      "shopping",
       "apocalipse",
-      "horda"
+      "horda",
+      "anos_70"
     ]
   },
   {
@@ -1187,11 +1074,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "classico",
-      "serial_killer",
-      "humano",
-      "assassino",
-      "slasher"
+      "slasher",
+      "classico"
     ]
   },
   {
@@ -1215,12 +1099,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "classico",
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "assassino",
-      "slasher"
+      "classico"
     ]
   },
   {
@@ -1244,12 +1125,14 @@
     "audience": "Zumbis de Ação, Tensão Acelerada e Gore Altamente Divertido.",
     "category": "Zumbis",
     "tags": [
+      "zumbi",
       "classico",
       "aclamado",
-      "infeccao",
-      "zumbi",
+      "virus",
+      "shopping",
       "apocalipse",
-      "horda"
+      "horda",
+      "anos_70"
     ]
   },
   {
@@ -1273,14 +1156,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "classico",
       "casa_assombrada",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
-      "confinamento"
+      "classico"
     ]
   },
   {
@@ -1305,10 +1183,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "aclamado"
     ]
   },
@@ -1333,16 +1208,19 @@
     "audience": "Terror Psicológico denso e cinematografia de vanguarda.",
     "category": "Terror Psicológico",
     "tags": [
-      "anos_80",
-      "obra_prima",
       "casa_assombrada",
-      "paranóia",
-      "mente",
+      "crianca",
       "stephen_king",
-      "crianca_macabra",
       "psicologico",
+      "obra_prima",
+      "anos_80",
       "loucura",
-      "confinamento"
+      "fantasma",
+      "hotel",
+      "isolamento",
+      "neve",
+      "machado",
+      "classico"
     ]
   },
   {
@@ -1367,10 +1245,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "psicologico",
-      "loucura"
+      "psicologico"
     ]
   },
   {
@@ -1395,12 +1270,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
+      "aclamado",
       "tortura",
-      "aclamado"
+      "gore"
     ]
   },
   {
@@ -1425,11 +1297,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -1454,12 +1323,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -1484,11 +1350,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie"
     ]
   },
   {
@@ -1512,14 +1375,11 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "anos_80",
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
       "lobisomem",
-      "sadismo",
-      "tortura"
+      "anos_80",
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -1543,17 +1403,11 @@
     "audience": "Fãs de Gore, Terror B e clássicos absolutos de cabana na floresta.",
     "category": "Zumbis",
     "tags": [
+      "virus",
+      "isolamento_natureza",
       "anos_80",
-      "natureza",
-      "religioso",
-      "cabana",
-      "aclamado",
-      "floresta",
-      "exorcismo",
-      "infeccao",
       "zumbi",
-      "apocalipse",
-      "horda"
+      "aclamado"
     ]
   },
   {
@@ -1578,11 +1432,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie"
     ]
   },
   {
@@ -1607,11 +1458,15 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
-      "aclamado"
+      "aclamado",
+      "serial_killer",
+      "mascara",
+      "faca",
+      "baba",
+      "suburbio",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -1636,12 +1491,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
+      "aclamado",
       "tortura",
-      "aclamado"
+      "gore"
     ]
   },
   {
@@ -1666,10 +1518,13 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura"
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "machete",
+      "acampamento",
+      "lago"
     ]
   },
   {
@@ -1694,11 +1549,8 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
-      "slasher"
+      "slasher",
+      "trash_b_movie"
     ]
   },
   {
@@ -1723,11 +1575,14 @@
     "category": "Aliens / Sci-Fi Horror",
     "tags": [
       "anos_80",
+      "alien",
       "obra_prima",
-      "extraterrestre",
       "scifi",
-      "espaco",
-      "alien"
+      "monstro",
+      "neve",
+      "isolamento",
+      "metamorfo",
+      "paranoia"
     ]
   },
   {
@@ -1751,16 +1606,12 @@
     "audience": "Terror Clássico Sobrenatural e Assombrações em Família.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "anos_80",
-      "casa_assombrada",
       "fantasma",
-      "assombracao",
-      "sobrenatural",
-      "drama_familiar",
-      "crianca_macabra",
-      "espirito",
-      "confinamento",
-      "aclamado"
+      "casa_assombrada",
+      "crianca",
+      "anos_80",
+      "aclamado",
+      "sobrenatural"
     ]
   },
   {
@@ -1785,10 +1636,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "psicologico",
-      "loucura"
+      "psicologico"
     ]
   },
   {
@@ -1813,12 +1661,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -1843,11 +1688,15 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "faca",
+      "baba",
+      "suburbio",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -1872,11 +1721,14 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
-      "aclamado"
+      "aclamado",
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "machete",
+      "acampamento",
+      "lago"
     ]
   },
   {
@@ -1901,11 +1753,8 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "obra_prima",
-      "serial_killer",
-      "humano",
-      "assassino",
-      "slasher"
+      "slasher",
+      "obra_prima"
     ]
   },
   {
@@ -1930,9 +1779,6 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher"
     ]
   },
@@ -1958,11 +1804,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -1987,12 +1830,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
+      "aclamado",
       "tortura",
-      "aclamado"
+      "gore"
     ]
   },
   {
@@ -2017,11 +1857,8 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
-      "slasher"
+      "slasher",
+      "trash_b_movie"
     ]
   },
   {
@@ -2046,9 +1883,6 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher"
     ]
   },
@@ -2074,9 +1908,6 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher"
     ]
   },
@@ -2102,13 +1933,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "natureza",
-      "mente",
-      "cabana",
-      "floresta",
+      "isolamento_natureza",
       "psicologico",
-      "loucura",
       "aclamado"
     ]
   },
@@ -2134,11 +1960,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie"
     ]
   },
   {
@@ -2163,10 +1986,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "psicologico",
-      "loucura"
+      "psicologico"
     ]
   },
   {
@@ -2191,12 +2011,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -2221,11 +2038,14 @@
     "category": "Sobrenatural / Fantasmas",
     "tags": [
       "anos_80",
-      "obra_prima",
-      "fantasma",
-      "assombracao",
       "sobrenatural",
-      "espirito"
+      "fantasma",
+      "obra_prima",
+      "slasher",
+      "sonho",
+      "luva_lamina",
+      "queimado",
+      "psicologico"
     ]
   },
   {
@@ -2250,9 +2070,6 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "aclamado"
     ]
@@ -2279,10 +2096,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "psicologico",
-      "loucura"
+      "psicologico"
     ]
   },
   {
@@ -2307,11 +2121,14 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "machete",
+      "acampamento",
+      "lago"
     ]
   },
   {
@@ -2336,11 +2153,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie"
     ]
   },
   {
@@ -2365,9 +2179,6 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "aclamado"
     ]
@@ -2394,11 +2205,14 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "machete",
+      "acampamento",
+      "lago"
     ]
   },
   {
@@ -2423,11 +2237,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
-      "psicologico",
-      "loucura"
+      "psicologico"
     ]
   },
   {
@@ -2452,11 +2262,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie"
     ]
   },
   {
@@ -2481,11 +2288,9 @@
     "category": "Zumbis",
     "tags": [
       "anos_80",
-      "aclamado",
-      "infeccao",
       "zumbi",
-      "apocalipse",
-      "horda"
+      "aclamado",
+      "virus"
     ]
   },
   {
@@ -2510,12 +2315,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
+      "aclamado",
       "tortura",
-      "aclamado"
+      "gore"
     ]
   },
   {
@@ -2540,13 +2342,8 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "casa_assombrada",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
-      "confinamento"
+      "casa_assombrada"
     ]
   },
   {
@@ -2571,10 +2368,12 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
-      "assassino",
-      "slasher"
+      "slasher",
+      "sobrenatural",
+      "sonho",
+      "luva_lamina",
+      "queimado",
+      "psicologico"
     ]
   },
   {
@@ -2600,11 +2399,8 @@
     "tags": [
       "anos_80",
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -2629,10 +2425,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "psicologico",
-      "loucura"
+      "psicologico"
     ]
   },
   {
@@ -2657,12 +2450,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -2687,12 +2477,16 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "slasher",
+      "motosserra",
+      "familia_canibal",
+      "texas",
+      "rural",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -2717,10 +2511,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "psicologico",
-      "loucura"
+      "psicologico"
     ]
   },
   {
@@ -2745,11 +2536,13 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "assassino",
-      "slasher"
+      "serial_killer",
+      "mascara",
+      "machete",
+      "acampamento",
+      "lago"
     ]
   },
   {
@@ -2774,10 +2567,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "psicologico",
-      "loucura"
+      "psicologico"
     ]
   },
   {
@@ -2802,10 +2592,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "aclamado"
     ]
   },
@@ -2831,12 +2618,15 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "slasher",
+      "sobrenatural",
+      "sonho",
+      "luva_lamina",
+      "queimado",
+      "psicologico"
     ]
   },
   {
@@ -2861,11 +2651,13 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
-      "aclamado"
+      "aclamado",
+      "alien",
+      "acao",
+      "floresta",
+      "militar",
+      "cacador"
     ]
   },
   {
@@ -2890,11 +2682,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "obra_prima",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura"
+      "obra_prima"
     ]
   },
   {
@@ -2920,11 +2709,8 @@
     "tags": [
       "anos_80",
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -2949,12 +2735,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -2979,11 +2761,8 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
-      "slasher"
+      "slasher",
+      "trash_b_movie"
     ]
   },
   {
@@ -3008,12 +2787,9 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
-      "psicologico",
       "vinganca",
-      "loucura"
+      "psicologico",
+      "trash_b_movie"
     ]
   },
   {
@@ -3038,10 +2814,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "psicologico",
-      "loucura"
+      "psicologico"
     ]
   },
   {
@@ -3067,11 +2840,8 @@
     "tags": [
       "anos_80",
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -3096,12 +2866,12 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
-      "drama_familiar",
-      "assassino",
       "slasher",
-      "aclamado"
+      "aclamado",
+      "boneco",
+      "magia_negra",
+      "faca",
+      "comedia_terror"
     ]
   },
   {
@@ -3126,12 +2896,9 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
-      "espaco_sideral"
+      "espaco_sideral",
+      "trash_b_movie"
     ]
   },
   {
@@ -3156,10 +2923,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "aclamado"
     ]
   },
@@ -3185,10 +2949,12 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura"
+      "slasher",
+      "sobrenatural",
+      "sonho",
+      "luva_lamina",
+      "queimado"
     ]
   },
   {
@@ -3213,14 +2979,9 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "obra_prima",
-      "paranóia",
-      "natureza",
-      "mente",
-      "cabana",
-      "floresta",
+      "isolamento_natureza",
       "psicologico",
-      "loucura"
+      "obra_prima"
     ]
   },
   {
@@ -3245,10 +3006,15 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura"
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "faca",
+      "baba",
+      "suburbio",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -3273,11 +3039,14 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "machete",
+      "acampamento",
+      "lago"
     ]
   },
   {
@@ -3302,11 +3071,14 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "machete",
+      "acampamento",
+      "lago"
     ]
   },
   {
@@ -3331,10 +3103,15 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura"
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "faca",
+      "baba",
+      "suburbio",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -3359,11 +3136,13 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "assassino",
-      "slasher"
+      "sobrenatural",
+      "sonho",
+      "luva_lamina",
+      "queimado",
+      "psicologico"
     ]
   },
   {
@@ -3388,13 +3167,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_80",
-      "paranóia",
-      "natureza",
-      "mente",
-      "cabana",
-      "floresta",
+      "isolamento_natureza",
       "psicologico",
-      "loucura",
       "aclamado"
     ]
   },
@@ -3420,11 +3194,8 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_80",
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
-      "slasher"
+      "slasher",
+      "trash_b_movie"
     ]
   },
   {
@@ -3449,12 +3220,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -3479,12 +3246,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_80",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -3509,9 +3273,6 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "aclamado"
     ]
@@ -3538,11 +3299,15 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "slasher",
+      "motosserra",
+      "familia_canibal",
+      "texas",
+      "rural",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -3567,11 +3332,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie"
     ]
   },
   {
@@ -3596,11 +3358,13 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "assassino",
-      "slasher"
+      "boneco",
+      "magia_negra",
+      "faca",
+      "anos_80",
+      "comedia_terror"
     ]
   },
   {
@@ -3625,11 +3389,8 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
-      "slasher"
+      "slasher",
+      "trash_b_movie"
     ]
   },
   {
@@ -3654,11 +3415,9 @@
     "category": "Aliens / Sci-Fi Horror",
     "tags": [
       "anos_90",
-      "extraterrestre",
-      "scifi",
+      "alien",
       "trash_b_movie",
-      "espaco",
-      "alien"
+      "scifi"
     ]
   },
   {
@@ -3683,11 +3442,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -3712,12 +3468,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -3742,9 +3495,6 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher"
     ]
   },
@@ -3770,11 +3520,8 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "obra_prima",
-      "serial_killer",
-      "humano",
-      "assassino",
-      "slasher"
+      "slasher",
+      "obra_prima"
     ]
   },
   {
@@ -3799,11 +3546,14 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "obra_prima",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura"
+      "obra_prima",
+      "slasher",
+      "sobrenatural",
+      "sonho",
+      "luva_lamina",
+      "queimado",
+      "anos_80"
     ]
   },
   {
@@ -3828,11 +3578,13 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
-      "aclamado"
+      "aclamado",
+      "boneco",
+      "magia_negra",
+      "faca",
+      "anos_80",
+      "comedia_terror"
     ]
   },
   {
@@ -3857,11 +3609,8 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "obra_prima",
-      "serial_killer",
-      "humano",
-      "assassino",
-      "slasher"
+      "slasher",
+      "obra_prima"
     ]
   },
   {
@@ -3886,10 +3635,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "paranóia",
-      "mente",
-      "psicologico",
-      "loucura"
+      "psicologico"
     ]
   },
   {
@@ -3914,9 +3660,6 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher"
     ]
   },
@@ -3942,11 +3685,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -3971,11 +3711,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie"
     ]
   },
   {
@@ -4000,10 +3737,13 @@
     "category": "Aliens / Sci-Fi Horror",
     "tags": [
       "anos_90",
-      "extraterrestre",
+      "alien",
       "scifi",
-      "espaco",
-      "alien"
+      "espaco_sideral",
+      "nave",
+      "claustrofobia",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -4029,11 +3769,8 @@
     "tags": [
       "anos_90",
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -4059,11 +3796,8 @@
     "tags": [
       "anos_90",
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -4088,12 +3822,10 @@
     "category": "Demônios / Possessão",
     "tags": [
       "anos_90",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "trash_b_movie",
+      "possessao",
       "bruxaria",
-      "possessao"
+      "trash_b_movie",
+      "demonio"
     ]
   },
   {
@@ -4118,12 +3850,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
-      "crianca_macabra",
-      "gore",
-      "sadismo",
-      "tortura"
+      "crianca",
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -4148,12 +3877,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -4178,11 +3904,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie"
     ]
   },
   {
@@ -4207,11 +3930,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie"
     ]
   },
   {
@@ -4236,13 +3956,10 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
       "vampiro",
-      "gore",
-      "sadismo",
-      "tortura"
+      "trash_b_movie",
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -4267,12 +3984,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -4297,12 +4011,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -4327,11 +4038,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "obra_prima",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura"
+      "obra_prima"
     ]
   },
   {
@@ -4356,12 +4064,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
+      "aclamado",
       "tortura",
-      "aclamado"
+      "gore"
     ]
   },
   {
@@ -4386,11 +4091,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie"
     ]
   },
   {
@@ -4415,9 +4117,6 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher"
     ]
   },
@@ -4443,14 +4142,10 @@
     "category": "Demônios / Possessão",
     "tags": [
       "anos_90",
-      "religioso",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "trash_b_movie",
-      "exorcismo",
+      "possessao",
       "bruxaria",
-      "possessao"
+      "trash_b_movie",
+      "demonio"
     ]
   },
   {
@@ -4475,12 +4170,16 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "faca",
+      "baba",
+      "suburbio",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -4505,11 +4204,14 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
-      "slasher"
+      "slasher",
+      "gore",
+      "motosserra",
+      "familia_canibal",
+      "texas",
+      "rural",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -4534,11 +4236,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -4563,11 +4262,9 @@
     "category": "Demônios / Possessão",
     "tags": [
       "anos_90",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "bruxaria",
       "possessao",
+      "bruxaria",
+      "demonio",
       "aclamado"
     ]
   },
@@ -4594,13 +4291,15 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "obra_prima",
-      "serial_killer",
-      "humano",
-      "jogos_mortais",
-      "assassino",
       "slasher",
-      "mascara"
+      "obra_prima",
+      "armadilha",
+      "mascara",
+      "meta_linguagem",
+      "faca",
+      "telefone",
+      "adolescente",
+      "misterio"
     ]
   },
   {
@@ -4625,11 +4324,8 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "obra_prima",
-      "serial_killer",
-      "humano",
-      "assassino",
-      "slasher"
+      "slasher",
+      "obra_prima"
     ]
   },
   {
@@ -4654,10 +4350,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "aclamado"
     ]
   },
@@ -4683,12 +4376,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -4713,10 +4403,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "aclamado"
     ]
   },
@@ -4742,11 +4429,13 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
-      "slasher"
+      "slasher",
+      "meta_linguagem",
+      "mascara",
+      "faca",
+      "telefone",
+      "adolescente",
+      "misterio"
     ]
   },
   {
@@ -4771,11 +4460,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie"
     ]
   },
   {
@@ -4800,11 +4486,15 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
+      "slasher",
       "obra_prima",
-      "serial_killer",
-      "humano",
-      "assassino",
-      "slasher"
+      "alien",
+      "espaco_sideral",
+      "scifi",
+      "nave",
+      "claustrofobia",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -4829,13 +4519,10 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
-      "gore",
       "lobisomem",
-      "sadismo",
-      "tortura"
+      "trash_b_movie",
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -4860,11 +4547,8 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "obra_prima",
-      "serial_killer",
-      "humano",
-      "assassino",
-      "slasher"
+      "slasher",
+      "obra_prima"
     ]
   },
   {
@@ -4889,11 +4573,8 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
-      "slasher"
+      "slasher",
+      "trash_b_movie"
     ]
   },
   {
@@ -4918,12 +4599,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -4948,16 +4625,12 @@
     "category": "Monstros Clássicos / Bruxaria",
     "tags": [
       "anos_90",
-      "monstro",
-      "criatura",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "animal",
-      "trash_b_movie",
-      "besta",
+      "possessao",
       "bruxaria",
-      "possessao"
+      "trash_b_movie",
+      "demonio",
+      "monstro",
+      "criatura"
     ]
   },
   {
@@ -4982,12 +4655,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -5012,9 +4682,6 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher"
     ]
   },
@@ -5040,11 +4707,15 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
-      "aclamado"
+      "aclamado",
+      "serial_killer",
+      "mascara",
+      "faca",
+      "baba",
+      "suburbio",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -5069,12 +4740,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
+      "aclamado",
       "tortura",
-      "aclamado"
+      "gore"
     ]
   },
   {
@@ -5099,12 +4767,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
+      "aclamado",
       "tortura",
-      "aclamado"
+      "gore"
     ]
   },
   {
@@ -5129,12 +4794,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -5159,10 +4821,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "aclamado"
     ]
   },
@@ -5188,12 +4847,13 @@
     "category": "Gore / Tortura",
     "tags": [
       "anos_90",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
+      "aclamado",
       "tortura",
-      "aclamado"
+      "gore",
+      "psicologico",
+      "fantasma",
+      "plot_twist",
+      "crianca"
     ]
   },
   {
@@ -5219,13 +4879,9 @@
     "tags": [
       "anos_90",
       "casa_assombrada",
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
-      "confinamento"
+      "gore"
     ]
   },
   {
@@ -5250,11 +4906,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie"
     ]
   },
   {
@@ -5279,11 +4932,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura"
+      "trash_b_movie"
     ]
   },
   {
@@ -5308,19 +4958,20 @@
     "category": "Monstros Clássicos / Bruxaria",
     "tags": [
       "anos_90",
-      "obra_prima",
-      "natureza",
-      "monstro",
-      "cabana",
-      "criatura",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "animal",
-      "floresta",
-      "besta",
+      "possessao",
       "bruxaria",
-      "possessao"
+      "isolamento_natureza",
+      "obra_prima",
+      "demonio",
+      "monstro",
+      "criatura",
+      "psicologico",
+      "epoca",
+      "isolamento",
+      "religioso",
+      "bode",
+      "moderno",
+      "a24"
     ]
   },
   {
@@ -5345,9 +4996,6 @@
     "category": "Slasher / Serial Killer",
     "tags": [
       "anos_90",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "aclamado"
     ]
@@ -5374,11 +5022,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "obra_prima",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura"
+      "obra_prima"
     ]
   },
   {
@@ -5402,12 +5047,10 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Demônios / Possessão",
     "tags": [
-      "anos_90",
       "demonio",
-      "religiao",
-      "ocultismo",
-      "bruxaria",
-      "possessao"
+      "anos_90",
+      "possessao",
+      "bruxaria"
     ]
   },
   {
@@ -5432,10 +5075,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "anos_90",
-      "paranóia",
-      "mente",
-      "psicologico",
-      "loucura"
+      "psicologico"
     ]
   },
   {
@@ -5459,13 +5099,11 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Demônios / Possessão",
     "tags": [
-      "demonio",
-      "religiao",
-      "ocultismo",
+      "possessao",
+      "bruxaria",
       "anos_2000",
       "trash_b_movie",
-      "bruxaria",
-      "possessao"
+      "demonio"
     ]
   },
   {
@@ -5489,12 +5127,15 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
+      "slasher",
       "anos_2000",
-      "assassino",
-      "slasher"
+      "meta_linguagem",
+      "mascara",
+      "faca",
+      "telefone",
+      "adolescente",
+      "anos_90",
+      "misterio"
     ]
   },
   {
@@ -5519,12 +5160,9 @@
     "category": "Demônios / Possessão",
     "tags": [
       "demonio",
-      "religiao",
-      "ocultismo",
       "anos_2000",
-      "trash_b_movie",
-      "bruxaria",
-      "possessao"
+      "possessao",
+      "bruxaria"
     ]
   },
   {
@@ -5548,12 +5186,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Demônios / Possessão",
     "tags": [
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "anos_2000",
-      "bruxaria",
       "possessao",
+      "bruxaria",
+      "anos_2000",
+      "demonio",
       "aclamado"
     ]
   },
@@ -5578,17 +5214,20 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Monstros Clássicos / Bruxaria",
     "tags": [
+      "possessao",
+      "bruxaria",
+      "anos_2000",
+      "demonio",
+      "aclamado",
       "monstro",
       "criatura",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "animal",
-      "anos_2000",
-      "besta",
-      "bruxaria",
-      "possessao",
-      "aclamado"
+      "psicologico",
+      "epoca",
+      "isolamento",
+      "religioso",
+      "bode",
+      "moderno",
+      "a24"
     ]
   },
   {
@@ -5612,11 +5251,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "anos_2000"
     ]
   },
   {
@@ -5640,12 +5276,10 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "fantasma",
-      "assombracao",
       "sobrenatural",
+      "fantasma",
       "trash_b_movie",
-      "anos_2000",
-      "espirito"
+      "anos_2000"
     ]
   },
   {
@@ -5669,12 +5303,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "anos_2000"
     ]
   },
   {
@@ -5698,12 +5329,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "fantasma",
-      "assombracao",
       "sobrenatural",
+      "fantasma",
       "trash_b_movie",
-      "anos_2000",
-      "espirito"
+      "anos_2000"
     ]
   },
   {
@@ -5727,13 +5356,11 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Demônios / Possessão",
     "tags": [
-      "demonio",
-      "religiao",
-      "ocultismo",
+      "possessao",
+      "bruxaria",
       "anos_2000",
       "trash_b_movie",
-      "bruxaria",
-      "possessao"
+      "demonio"
     ]
   },
   {
@@ -5757,13 +5384,11 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Demônios / Possessão",
     "tags": [
-      "demonio",
-      "religiao",
-      "ocultismo",
+      "possessao",
+      "bruxaria",
       "anos_2000",
       "trash_b_movie",
-      "bruxaria",
-      "possessao"
+      "demonio"
     ]
   },
   {
@@ -5787,11 +5412,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "anos_2000"
     ]
   },
   {
@@ -5815,15 +5437,11 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Demônios / Possessão",
     "tags": [
-      "natureza",
-      "cabana",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "anos_2000",
-      "floresta",
-      "bruxaria",
       "possessao",
+      "bruxaria",
+      "anos_2000",
+      "isolamento_natureza",
+      "demonio",
       "aclamado"
     ]
   },
@@ -5848,11 +5466,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "anos_2000"
     ]
   },
   {
@@ -5876,16 +5491,12 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Demônios / Possessão",
     "tags": [
-      "natureza",
-      "cabana",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "anos_2000",
-      "trash_b_movie",
-      "floresta",
+      "possessao",
       "bruxaria",
-      "possessao"
+      "anos_2000",
+      "isolamento_natureza",
+      "trash_b_movie",
+      "demonio"
     ]
   },
   {
@@ -5909,12 +5520,14 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
       "anos_2000",
-      "assassino",
-      "slasher"
+      "zumbi",
+      "virus",
+      "corrida",
+      "apocalipse",
+      "londres"
     ]
   },
   {
@@ -5938,12 +5551,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "slasher",
+      "anos_2000"
     ]
   },
   {
@@ -5967,12 +5576,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "anos_2000"
     ]
   },
   {
@@ -5996,12 +5602,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "fantasma",
-      "assombracao",
       "sobrenatural",
+      "fantasma",
       "trash_b_movie",
-      "anos_2000",
-      "espirito"
+      "anos_2000"
     ]
   },
   {
@@ -6025,13 +5629,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000"
     ]
   },
   {
@@ -6055,13 +5656,16 @@
     "audience": "Terror investigativo, lendas urbanas e atmosferas opressivas.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "tecnologia_maldita",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura",
-      "aclamado"
+      "tecnologia",
+      "aclamado",
+      "anos_2000",
+      "sobrenatural",
+      "fita_maldita",
+      "menina",
+      "fantasma",
+      "investigacao",
+      "agua"
     ]
   },
   {
@@ -6085,12 +5689,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura",
-      "aclamado"
+      "aclamado",
+      "anos_2000"
     ]
   },
   {
@@ -6114,12 +5715,17 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
+      "psicologico",
       "trash_b_movie",
       "anos_2000",
-      "psicologico",
-      "loucura"
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "faca",
+      "baba",
+      "suburbio",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -6143,12 +5749,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
+      "slasher",
       "obra_prima",
-      "serial_killer",
-      "humano",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -6172,12 +5775,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000"
     ]
   },
   {
@@ -6201,12 +5801,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "slasher",
+      "anos_2000"
     ]
   },
   {
@@ -6230,12 +5826,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "anos_2000",
-      "assassino",
       "slasher",
-      "aclamado"
+      "aclamado",
+      "anos_2000"
     ]
   },
   {
@@ -6259,13 +5852,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000"
     ]
   },
   {
@@ -6289,12 +5878,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -6318,11 +5904,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "fantasma",
-      "assombracao",
       "sobrenatural",
-      "anos_2000",
-      "espirito"
+      "fantasma",
+      "anos_2000"
     ]
   },
   {
@@ -6346,13 +5930,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "anos_2000",
-      "gore",
-      "sadismo",
+      "aclamado",
       "tortura",
-      "aclamado"
+      "gore",
+      "anos_2000"
     ]
   },
   {
@@ -6376,12 +5957,16 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
       "anos_2000",
-      "assassino",
-      "slasher"
+      "gore",
+      "motosserra",
+      "familia_canibal",
+      "texas",
+      "rural",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -6405,12 +5990,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000"
     ]
   },
   {
@@ -6434,13 +6016,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000"
     ]
   },
   {
@@ -6464,12 +6043,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "anos_2000"
     ]
   },
   {
@@ -6493,11 +6069,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "slasher",
+      "anos_2000"
     ]
   },
   {
@@ -6521,12 +6094,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
+      "slasher",
       "obra_prima",
-      "serial_killer",
-      "humano",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -6550,11 +6120,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "anos_2000"
     ]
   },
   {
@@ -6578,12 +6145,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "obra_prima",
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "obra_prima",
+      "anos_2000"
     ]
   },
   {
@@ -6607,13 +6171,10 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
+      "crianca",
       "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "crianca_macabra",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -6637,13 +6198,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000"
     ]
   },
   {
@@ -6668,14 +6225,16 @@
     "audience": "Torture Porn e Plot Twists Magistrais.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "jogos_mortais",
-      "vampiro",
-      "anos_2000",
-      "assassino",
       "slasher",
-      "aclamado"
+      "armadilha",
+      "aclamado",
+      "anos_2000",
+      "gore",
+      "tortura",
+      "jogos_mortais",
+      "puzzle",
+      "plot_twist",
+      "marionete"
     ]
   },
   {
@@ -6699,11 +6258,15 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "anos_2000",
-      "assassino",
-      "slasher"
+      "alien",
+      "espaco_sideral",
+      "scifi",
+      "nave",
+      "claustrofobia",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -6727,12 +6290,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "fantasma",
-      "assombracao",
       "sobrenatural",
-      "anos_2000",
-      "espirito",
-      "aclamado"
+      "fantasma",
+      "aclamado",
+      "anos_2000"
     ]
   },
   {
@@ -6756,12 +6317,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -6785,12 +6343,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "obra_prima",
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "obra_prima",
+      "anos_2000"
     ]
   },
   {
@@ -6814,13 +6369,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000"
     ]
   },
   {
@@ -6844,12 +6396,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "anos_2000"
     ]
   },
   {
@@ -6873,12 +6422,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -6902,12 +6448,15 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
+      "psicologico",
       "trash_b_movie",
       "anos_2000",
-      "psicologico",
-      "loucura"
+      "sobrenatural",
+      "fita_maldita",
+      "menina",
+      "fantasma",
+      "investigacao",
+      "agua"
     ]
   },
   {
@@ -6931,12 +6480,10 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Zumbis",
     "tags": [
-      "aclamado",
       "anos_2000",
-      "infeccao",
       "zumbi",
-      "apocalipse",
-      "horda"
+      "aclamado",
+      "virus"
     ]
   },
   {
@@ -6961,13 +6508,9 @@
     "category": "Terror Psicológico",
     "tags": [
       "casa_assombrada",
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura",
-      "confinamento",
-      "aclamado"
+      "aclamado",
+      "anos_2000"
     ]
   },
   {
@@ -6991,12 +6534,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "slasher",
+      "anos_2000"
     ]
   },
   {
@@ -7020,15 +6559,12 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Demônios / Possessão",
     "tags": [
-      "obra_prima",
-      "religioso",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "anos_2000",
-      "exorcismo",
+      "possessao",
       "bruxaria",
-      "possessao"
+      "anos_2000",
+      "obra_prima",
+      "padre",
+      "demonio"
     ]
   },
   {
@@ -7051,16 +6587,12 @@
     "audience": "Julgamentos e Possessão Religiosa Baseada em Fatos Reais.",
     "category": "Demônios / Possessão",
     "tags": [
-      "casa_assombrada",
-      "religioso",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "anos_2000",
-      "exorcismo",
-      "bruxaria",
       "possessao",
-      "confinamento"
+      "casa_assombrada",
+      "bruxaria",
+      "anos_2000",
+      "padre",
+      "demonio"
     ]
   },
   {
@@ -7084,13 +6616,14 @@
     "audience": "O Pináculo do Torture Porn. Violência crua e sádica.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000",
+      "viagem",
+      "hostel",
+      "leste_europeu",
+      "rico",
+      "sadismo"
     ]
   },
   {
@@ -7114,11 +6647,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "anos_2000"
     ]
   },
   {
@@ -7142,12 +6672,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura",
-      "aclamado"
+      "aclamado",
+      "anos_2000"
     ]
   },
   {
@@ -7171,12 +6698,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
+      "slasher",
       "obra_prima",
-      "serial_killer",
-      "humano",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -7200,12 +6724,14 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000",
+      "armadilha",
+      "jogos_mortais",
+      "puzzle",
+      "plot_twist",
+      "marionete"
     ]
   },
   {
@@ -7229,11 +6755,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "slasher",
+      "anos_2000"
     ]
   },
   {
@@ -7257,12 +6780,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -7286,14 +6806,11 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Demônios / Possessão",
     "tags": [
-      "religioso",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "anos_2000",
-      "exorcismo",
-      "bruxaria",
       "possessao",
+      "bruxaria",
+      "anos_2000",
+      "padre",
+      "demonio",
       "aclamado"
     ]
   },
@@ -7318,12 +6835,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
+      "slasher",
       "obra_prima",
-      "serial_killer",
-      "humano",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -7347,13 +6861,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000"
     ]
   },
   {
@@ -7377,11 +6888,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "slasher",
+      "anos_2000"
     ]
   },
   {
@@ -7405,11 +6913,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "slasher",
+      "anos_2000"
     ]
   },
   {
@@ -7433,11 +6938,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "slasher",
+      "anos_2000"
     ]
   },
   {
@@ -7459,12 +6961,9 @@
     "audience": "Fãs do Nicolas Cage em atuações bizarras (Terror B/Comédia Involuntária).",
     "category": "Suspense Macabro",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "anos_2000"
     ]
   },
   {
@@ -7488,13 +6987,15 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000",
+      "armadilha",
+      "jogos_mortais",
+      "puzzle",
+      "plot_twist",
+      "marionete"
     ]
   },
   {
@@ -7518,13 +7019,17 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000",
+      "slasher",
+      "motosserra",
+      "familia_canibal",
+      "texas",
+      "rural",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -7548,13 +7053,10 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "obra_prima",
-      "paranóia",
-      "mente",
-      "anos_2000",
-      "psicologico",
       "espaco_sideral",
-      "loucura"
+      "psicologico",
+      "obra_prima",
+      "anos_2000"
     ]
   },
   {
@@ -7578,12 +7080,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "slasher",
+      "anos_2000"
     ]
   },
   {
@@ -7607,11 +7105,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "anos_2000"
     ]
   },
   {
@@ -7635,12 +7130,16 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
       "anos_2000",
-      "assassino",
-      "slasher"
+      "gore",
+      "tortura",
+      "armadilha",
+      "jogos_mortais",
+      "puzzle",
+      "plot_twist",
+      "marionete"
     ]
   },
   {
@@ -7664,11 +7163,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "anos_2000"
     ]
   },
   {
@@ -7693,12 +7189,9 @@
     "category": "Gore / Tortura",
     "tags": [
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000"
     ]
   },
   {
@@ -7722,12 +7215,15 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Aliens / Sci-Fi Horror",
     "tags": [
-      "extraterrestre",
-      "scifi",
+      "alien",
       "trash_b_movie",
+      "scifi",
       "anos_2000",
-      "espaco",
-      "alien"
+      "espaco_sideral",
+      "nave",
+      "claustrofobia",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -7751,12 +7247,10 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Zumbis",
     "tags": [
-      "aclamado",
       "anos_2000",
-      "infeccao",
       "zumbi",
-      "apocalipse",
-      "horda"
+      "aclamado",
+      "virus"
     ]
   },
   {
@@ -7780,11 +7274,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "anos_2000"
     ]
   },
   {
@@ -7808,12 +7299,16 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
+      "slasher",
       "obra_prima",
-      "serial_killer",
-      "humano",
       "anos_2000",
-      "assassino",
-      "slasher"
+      "gore",
+      "tortura",
+      "viagem",
+      "hostel",
+      "leste_europeu",
+      "rico",
+      "sadismo"
     ]
   },
   {
@@ -7837,13 +7332,15 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "anos_2000",
-      "gore",
-      "sadismo",
+      "aclamado",
       "tortura",
-      "aclamado"
+      "gore",
+      "anos_2000",
+      "zumbi",
+      "virus",
+      "corrida",
+      "apocalipse",
+      "londres"
     ]
   },
   {
@@ -7867,12 +7364,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "anos_2000"
     ]
   },
   {
@@ -7896,14 +7390,15 @@
     "audience": "Fãs de found-footage, sustos construídos lentamente e tensão crescente.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "casa_assombrada",
       "fantasma",
-      "assombracao",
-      "sobrenatural",
+      "casa_assombrada",
       "anos_2000",
-      "espirito",
-      "confinamento",
-      "aclamado"
+      "aclamado",
+      "sobrenatural",
+      "found_footage",
+      "camera",
+      "demonio",
+      "moderno"
     ]
   },
   {
@@ -7926,13 +7421,10 @@
     "audience": "Fãs de Zumbis claustrofóbicos e espanhóis.",
     "category": "Zumbis",
     "tags": [
-      "obra_prima",
       "anos_2000",
-      "virus",
-      "infeccao",
       "zumbi",
-      "apocalipse",
-      "horda"
+      "obra_prima",
+      "virus"
     ]
   },
   {
@@ -7956,12 +7448,17 @@
     "audience": "Fãs de Splatter, Gore e origens psicológicas aprofundadas.",
     "category": "Zumbis",
     "tags": [
-      "drama_familiar",
       "anos_2000",
-      "infeccao",
       "zumbi",
-      "apocalipse",
-      "horda"
+      "virus",
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "faca",
+      "baba",
+      "suburbio",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -7985,12 +7482,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -8014,13 +7508,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000"
     ]
   },
   {
@@ -8044,11 +7534,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "anos_2000"
     ]
   },
   {
@@ -8072,12 +7559,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -8101,12 +7585,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "anos_2000"
     ]
   },
   {
@@ -8130,11 +7610,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "slasher",
+      "anos_2000"
     ]
   },
   {
@@ -8158,12 +7635,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -8187,12 +7661,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura",
-      "aclamado"
+      "aclamado",
+      "anos_2000"
     ]
   },
   {
@@ -8216,12 +7687,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -8245,12 +7713,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "obra_prima",
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "obra_prima",
+      "anos_2000"
     ]
   },
   {
@@ -8274,13 +7739,15 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000",
+      "armadilha",
+      "jogos_mortais",
+      "puzzle",
+      "plot_twist",
+      "marionete"
     ]
   },
   {
@@ -8304,12 +7771,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "anos_2000",
-      "assassino",
       "slasher",
-      "aclamado"
+      "aclamado",
+      "anos_2000"
     ]
   },
   {
@@ -8333,12 +7797,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -8361,13 +7822,11 @@
     "audience": "Público americano que não gosta de legendas e prefere terror puramente sci-fi sem demônios.",
     "category": "Demônios / Possessão",
     "tags": [
-      "demonio",
-      "religiao",
-      "ocultismo",
+      "possessao",
+      "bruxaria",
       "anos_2000",
       "virus",
-      "bruxaria",
-      "possessao"
+      "demonio"
     ]
   },
   {
@@ -8391,13 +7850,10 @@
     "audience": "Extremamente Perturbador, Tortura Filosófica. Não é para os fracos.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "anos_2000",
-      "gore",
-      "sadismo",
+      "aclamado",
       "tortura",
-      "aclamado"
+      "gore",
+      "anos_2000"
     ]
   },
   {
@@ -8421,11 +7877,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "anos_2000"
     ]
   },
   {
@@ -8449,15 +7902,11 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Demônios / Possessão",
     "tags": [
-      "casa_assombrada",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "anos_2000",
-      "trash_b_movie",
-      "bruxaria",
       "possessao",
-      "confinamento"
+      "casa_assombrada",
+      "bruxaria",
+      "anos_2000",
+      "demonio"
     ]
   },
   {
@@ -8481,12 +7930,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "anos_2000"
     ]
   },
   {
@@ -8510,12 +7956,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "slasher",
+      "anos_2000"
     ]
   },
   {
@@ -8539,13 +7981,10 @@
     "audience": "Thriller Psicológico Familiar e Reviravoltas Chocantes.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
-      "crianca_macabra",
       "psicologico",
-      "loucura",
-      "aclamado"
+      "crianca",
+      "aclamado",
+      "anos_2000"
     ]
   },
   {
@@ -8570,11 +8009,9 @@
     "category": "Demônios / Possessão",
     "tags": [
       "demonio",
-      "religiao",
-      "ocultismo",
       "anos_2000",
-      "bruxaria",
-      "possessao"
+      "possessao",
+      "bruxaria"
     ]
   },
   {
@@ -8599,10 +8036,8 @@
     "category": "Zumbis",
     "tags": [
       "anos_2000",
-      "infeccao",
       "zumbi",
-      "apocalipse",
-      "horda"
+      "virus"
     ]
   },
   {
@@ -8627,10 +8062,8 @@
     "category": "Zumbis",
     "tags": [
       "anos_2000",
-      "infeccao",
       "zumbi",
-      "apocalipse",
-      "horda"
+      "virus"
     ]
   },
   {
@@ -8654,12 +8087,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "slasher",
+      "anos_2000"
     ]
   },
   {
@@ -8683,12 +8112,16 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
+      "psicologico",
       "trash_b_movie",
       "anos_2000",
-      "psicologico",
-      "loucura"
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "machete",
+      "acampamento",
+      "lago",
+      "anos_80"
     ]
   },
   {
@@ -8712,12 +8145,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
-      "crianca_macabra",
       "psicologico",
-      "loucura"
+      "crianca",
+      "anos_2000"
     ]
   },
   {
@@ -8741,13 +8171,14 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000",
+      "armadilha",
+      "jogos_mortais",
+      "puzzle",
+      "plot_twist",
+      "marionete"
     ]
   },
   {
@@ -8771,13 +8202,17 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "anos_2000",
-      "gore",
-      "sadismo",
+      "aclamado",
       "tortura",
-      "aclamado"
+      "gore",
+      "anos_2000",
+      "sobrenatural",
+      "fantasma",
+      "found_footage",
+      "camera",
+      "demonio",
+      "moderno",
+      "casa_assombrada"
     ]
   },
   {
@@ -8801,12 +8236,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "anos_2000"
     ]
   },
   {
@@ -8830,12 +8262,17 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
+      "psicologico",
       "trash_b_movie",
       "anos_2000",
-      "psicologico",
-      "loucura"
+      "slasher",
+      "meta_linguagem",
+      "mascara",
+      "faca",
+      "telefone",
+      "adolescente",
+      "anos_90",
+      "misterio"
     ]
   },
   {
@@ -8859,12 +8296,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura",
-      "aclamado"
+      "aclamado",
+      "anos_2000"
     ]
   },
   {
@@ -8888,12 +8322,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "anos_2000",
-      "psicologico",
       "vinganca",
-      "loucura"
+      "psicologico",
+      "anos_2000"
     ]
   },
   {
@@ -8917,12 +8348,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "obra_prima",
-      "paranóia",
-      "mente",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "obra_prima",
+      "anos_2000"
     ]
   },
   {
@@ -8946,12 +8374,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "anos_2000"
     ]
   },
   {
@@ -8975,12 +8400,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
-      "anos_2000",
-      "assassino",
-      "slasher"
+      "anos_2000"
     ]
   },
   {
@@ -9004,13 +8426,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000"
     ]
   },
   {
@@ -9034,12 +8453,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
-      "anos_2000",
       "psicologico",
-      "loucura"
+      "trash_b_movie",
+      "anos_2000"
     ]
   },
   {
@@ -9063,15 +8479,12 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Demônios / Possessão",
     "tags": [
-      "religioso",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "anos_2000",
-      "trash_b_movie",
-      "exorcismo",
+      "possessao",
       "bruxaria",
-      "possessao"
+      "anos_2000",
+      "padre",
+      "trash_b_movie",
+      "demonio"
     ]
   },
   {
@@ -9095,12 +8508,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "anos_2000",
+      "tortura",
       "gore",
-      "sadismo",
-      "tortura"
+      "anos_2000"
     ]
   },
   {
@@ -9124,12 +8534,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Aliens / Sci-Fi Horror",
     "tags": [
+      "alien",
       "obra_prima",
-      "extraterrestre",
       "scifi",
-      "anos_2000",
-      "espaco",
-      "alien"
+      "anos_2000"
     ]
   },
   {
@@ -9153,12 +8561,15 @@
     "audience": "Nova Geração querendo sustos diretos, sem humor.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
+      "psicologico",
       "trash_b_movie",
       "anos_2000",
-      "psicologico",
-      "loucura"
+      "slasher",
+      "sobrenatural",
+      "sonho",
+      "luva_lamina",
+      "queimado",
+      "anos_80"
     ]
   },
   {
@@ -9183,16 +8594,12 @@
     "audience": "Suspense denso, Jump-Scares eficazes e fãs de demônios.",
     "category": "Demônios / Possessão",
     "tags": [
-      "casa_assombrada",
-      "drama_familiar",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "anos_2000",
-      "crianca_macabra",
-      "bruxaria",
       "possessao",
-      "confinamento"
+      "casa_assombrada",
+      "bruxaria",
+      "crianca",
+      "anos_2000",
+      "demonio"
     ]
   },
   {
@@ -9216,14 +8623,11 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "obra_prima",
-      "armadilha",
-      "sangue",
       "anos_2000",
-      "gore",
+      "obra_prima",
       "lobisomem",
-      "sadismo",
-      "tortura"
+      "tortura",
+      "gore"
     ]
   },
   {
@@ -9247,12 +8651,16 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
+      "slasher",
       "trash_b_movie",
       "anos_2000",
-      "assassino",
-      "slasher"
+      "gore",
+      "tortura",
+      "armadilha",
+      "jogos_mortais",
+      "puzzle",
+      "plot_twist",
+      "marionete"
     ]
   },
   {
@@ -9277,12 +8685,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "casa_assombrada",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
-      "confinamento",
+      "gore",
       "moderno"
     ]
   },
@@ -9307,11 +8711,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "aclamado",
       "psicologico",
-      "loucura",
+      "aclamado",
       "moderno"
     ]
   },
@@ -9336,10 +8737,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -9364,11 +8762,8 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -9393,11 +8788,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
+      "aclamado",
       "moderno"
     ]
   },
@@ -9422,12 +8814,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -9452,12 +8841,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "religioso",
-      "exorcismo",
       "psicologico",
-      "loucura",
+      "padre",
       "moderno"
     ]
   },
@@ -9482,12 +8867,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -9512,12 +8894,16 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
-      "moderno"
+      "moderno",
+      "gore",
+      "tortura",
+      "viagem",
+      "hostel",
+      "leste_europeu",
+      "rico",
+      "sadismo",
+      "anos_2000"
     ]
   },
   {
@@ -9541,11 +8927,14 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
-      "moderno"
+      "moderno",
+      "sobrenatural",
+      "fantasma",
+      "found_footage",
+      "camera",
+      "demonio",
+      "casa_assombrada"
     ]
   },
   {
@@ -9569,17 +8958,11 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "natureza",
-      "armadilha",
-      "sangue",
+      "isolamento_natureza",
       "trash_b_movie",
-      "cabana",
-      "floresta",
-      "drama_familiar",
-      "gore",
-      "sadismo",
+      "moderno",
       "tortura",
-      "moderno"
+      "gore"
     ]
   },
   {
@@ -9603,13 +8986,18 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
-      "moderno"
+      "gore",
+      "moderno",
+      "slasher",
+      "meta_linguagem",
+      "mascara",
+      "faca",
+      "telefone",
+      "adolescente",
+      "anos_90",
+      "misterio"
     ]
   },
   {
@@ -9633,12 +9021,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -9663,10 +9048,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -9691,12 +9073,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "crianca_macabra",
-      "gore",
-      "sadismo",
+      "crianca",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -9721,11 +9100,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "aclamado",
       "psicologico",
-      "loucura",
+      "aclamado",
       "moderno"
     ]
   },
@@ -9750,11 +9126,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "fantasma",
-      "assombracao",
       "sobrenatural",
+      "fantasma",
       "aclamado",
-      "espirito",
       "moderno"
     ]
   },
@@ -9779,11 +9153,8 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -9808,12 +9179,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -9838,11 +9206,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -9867,12 +9232,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -9897,9 +9259,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -9925,11 +9284,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
+      "aclamado",
       "moderno"
     ]
   },
@@ -9954,12 +9310,15 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
-      "moderno"
+      "trash_b_movie",
+      "moderno",
+      "sobrenatural",
+      "fantasma",
+      "found_footage",
+      "camera",
+      "demonio",
+      "casa_assombrada"
     ]
   },
   {
@@ -9983,13 +9342,9 @@
     "audience": "Público que gosta de atmosferas aterrorizantes e o gênero found-footage incorporado na narrativa.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "casa_assombrada",
-      "fantasma",
-      "assombracao",
       "sobrenatural",
-      "drama_familiar",
-      "espirito",
-      "confinamento",
+      "fantasma",
+      "casa_assombrada",
       "moderno"
     ]
   },
@@ -10014,11 +9369,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -10043,12 +9395,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -10073,11 +9422,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
+      "aclamado",
       "moderno"
     ]
   },
@@ -10102,12 +9448,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "gore",
       "vinganca",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -10132,11 +9475,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -10161,9 +9501,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -10189,12 +9526,13 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
-      "moderno"
+      "moderno",
+      "zumbi",
+      "pandemia",
+      "global",
+      "acao",
+      "cgi"
     ]
   },
   {
@@ -10218,11 +9556,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "obra_prima",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
+      "obra_prima",
       "moderno"
     ]
   },
@@ -10247,11 +9582,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "obra_prima",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
+      "obra_prima",
       "moderno"
     ]
   },
@@ -10277,11 +9609,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -10307,12 +9636,16 @@
     "category": "Gore / Tortura",
     "tags": [
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
-      "moderno"
+      "gore",
+      "moderno",
+      "slasher",
+      "motosserra",
+      "familia_canibal",
+      "texas",
+      "rural",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -10336,14 +9669,10 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Demônios / Possessão",
     "tags": [
-      "religioso",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "trash_b_movie",
-      "exorcismo",
-      "bruxaria",
       "possessao",
+      "bruxaria",
+      "padre",
+      "demonio",
       "moderno"
     ]
   },
@@ -10368,13 +9697,14 @@
     "audience": "Jump-Scares Absolutos, Casal Clássico e Casas Mal-Assombradas.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "obra_prima",
-      "fantasma",
-      "assombracao",
       "sobrenatural",
-      "drama_familiar",
-      "espirito",
-      "moderno"
+      "fantasma",
+      "obra_prima",
+      "moderno",
+      "demonio",
+      "casa_assombrada",
+      "investigadores",
+      "boneca"
     ]
   },
   {
@@ -10398,16 +9728,10 @@
     "audience": "Fãs de Splatter extremo, remake moderno visceral.",
     "category": "Zumbis",
     "tags": [
-      "natureza",
-      "horda",
-      "religioso",
-      "cabana",
-      "exorcismo",
-      "floresta",
-      "infeccao",
+      "isolamento_natureza",
       "zumbi",
-      "apocalipse",
-      "moderno"
+      "moderno",
+      "virus"
     ]
   },
   {
@@ -10431,12 +9755,7 @@
     "audience": "Home Invasion, Distopia e Tensão Constante.",
     "category": "Suspense Macabro",
     "tags": [
-      "paranóia",
-      "mente",
-      "drama_familiar",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -10461,10 +9780,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -10489,10 +9805,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -10518,11 +9830,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -10547,11 +9856,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -10576,12 +9882,15 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
-      "moderno"
+      "gore",
+      "moderno",
+      "sobrenatural",
+      "fantasma",
+      "found_footage",
+      "camera",
+      "demonio",
+      "casa_assombrada"
     ]
   },
   {
@@ -10606,11 +9915,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -10635,10 +9941,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -10664,10 +9966,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -10693,12 +9992,9 @@
     "category": "Demônios / Possessão",
     "tags": [
       "demonio",
-      "religiao",
-      "ocultismo",
-      "trash_b_movie",
-      "bruxaria",
       "possessao",
-      "moderno"
+      "moderno",
+      "bruxaria"
     ]
   },
   {
@@ -10722,12 +10018,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -10752,10 +10045,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -10780,11 +10070,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -10809,11 +10096,8 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -10838,9 +10122,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -10866,20 +10147,14 @@
     "audience": "Terror Emocional, Alegorias e Filmes Indie Aclamados.",
     "category": "Monstros Clássicos / Bruxaria",
     "tags": [
-      "casa_assombrada",
-      "monstro",
-      "criatura",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "animal",
-      "crianca_macabra",
-      "drama_familiar",
-      "besta",
-      "bruxaria",
       "possessao",
-      "confinamento",
-      "moderno"
+      "bruxaria",
+      "casa_assombrada",
+      "crianca",
+      "demonio",
+      "moderno",
+      "monstro",
+      "criatura"
     ]
   },
   {
@@ -10903,10 +10178,8 @@
     "audience": "Terror Cult Indy. Suspense lento, paranóia iminente.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "fantasma",
-      "assombracao",
       "sobrenatural",
-      "espirito",
+      "fantasma",
       "moderno"
     ]
   },
@@ -10931,11 +10204,8 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -10960,11 +10230,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
+      "aclamado",
       "moderno"
     ]
   },
@@ -10989,11 +10256,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "fantasma",
-      "assombracao",
       "sobrenatural",
+      "fantasma",
       "trash_b_movie",
-      "espirito",
       "moderno"
     ]
   },
@@ -11018,14 +10283,11 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
       "vinganca",
-      "sadismo",
+      "obra_prima",
+      "moderno",
       "tortura",
-      "moderno"
+      "gore"
     ]
   },
   {
@@ -11049,9 +10311,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -11077,10 +10336,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -11105,12 +10361,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -11135,11 +10388,8 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -11164,12 +10414,16 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
-      "moderno"
+      "trash_b_movie",
+      "moderno",
+      "psicologico",
+      "bruxaria",
+      "epoca",
+      "isolamento",
+      "religioso",
+      "bode",
+      "a24"
     ]
   },
   {
@@ -11193,11 +10447,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -11222,9 +10472,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -11250,21 +10497,20 @@
     "audience": "Folk Horror A24 Lento, Opressivo e Cinematografia de Época.",
     "category": "Monstros Clássicos / Bruxaria",
     "tags": [
-      "natureza",
-      "monstro",
-      "cabana",
-      "criatura",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "animal",
-      "floresta",
-      "crianca_macabra",
-      "drama_familiar",
-      "besta",
-      "bruxaria",
       "possessao",
-      "moderno"
+      "bruxaria",
+      "crianca",
+      "isolamento_natureza",
+      "demonio",
+      "moderno",
+      "monstro",
+      "criatura",
+      "psicologico",
+      "epoca",
+      "isolamento",
+      "religioso",
+      "bode",
+      "a24"
     ]
   },
   {
@@ -11288,11 +10534,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "obra_prima",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
+      "obra_prima",
       "moderno"
     ]
   },
@@ -11317,12 +10560,14 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "obra_prima",
-      "fantasma",
-      "assombracao",
       "sobrenatural",
-      "espirito",
-      "moderno"
+      "fantasma",
+      "obra_prima",
+      "moderno",
+      "found_footage",
+      "camera",
+      "demonio",
+      "casa_assombrada"
     ]
   },
   {
@@ -11346,11 +10591,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -11375,12 +10616,10 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Zumbis",
     "tags": [
-      "horda",
-      "aclamado",
-      "infeccao",
       "zumbi",
-      "apocalipse",
-      "moderno"
+      "moderno",
+      "aclamado",
+      "virus"
     ]
   },
   {
@@ -11404,12 +10643,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -11434,11 +10670,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "aclamado",
       "psicologico",
-      "loucura",
+      "aclamado",
       "moderno"
     ]
   },
@@ -11463,12 +10696,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -11493,12 +10723,12 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
-      "moderno"
+      "moderno",
+      "gore",
+      "palhaco",
+      "violencia_extrema",
+      "indie"
     ]
   },
   {
@@ -11522,13 +10752,17 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
-      "moderno"
+      "gore",
+      "moderno",
+      "psicologico",
+      "bruxaria",
+      "epoca",
+      "isolamento",
+      "religioso",
+      "bode",
+      "a24"
     ]
   },
   {
@@ -11552,11 +10786,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -11581,11 +10812,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -11610,9 +10838,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -11638,12 +10863,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -11668,11 +10890,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "aclamado",
       "psicologico",
-      "loucura",
+      "aclamado",
       "moderno"
     ]
   },
@@ -11697,11 +10916,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -11726,20 +10942,14 @@
     "audience": "Fãs do filme original em busca de um encerramento.",
     "category": "Monstros Clássicos / Bruxaria",
     "tags": [
-      "natureza",
-      "monstro",
-      "cabana",
-      "criatura",
-      "demonio",
-      "religiao",
-      "ocultismo",
-      "animal",
-      "trash_b_movie",
-      "floresta",
-      "besta",
-      "bruxaria",
       "possessao",
-      "moderno"
+      "bruxaria",
+      "isolamento_natureza",
+      "trash_b_movie",
+      "demonio",
+      "moderno",
+      "monstro",
+      "criatura"
     ]
   },
   {
@@ -11763,11 +10973,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -11792,9 +10999,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -11820,12 +11024,8 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -11850,11 +11050,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -11879,11 +11076,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -11908,11 +11102,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -11937,11 +11128,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -11966,12 +11154,16 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
-      "moderno"
+      "gore",
+      "moderno",
+      "sobrenatural",
+      "fita_maldita",
+      "menina",
+      "fantasma",
+      "investigacao",
+      "anos_2000",
+      "agua"
     ]
   },
   {
@@ -11995,11 +11187,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "obra_prima",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
+      "obra_prima",
       "moderno"
     ]
   },
@@ -12024,12 +11213,15 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Aliens / Sci-Fi Horror",
     "tags": [
-      "extraterrestre",
-      "scifi",
-      "aclamado",
-      "espaco",
       "alien",
-      "moderno"
+      "aclamado",
+      "scifi",
+      "moderno",
+      "espaco_sideral",
+      "nave",
+      "claustrofobia",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -12053,11 +11245,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -12082,11 +11270,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
+      "aclamado",
       "moderno"
     ]
   },
@@ -12111,11 +11296,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -12140,11 +11322,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -12169,11 +11348,8 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -12198,13 +11374,14 @@
     "audience": "Terror Psicológico e Crítica Social.",
     "category": "Terror Psicológico",
     "tags": [
-      "obra_prima",
-      "paranóia",
-      "mente",
-      "drama_familiar",
       "psicologico",
-      "loucura",
-      "moderno"
+      "obra_prima",
+      "moderno",
+      "racismo",
+      "culto",
+      "hipnose",
+      "plot_twist",
+      "aclamado"
     ]
   },
   {
@@ -12229,13 +11406,17 @@
     "audience": "Terror de Coming-of-Age, Palhaços Macabros.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "stephen_king",
-      "aclamado",
       "psicologico",
-      "loucura",
-      "moderno"
+      "aclamado",
+      "moderno",
+      "alien",
+      "monstro",
+      "neve",
+      "isolamento",
+      "metamorfo",
+      "paranoia",
+      "anos_80"
     ]
   },
   {
@@ -12259,11 +11440,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -12288,12 +11466,9 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "jogos_mortais",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "armadilha",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -12318,12 +11493,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -12349,11 +11521,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -12378,11 +11547,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
+      "aclamado",
       "moderno"
     ]
   },
@@ -12407,10 +11573,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -12435,12 +11598,15 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
-      "moderno"
+      "aclamado",
+      "moderno",
+      "alien",
+      "acao",
+      "floresta",
+      "militar",
+      "cacador",
+      "anos_80"
     ]
   },
   {
@@ -12465,11 +11631,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -12494,12 +11657,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -12524,10 +11684,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -12553,11 +11710,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -12582,12 +11736,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -12612,13 +11763,19 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
-      "moderno"
+      "gore",
+      "moderno",
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "faca",
+      "baba",
+      "suburbio",
+      "classico",
+      "anos_70",
+      "vinganca"
     ]
   },
   {
@@ -12642,12 +11799,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -12672,10 +11826,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -12700,11 +11851,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "aclamado",
       "psicologico",
-      "loucura",
+      "aclamado",
       "moderno"
     ]
   },
@@ -12729,11 +11877,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -12758,11 +11903,8 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -12787,11 +11929,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -12816,15 +11954,17 @@
     "audience": "Terror Psicológico Pesado, Modern A24, Drama Familiar Destrutivo.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "obra_prima",
-      "casa_assombrada",
       "fantasma",
-      "assombracao",
+      "casa_assombrada",
+      "obra_prima",
+      "moderno",
       "sobrenatural",
+      "psicologico",
+      "demonio",
       "drama_familiar",
-      "espirito",
-      "confinamento",
-      "moderno"
+      "culto",
+      "tragedia",
+      "a24"
     ]
   },
   {
@@ -12848,11 +11988,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
+      "aclamado",
       "moderno"
     ]
   },
@@ -12877,11 +12014,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -12906,9 +12040,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -12935,11 +12066,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -12964,10 +12092,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Aliens / Sci-Fi Horror",
     "tags": [
-      "extraterrestre",
       "scifi",
       "trash_b_movie",
-      "espaco",
       "espaco_sideral",
       "alien",
       "moderno"
@@ -12994,13 +12120,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "obra_prima",
       "casa_assombrada",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
-      "confinamento",
+      "obra_prima",
       "moderno"
     ]
   },
@@ -13025,12 +12147,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -13055,11 +12174,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
+      "aclamado",
       "moderno"
     ]
   },
@@ -13084,9 +12200,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -13112,11 +12225,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
+      "aclamado",
       "moderno"
     ]
   },
@@ -13141,10 +12251,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -13170,12 +12276,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -13201,12 +12304,8 @@
     "category": "Terror Psicológico",
     "tags": [
       "casa_assombrada",
-      "paranóia",
-      "mente",
-      "aclamado",
       "psicologico",
-      "loucura",
-      "confinamento",
+      "aclamado",
       "moderno"
     ]
   },
@@ -13231,9 +12330,6 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -13259,12 +12355,13 @@
     "audience": "Fãs de ficção científica, Slasher tecnológico e releituras.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
-      "moderno"
+      "moderno",
+      "boneco",
+      "magia_negra",
+      "faca",
+      "anos_80",
+      "comedia_terror"
     ]
   },
   {
@@ -13288,13 +12385,15 @@
     "audience": "Cultos Diurnos, Tensão crescente e ansiedade visual.",
     "category": "Suspense Macabro",
     "tags": [
-      "obra_prima",
-      "paranóia",
-      "mente",
-      "drama_familiar",
       "psicologico",
-      "loucura",
-      "moderno"
+      "obra_prima",
+      "moderno",
+      "culto",
+      "luz_do_dia",
+      "viagem",
+      "trauma",
+      "a24",
+      "fogo"
     ]
   },
   {
@@ -13319,12 +12418,7 @@
     "category": "Terror Psicológico",
     "tags": [
       "casa_assombrada",
-      "paranóia",
-      "mente",
-      "drama_familiar",
       "psicologico",
-      "loucura",
-      "confinamento",
       "moderno"
     ]
   },
@@ -13349,11 +12443,9 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Zumbis",
     "tags": [
-      "horda",
-      "infeccao",
       "zumbi",
-      "apocalipse",
-      "moderno"
+      "moderno",
+      "virus"
     ]
   },
   {
@@ -13377,11 +12469,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "aclamado",
       "psicologico",
-      "loucura",
+      "aclamado",
       "moderno"
     ]
   },
@@ -13406,10 +12495,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -13435,9 +12520,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -13463,11 +12545,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "obra_prima",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
+      "obra_prima",
       "moderno"
     ]
   },
@@ -13492,11 +12571,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Zumbis",
     "tags": [
-      "horda",
-      "infeccao",
       "zumbi",
-      "apocalipse",
-      "moderno"
+      "moderno",
+      "virus"
     ]
   },
   {
@@ -13520,11 +12597,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -13549,10 +12623,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -13577,12 +12648,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -13607,13 +12675,16 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
-      "moderno"
+      "gore",
+      "moderno",
+      "sobrenatural",
+      "fantasma",
+      "demonio",
+      "casa_assombrada",
+      "investigadores",
+      "boneca"
     ]
   },
   {
@@ -13637,11 +12708,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "obra_prima",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
+      "obra_prima",
       "moderno"
     ]
   },
@@ -13666,11 +12734,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
+      "aclamado",
       "moderno"
     ]
   },
@@ -13695,12 +12760,17 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
-      "moderno"
+      "trash_b_movie",
+      "moderno",
+      "gore",
+      "tortura",
+      "armadilha",
+      "jogos_mortais",
+      "puzzle",
+      "anos_2000",
+      "plot_twist",
+      "marionete"
     ]
   },
   {
@@ -13724,11 +12794,8 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -13753,10 +12820,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -13781,11 +12845,8 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -13810,12 +12871,17 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "obra_prima",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
-      "moderno"
+      "obra_prima",
+      "moderno",
+      "slasher",
+      "serial_killer",
+      "mascara",
+      "faca",
+      "baba",
+      "suburbio",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -13839,11 +12905,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "obra_prima",
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
+      "obra_prima",
       "moderno"
     ]
   },
@@ -13868,11 +12931,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "obra_prima",
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
+      "obra_prima",
       "moderno"
     ]
   },
@@ -13897,12 +12957,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -13927,11 +12984,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
+      "aclamado",
       "moderno"
     ]
   },
@@ -13956,12 +13010,17 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
-      "moderno"
+      "trash_b_movie",
+      "moderno",
+      "slasher",
+      "meta_linguagem",
+      "mascara",
+      "faca",
+      "telefone",
+      "adolescente",
+      "anos_90",
+      "misterio"
     ]
   },
   {
@@ -13985,10 +13044,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -14013,10 +13069,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -14042,11 +13094,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -14071,12 +13119,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -14101,11 +13146,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -14130,11 +13172,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -14159,11 +13198,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "crianca_macabra",
-      "assassino",
       "slasher",
+      "crianca",
       "moderno"
     ]
   },
@@ -14188,12 +13224,16 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
-      "moderno"
+      "aclamado",
+      "moderno",
+      "serial_killer",
+      "mascara",
+      "faca",
+      "baba",
+      "suburbio",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -14217,12 +13257,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -14247,11 +13284,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -14276,12 +13310,16 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
-      "moderno"
+      "aclamado",
+      "moderno",
+      "gore",
+      "motosserra",
+      "familia_canibal",
+      "texas",
+      "rural",
+      "classico",
+      "anos_70"
     ]
   },
   {
@@ -14305,11 +13343,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "aclamado",
       "psicologico",
-      "loucura",
+      "aclamado",
       "moderno"
     ]
   },
@@ -14334,10 +13369,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -14364,11 +13395,8 @@
     "category": "Gore / Tortura",
     "tags": [
       "obra_prima",
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -14393,10 +13421,8 @@
     "audience": "Jump-scares psicológicos modernos, ciclo de maldição inquebrável.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "fantasma",
-      "assombracao",
       "sobrenatural",
-      "espirito",
+      "fantasma",
       "moderno"
     ]
   },
@@ -14421,11 +13447,14 @@
     "audience": "Gore Hounds, fãs de estômago forte e ultraviolência gráfica.",
     "category": "Sobrenatural / Fantasmas",
     "tags": [
-      "fantasma",
-      "assombracao",
       "sobrenatural",
-      "espirito",
-      "moderno"
+      "fantasma",
+      "moderno",
+      "slasher",
+      "gore",
+      "palhaco",
+      "violencia_extrema",
+      "indie"
     ]
   },
   {
@@ -14449,10 +13478,6 @@
     "audience": "Fãs de terror cult A24 e Slashers estilizados dos anos 70.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "vampiro",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -14480,12 +13505,10 @@
     "category": "Sobrenatural / Fantasmas",
     "tags": [
       "fantasma",
-      "assombracao",
-      "sobrenatural",
-      "jogos_mortais",
+      "armadilha",
       "aclamado",
-      "espirito",
-      "moderno"
+      "moderno",
+      "sobrenatural"
     ]
   },
   {
@@ -14509,9 +13532,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -14537,11 +13557,8 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -14566,11 +13583,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -14595,12 +13608,17 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
-      "moderno"
+      "trash_b_movie",
+      "moderno",
+      "gore",
+      "tortura",
+      "armadilha",
+      "jogos_mortais",
+      "puzzle",
+      "anos_2000",
+      "plot_twist",
+      "marionete"
     ]
   },
   {
@@ -14624,11 +13642,16 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
-      "moderno"
+      "moderno",
+      "slasher",
+      "meta_linguagem",
+      "mascara",
+      "faca",
+      "telefone",
+      "adolescente",
+      "anos_90",
+      "misterio"
     ]
   },
   {
@@ -14652,13 +13675,18 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
-      "moderno"
+      "gore",
+      "moderno",
+      "sobrenatural",
+      "possessao",
+      "demonio",
+      "padre",
+      "igreja",
+      "menina",
+      "classico",
+      "anos_70",
+      "obra_prima"
     ]
   },
   {
@@ -14682,11 +13710,8 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -14711,11 +13736,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -14740,10 +13762,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -14768,12 +13787,18 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
-      "moderno"
+      "aclamado",
+      "moderno",
+      "sobrenatural",
+      "possessao",
+      "demonio",
+      "padre",
+      "igreja",
+      "menina",
+      "classico",
+      "anos_70",
+      "obra_prima"
     ]
   },
   {
@@ -14797,9 +13822,6 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "assassino",
       "slasher",
       "moderno"
     ]
@@ -14825,11 +13847,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -14854,11 +13872,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -14883,14 +13898,10 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Demônios / Possessão",
     "tags": [
-      "religioso",
       "demonio",
-      "religiao",
-      "ocultismo",
-      "exorcismo",
-      "bruxaria",
       "possessao",
-      "moderno"
+      "moderno",
+      "bruxaria"
     ]
   },
   {
@@ -14914,12 +13925,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -14944,11 +13952,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
+      "aclamado",
       "moderno"
     ]
   },
@@ -14973,12 +13978,9 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "aclamado",
-      "gore",
-      "sadismo",
       "tortura",
+      "gore",
       "moderno"
     ]
   },
@@ -15003,11 +14005,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "aclamado",
-      "assassino",
       "slasher",
+      "aclamado",
       "moderno"
     ]
   },
@@ -15032,11 +14031,8 @@
     "audience": "Fãs de Slasher e perseguição.",
     "category": "Slasher / Serial Killer",
     "tags": [
-      "serial_killer",
-      "humano",
-      "trash_b_movie",
-      "assassino",
       "slasher",
+      "trash_b_movie",
       "moderno"
     ]
   },
@@ -15061,10 +14057,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -15089,11 +14082,7 @@
     "audience": "Amantes de Terror Psicológico e Suspense.",
     "category": "Terror Psicológico",
     "tags": [
-      "paranóia",
-      "mente",
-      "trash_b_movie",
       "psicologico",
-      "loucura",
       "moderno"
     ]
   },
@@ -15118,13 +14107,14 @@
     "audience": "Gore Hounds e adoradores do bizarro.",
     "category": "Gore / Tortura",
     "tags": [
-      "armadilha",
-      "sangue",
       "trash_b_movie",
-      "gore",
-      "sadismo",
       "tortura",
-      "moderno"
+      "gore",
+      "moderno",
+      "slasher",
+      "palhaco",
+      "violencia_extrema",
+      "indie"
     ]
   }
 ]

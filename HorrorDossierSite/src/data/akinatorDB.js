@@ -1,226 +1,172 @@
+// AKINATOR DATABASE v3
+// Perguntas agora possuem um 'domain' (global, slasher, sobrenatural, gore, psicologico, monstro).
+
 export const questionPool = [
-  // 1. MACRO-GENRE
+  // ---------------- GLOBAL DOMAIN ----------------
   {
     id: "q_root",
-    tag: "root",
-    text: "O que espreita nas sombras do seu pesadelo mais profundo?",
+    domain: "root",
+    text: "Em qual reino o seu pesadelo habita?",
     options: [
-      { text: "Um assassino mascarado com sede de sangue.", boostTags: ["slasher", "serial_killer"] },
-      { text: "Espíritos rancorosos e assombrações de casas.", boostTags: ["sobrenatural", "fantasma", "casa_assombrada"] },
-      { text: "A possessão demoníaca e rituais do inferno.", boostTags: ["demonio", "possessao", "exorcismo"] },
-      { text: "Aberrações da natureza, aliens ou zumbis famintos.", boostTags: ["monstro", "alien", "zumbi"] },
-      { text: "A quebra da mente humana e paranóia psicológica.", boostTags: ["psicologico", "loucura"] },
-      { text: "Tortura agonizante, armadilhas cruéis e sadismo.", boostTags: ["gore", "tortura"] }
+      { text: "Assassinos cruéis, perseguições e facas (Slasher).", boostTags: ["slasher", "serial_killer"] },
+      { text: "Espíritos, entidades invisíveis e exorcismos (Sobrenatural).", boostTags: ["sobrenatural", "fantasma", "demonio"] },
+      { text: "Loucura, paranóia e quebra de sanidade (Psicológico).", boostTags: ["psicologico"] },
+      { text: "Monstros, zumbis, alienígenas e criaturas físicas (Monstros).", boostTags: ["monstro", "zumbi", "alien"] },
+      { text: "Tortura agoniante, jogos sádicos e mutilações (Gore).", boostTags: ["gore", "tortura"] },
+      { text: "Mistério com fitas caseiras ou câmeras escondidas (Found Footage).", boostTags: ["found_footage"] }
     ]
   },
-  
-  // 2. ERA
   {
-    id: "q_era",
-    tag: "era",
-    text: "Em qual época esse pesadelo se desenrola?",
+    id: "g_era",
+    domain: "global",
+    text: "O visual e a época do filme são marcados por...",
     options: [
-      { text: "No preto e branco ou cores saturadas dos Clássicos (Pré-1980).", boostTags: ["classico"] },
-      { text: "Na nostálgica era dos anos 80, com efeitos práticos.", boostTags: ["anos_80"] },
-      { text: "No tom irônico, adolescente e grunge dos anos 90.", boostTags: ["anos_90"] },
-      { text: "Nas câmeras tremidas e remakes sombrios dos anos 2000.", boostTags: ["anos_2000"] },
-      { text: "Num terror estético, hiper-realista ou moderno (A24 vibes).", boostTags: ["moderno"] },
-      { text: "O tempo não importa, apenas o medo e a morte importam.", boostTags: [] }
+      { text: "Preto e branco ou charme antigo dos anos 70 para baixo.", boostTags: ["classico"] },
+      { text: "Sintetizadores, jaquetas e efeitos práticos gloriosos dos anos 80.", boostTags: ["anos_80"] },
+      { text: "Visual limpo adolescente com estética grunge/pop dos anos 90.", boostTags: ["anos_90"] },
+      { text: "Filtros escuros, CGI inicial e remakes dos anos 2000.", boostTags: ["anos_2000"] },
+      { text: "Câmeras modernas, redes sociais e ritmo artístico (Pós-2010).", boostTags: ["moderno"] },
+      { text: "A época não é relevante para essa história.", boostTags: [] }
     ]
   },
-
-  // 3. SETTING
   {
-    id: "q_setting",
-    tag: "setting",
-    text: "Onde ocorre o massacre ou a assombração?",
+    id: "g_setting",
+    domain: "global",
+    text: "Onde as vítimas encontram a desgraça?",
     options: [
-      { text: "Em uma cabana isolada na floresta escura.", boostTags: ["cabana", "floresta"] },
-      { text: "No confinamento claustrofóbico de um quarto ou casa.", boostTags: ["casa_assombrada", "confinamento"] },
-      { text: "No vazio silencioso e mortal do espaço sideral.", boostTags: ["espaco_sideral"] },
-      { text: "Nas ruas caóticas da cidade, entre cidadãos comuns.", boostTags: ["cidade"] },
-      { text: "Em um hospital psiquiátrico, asilo ou convento isolado.", boostTags: ["asilo", "hospital", "igreja"] },
-      { text: "Em um labirinto, prisão ou armadilha inescapável.", boostTags: ["jogos_mortais"] }
+      { text: "Em uma floresta, acampamento de verão ou cabana rural.", boostTags: ["isolamento_natureza"] },
+      { text: "Presos dentro de uma casa, apartamento ou quarto específico.", boostTags: ["casa_assombrada", "confinamento"] },
+      { text: "Em um ambiente urbano, subúrbio ou cidade cheia de pessoas.", boostTags: ["suburbio"] },
+      { text: "Em um hospital, asilo, ou base científica isolada.", boostTags: ["medico"] },
+      { text: "Viajando para longe de casa (Leste Europeu, espaço sideral, viagem).", boostTags: ["viagem", "espaco_sideral"] },
+      { text: "Trancados em um porão, armadilha ou labirinto.", boostTags: ["armadilha"] }
     ]
   },
-
-  // 4. SLASHER/WEAPON
   {
-    id: "q_weapon",
-    tag: "slasher",
-    text: "Como o antagonista executa suas vítimas de forma brutal?",
+    id: "g_protagonist",
+    domain: "global",
+    text: "Quem está sofrendo o ataque principal?",
     options: [
-      { text: "Rasgando carne com motosserras, machados ou facões rústicos.", boostTags: ["slasher", "forca_bruta"] },
-      { text: "Com lâminas silenciosas, como facas de cozinha perfeitamente polidas.", boostTags: ["slasher", "faca", "halloween"] },
-      { text: "Manipulando dispositivos letais onde a vítima deve se mutilar.", boostTags: ["tortura", "armadilha"] },
-      { text: "Atacando nos sonhos, usando garras ou manipulação da realidade.", boostTags: ["psicologico", "luva_lamina"] },
-      { text: "De forma inumana, arrancando membros com força bestial.", boostTags: ["monstro", "lobisomem"] },
-      { text: "Não executa. A vítima apenas se contorce sofrendo internamente.", boostTags: ["possessao", "fantasma"] }
+      { text: "Um grupo de jovens, adolescentes virgens ou festeiros.", boostTags: ["adolescente"] },
+      { text: "Uma família tentando recomeçar a vida ou salvar os filhos.", boostTags: ["drama_familiar", "crianca"] },
+      { text: "Profissionais (policiais, padres, astronautas, médicos).", boostTags: ["padre"] },
+      { text: "Uma única mulher lutando sozinha (A clássica Final Girl).", boostTags: ["baba", "slasher"] },
+      { text: "Pessoas ruins sendo punidas por seus pecados ou ignorância.", boostTags: ["vinganca"] },
+      { text: "Turistas, curiosos ou jornalistas se intrometendo.", boostTags: ["found_footage", "viagem"] }
     ]
   },
-
-  // 5. GHOST MANIFESTATION
   {
-    id: "q_paranormal",
-    tag: "sobrenatural",
-    text: "Como a entidade paranormal avisa que está no ambiente?",
+    id: "g_score",
+    domain: "global",
+    text: "A crítica diz que este filme é...",
     options: [
-      { text: "Objetos levitam, portas batem e cadeiras se empilham sozinhas.", boostTags: ["poltergeist", "casa_assombrada"] },
-      { text: "Através da tela de uma TV antiga, estática ou ligações macabras.", boostTags: ["tecnologia_maldita", "telefone"] },
-      { text: "O próprio rosto do familiar se contorce com um sorriso demoníaco.", boostTags: ["possessao", "sorriso"] },
-      { text: "Fitas de vídeo encontradas mostram coisas que você não deveria ver.", boostTags: ["found_footage", "fita_maldita"] },
-      { text: "Sussurros nas paredes e figuras de pessoas que morreram ali.", boostTags: ["fantasma", "espirito"] },
-      { text: "Um boneco de porcelana pisca os olhos quando você não olha.", boostTags: ["boneco", "artefato_maldito"] }
+      { text: "Uma Obra-Prima universal que definiu o gênero.", boostTags: ["obra_prima", "classico"] },
+      { text: "Fantástico, perturbador e altamente recomendado.", boostTags: ["aclamado", "moderno"] },
+      { text: "Divertido, cumpre a proposta e assusta na medida.", boostTags: [] },
+      { text: "Trash total: péssimas atuações, mas excelente pelo sangue.", boostTags: ["trash_b_movie", "comedia_terror"] },
+      { text: "Difícil de engolir, divisivo, ritmo lento (A24 vibes).", boostTags: ["a24"] },
+      { text: "Baseado no livro brilhante do Rei do Terror (Stephen King).", boostTags: ["stephen_king"] }
     ]
   },
 
-  // 6. CREATURE/MONSTER
+  // ---------------- SLASHER DOMAIN ----------------
   {
-    id: "q_monster",
-    tag: "monstro",
-    text: "A aberração que te caça no escuro se parece com:",
+    id: "s_mask",
+    domain: "slasher",
+    text: "O Assassino usa alguma coisa para esconder o rosto?",
     options: [
-      { text: "Um morto-vivo putrefato rastejando ou correndo furioso.", boostTags: ["zumbi", "virus"] },
-      { text: "Um xenomorfo esguio com sangue ácido no espaço.", boostTags: ["alien", "espaco_sideral"] },
-      { text: "Um lorde das trevas sugador de sangue e hipnótico.", boostTags: ["vampiro", "dracula"] },
-      { text: "Uma besta de duas toneladas coberta de pelos e garras sob a lua.", boostTags: ["lobisomem", "natureza"] },
-      { text: "Um inseto ou parasita gigante tentando te assimilar.", boostTags: ["mutacao", "animal"] },
-      { text: "Um ser cósmico de tentáculos com tamanho indescritível.", boostTags: ["horror_cosmico", "lovecraft"] }
+      { text: "Sim, uma máscara branca e sem expressão assustadora.", boostTags: ["mascara", "halloween"] },
+      { text: "Sim, uma máscara de hóquei, pano ou couro humano.", boostTags: ["mascara", "texas"] },
+      { text: "Não. O rosto dele é desfigurado ou queimado.", boostTags: ["queimado"] },
+      { text: "Não. É um assassino aparentemente comum ou misterioso.", boostTags: ["misterio"] },
+      { text: "É um brinquedo assassino ou objeto inanimado.", boostTags: ["boneco"] },
+      { text: "Ele usa fantasias cômicas ou de animais (como um palhaço).", boostTags: ["palhaco"] }
+    ]
+  },
+  {
+    id: "s_weapon",
+    domain: "slasher",
+    text: "A principal ferramenta de morte do Assassino é:",
+    options: [
+      { text: "Uma faca de cozinha perfeitamente limpa e brilhante.", boostTags: ["faca", "halloween", "adolescente"] },
+      { text: "Um facão de acampamento sujo de sangue.", boostTags: ["machete"] },
+      { text: "Uma motosserra barulhenta e desesperadora.", "boostTags": ["motosserra", "texas"] },
+      { text: "Uma luva com lâminas para rasgar a carne.", boostTags: ["luva_lamina"] },
+      { text: "O telefone. Ele liga e atormenta a vítima antes.", boostTags: ["telefone", "misterio"] },
+      { text: "Qualquer coisa ao redor, ele é criativo e brutal.", boostTags: ["gore"] }
     ]
   },
 
-  // 7. CRITICAL SCORE / QUALITY
+  // ---------------- SUPERNATURAL DOMAIN ----------------
   {
-    id: "q_score",
-    tag: "root",
-    text: "Qual é o nível da arte cinematográfica do seu pesadelo?",
+    id: "su_entity",
+    domain: "sobrenatural",
+    text: "A entidade paranormal se apresenta como:",
     options: [
-      { text: "Uma obra-prima incontestável, um marco absoluto do cinema (Score 8+).", boostTags: ["obra_prima"] },
-      { text: "Um filme visceral e tenso, muito elogiado pela crítica (Score 7+).", boostTags: ["aclamado"] },
-      { text: "Um terror divertido, que entrega exatamente o que promete (Mediano).", boostTags: ["pipoca"] },
-      { text: "B-Movie maravilhoso, atuações toscas e baldes de sangue falso (Score <6).", boostTags: ["trash_b_movie"] },
-      { text: "Gore exagerado com humor negro, pra rir com os amigos (Trash cômico).", boostTags: ["comedia_terror"] },
-      { text: "Uma adaptação brilhante e lenta da literatura (Stephen King vibes).", boostTags: ["stephen_king"] }
+      { text: "Um demônio milenar que toma o corpo de alguém.", boostTags: ["demonio", "possessao"] },
+      { text: "Uma criança assustadora com cabelos molhados/compridos.", boostTags: ["menina", "agua"] },
+      { text: "Um poltergeist que move móveis e portas sozinho.", boostTags: ["fantasma"] },
+      { text: "Uma presença amarrada a um objeto maldito (boneca, caixa).", boostTags: ["boneca"] },
+      { text: "Bruxas realizando rituais e sacrifícios na floresta.", boostTags: ["bruxaria"] },
+      { text: "Não conseguimos ver com os olhos, apenas nas fitas ou no espelho.", boostTags: ["camera", "fita_maldita"] }
+    ]
+  },
+  {
+    id: "su_defeat",
+    domain: "sobrenatural",
+    text: "Qual é a tentativa desesperada para parar o mal?",
+    options: [
+      { text: "Chamar um padre veterano para um Exorcismo perigoso.", boostTags: ["exorcismo", "padre", "igreja"] },
+      { text: "Investigadores paranormais (os Warren) trazendo equipamentos.", boostTags: ["investigadores"] },
+      { text: "Encontrar o cadáver escondido e queimar os ossos.", boostTags: ["espirito", "fantasma"] },
+      { text: "Tentar sobreviver 7 dias até que o prazo acabe.", boostTags: ["fita_maldita", "menina"] },
+      { text: "Sair correndo da casa de vez (mas a casa não é o problema).", boostTags: ["casa_assombrada"] },
+      { text: "Não tem salvação. O mal arrasta eles para o inferno.", boostTags: ["demonio"] }
     ]
   },
 
-  // 8. FINAL FATE
+  // ---------------- GORE DOMAIN ----------------
   {
-    id: "q_twist",
-    tag: "plot",
-    text: "O que acontece nos cinco minutos finais do filme perfeito?",
+    id: "g_trap",
+    domain: "gore",
+    text: "Qual é o motivo do sadismo neste filme?",
     options: [
-      { text: "O vilão senta, e a câmera afasta revelando que a maldição continua.", boostTags: ["franquia", "slasher"] },
-      { text: "O protagonista percebe num espelho que ELE era o vilão o tempo todo.", boostTags: ["psicologico", "plot_twist"] },
-      { text: "O padre grita o último feitiço e a fumaça preta é expurgada (Temporariamente).", boostTags: ["exorcismo"] },
-      { text: "A última mulher viva explode tudo e foge rindo/chorando em transe.", boostTags: ["gore", "vinganca", "final_girl"] },
-      { text: "A bateria da câmera pisca 'Sem Carga' e a tela corta para o preto.", boostTags: ["found_footage"] },
-      { text: "A humanidade é obliterada e monstros tomam a tela.", boostTags: ["zumbi", "alien"] }
+      { text: "Um assassino dá lições de moral fazendo as vítimas se cortarem.", boostTags: ["jogos_mortais", "armadilha"] },
+      { text: "Turistas ricos pagam para torturar pobres inocentes viajantes.", boostTags: ["hostel", "viagem"] },
+      { text: "Abre-se uma caixa/portal e demônios ensinam prazer extremo via dor.", boostTags: ["body_horror", "cenobita"] },
+      { text: "Um experimento médico doentio unindo os corpos das vítimas.", boostTags: ["body_horror", "medico", "nojento"] },
+      { text: "Pessoas são jogadas num labirinto mortal sem explicação.", boostTags: ["puzzle", "armadilha"] },
+      { text: "Canibais deformados simplesmente precisam se alimentar no Texas.", boostTags: ["familia_canibal", "texas"] }
     ]
   },
 
-  // 9. RELIGION / OCCULT
+  // ---------------- PSYCHOLOGICAL DOMAIN ----------------
   {
-    id: "q_occult",
-    tag: "demonio",
-    text: "De onde surgiu a maldição ancestral que afeta a sua casa?",
+    id: "p_trauma",
+    domain: "psicologico",
+    text: "Qual o trauma central que move a loucura do personagem?",
     options: [
-      { text: "Um culto de bruxas isoladas que sacrificam bebês ou animais.", boostTags: ["bruxaria", "culto"] },
-      { text: "Punição cristã divina. Um padre precisa enfrentar um príncipe do inferno.", boostTags: ["exorcismo", "padre", "igreja"] },
-      { text: "Fomos brincar com o tabuleiro Ouija/cartas e abrimos um portal.", boostTags: ["fantasma", "jogo_oculto"] },
-      { text: "Lemos um livro feito de pele humana encontrado no porão do avô.", boostTags: ["necronomicon", "evocacao"] },
-      { text: "Não é maldição. É um surto psicológico gerado por luto materno.", boostTags: ["psicologico", "drama_familiar"] },
-      { text: "Um rito milenar feito por aristocratas vampiros da era Vitoriana.", boostTags: ["vampiro", "classico"] }
+      { text: "Isolamento absoluto na neve, afetando o cérebro.", boostTags: ["isolamento", "neve", "stephen_king"] },
+      { text: "Luto materno, tragédia em família ou culpa.", boostTags: ["drama_familiar", "trauma", "a24"] },
+      { text: "A descoberta de racismo estrutural através de rituais e hipnose.", boostTags: ["racismo", "hipnose"] },
+      { text: "A quebra de confiança num relacionamento (viagem bizarra ao sol).", boostTags: ["luz_do_dia", "culto"] },
+      { text: "O personagem já estava morto e não percebeu (Plot Twist clássico).", boostTags: ["plot_twist", "anos_90"] },
+      { text: "Forte repressão religiosa ou sexual no passado.", boostTags: ["religioso", "bruxaria"] }
     ]
   },
 
-  // 10. HUMAN FLAW
+  // ---------------- MONSTER DOMAIN ----------------
   {
-    id: "q_human",
-    tag: "vitima",
-    text: "Por que você está morrendo? Qual foi o seu erro?",
+    id: "m_origin",
+    domain: "monstro",
+    text: "Qual é a origem da fera que ataca os humanos?",
     options: [
-      { text: "Eu transei, fumei maconha ou fiz bullying num acampamento (O Trope).", boostTags: ["anos_80", "slasher", "vinganca"] },
-      { text: "Meu marido me traiu e mudamos para uma casa barata, mas assombrada.", boostTags: ["drama_familiar", "casa_assombrada"] },
-      { text: "Paguei por férias sexuais/turísticas no Leste Europeu e me sequestraram.", boostTags: ["tortura", "gore", "sociedade"] },
-      { text: "Apertei o botão que desligou os escudos da nave de contenção alienígena.", boostTags: ["alien", "espaco_sideral"] },
-      { text: "Acessei a Deep Web sem saber quem eu estava assistindo.", boostTags: ["found_footage", "tecnologia_maldita"] },
-      { text: "Não errei. Fui escolhido aleatoriamente por um psicopata niilista.", boostTags: ["serial_killer", "violencia_gratuita"] }
-    ]
-  },
-
-  // 11. ZOMBIE/INFECTION
-  {
-    id: "q_zombie",
-    tag: "zumbi",
-    text: "No apocalipse dos mortos, a sua prioridade seria:",
-    options: [
-      { text: "Correr loucamente (Os infectados correm e espumam de raiva).", boostTags: ["infeccao", "moderno"] },
-      { text: "Trancar-se num shopping (Os zumbis são lentos e burros).", boostTags: ["zumbi", "classico", "anos_70"] },
-      { text: "Dar risada enquanto arranca cabeças com um cortador de grama.", boostTags: ["comedia_terror", "trash_b_movie", "gore"] },
-      { text: "Desconfiar mais dos humanos do acampamento do que dos mortos.", boostTags: ["apocalipse", "sociedade"] },
-      { text: "Usar tecnologia militar sofisticada que não adianta nada contra eles.", boostTags: ["virus", "scifi"] },
-      { text: "Curar o vírus geneticamente modificado em um laboratório branco.", boostTags: ["virus", "medico"] }
-    ]
-  },
-
-  // 12. FOUND FOOTAGE / TECH
-  {
-    id: "q_tech",
-    tag: "found_footage",
-    text: "Como você está filmando sua própria morte?",
-    options: [
-      { text: "Com a webcam do meu laptop presa no Zoom/Skype com meus amigos.", boostTags: ["tecnologia_maldita", "amigos", "moderno"] },
-      { text: "Com uma câmera de fita analógica no meio de uma floresta fria.", boostTags: ["found_footage", "bruxaria", "anos_90"] },
-      { text: "Apertando o celular na mão enquanto transmito live para redes sociais.", boostTags: ["moderno", "sociedade"] },
-      { text: "Através das Câmeras de Segurança lentas instaladas no meu quarto.", boostTags: ["atividade_paranormal", "fantasma"] },
-      { text: "Encontrei cassetes amaldiçoados (V/H/S) num porão cheirando a mofo.", boostTags: ["fita_maldita", "gore"] },
-      { text: "Através da TV estática com uma garotinha falando com fantasmas.", boostTags: ["classico", "sobrenatural"] }
-    ]
-  },
-
-  // 13. PSYCHO / MIND
-  {
-    id: "q_mind",
-    tag: "psicologico",
-    text: "Se você perder a sanidade, o que vai fazer com os outros?",
-    options: [
-      { text: "Isolar a mim mesmo e escrever a mesma frase 10.000 vezes na neve.", boostTags: ["loucura", "confinamento", "stephen_king"] },
-      { text: "Alimentar os segredos sombrios de um culto rural à luz do sol (Midsommar).", boostTags: ["culto", "natureza", "moderno"] },
-      { text: "Ter uma dupla personalidade que mata durante apagões.", boostTags: ["plot_twist", "mente"] },
-      { text: "Cortar meu próprio rosto acreditando que há insetos debaixo da pele.", boostTags: ["paranoia", "gore", "body_horror"] },
-      { text: "Enxergar os meus familiares como impostores que querem me destruir.", boostTags: ["drama_familiar", "psicologico"] },
-      { text: "Sequestrar minha atriz favorita e amarrá-la na cama para mim.", boostTags: ["serial_killer", "obsessao"] }
-    ]
-  },
-
-  // 14. GORE / TORTURE
-  {
-    id: "q_gore",
-    tag: "gore",
-    text: "Na pior sala do inferno, você deve escolher seu castigo:",
-    options: [
-      { text: "Serrar a própria perna com um arco de serra oxidado.", boostTags: ["jogos_mortais", "armadilha"] },
-      { text: "Ter agulhas inseridas em cada terminação nervosa pela glória divina.", boostTags: ["cenobita", "hellraiser", "sadismo"] },
-      { text: "Ser comido vivo, pedaço por pedaço, por canibais em uma ilha.", boostTags: ["canibal", "trash_b_movie", "anos_70"] },
-      { text: "Cair no covil da aranha alienígena gigante em outro planeta.", boostTags: ["alien", "espaco_sideral", "mutacao"] },
-      { text: "Participar do expurgo, onde a morte é um negócio estatal.", boostTags: ["sociedade", "vinganca"] },
-      { text: "Ser esfolado lentamente por caipiras sádicos em uma fazenda.", boostTags: ["serial_killer", "interior", "texas"] }
-    ]
-  },
-
-  // 15. AESTHETIC
-  {
-    id: "q_aesthetic",
-    tag: "root",
-    text: "Feche os olhos. Qual é a paleta de cores do seu pesadelo ideal?",
-    options: [
-      { text: "Monocromático, sombras expressionistas alemãs.", boostTags: ["classico", "preto_e_branco"] },
-      { text: "Vermelho sangue e texturas úmidas, banhado a neon barato.", boostTags: ["anos_80", "giallo"] },
-      { text: "Tons de verde e azul frios de fita VHS estourada.", boostTags: ["found_footage", "anos_90"] },
-      { text: "Tudo cinza e morto, a verdadeira melancolia em alta definição.", boostTags: ["psicologico", "anos_2000"] },
-      { text: "Cores solares e vívidas escondendo sacrifícios bizarros (A24 vibes).", boostTags: ["moderno", "culto"] },
-      { text: "O breu absoluto. Tela preta com apenas sons agoniantes.", boostTags: ["suspense_sonoro", "indie"] }
+      { text: "O espaço sideral, uma nave vazia ou planeta distante.", boostTags: ["alien", "espaco_sideral"] },
+      { text: "Um vírus pandêmico que se espalhou por sangue e saliva.", boostTags: ["virus", "apocalipse", "zumbi"] },
+      { text: "Uma maldição milenar europeia da aristocracia romena (Drácula).", boostTags: ["vampiro", "classico"] },
+      { text: "A lua cheia desencadeando a natureza primitiva humana.", boostTags: ["lobisomem", "natureza"] },
+      { text: "Desenterrada do gelo, assimilando suas vítimas perfeitamente.", boostTags: ["metamorfo", "paranoia"] },
+      { text: "Ciência que deu errado (mutação de moscas ou insetos gigantes).", boostTags: ["mutacao", "scifi"] }
     ]
   }
 ];

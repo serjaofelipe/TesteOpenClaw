@@ -16,6 +16,7 @@ function App() {
   const [quizStep, setQuizStep] = useState(0);
   const [askedQuestions, setAskedQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(null);
+  const [currentDomain, setCurrentDomain] = useState(null);
   const [candidates, setCandidates] = useState([]);
   const [recommendations, setRecommendations] = useState([]);
 
@@ -54,12 +55,24 @@ function App() {
   );
 
   const handleAnswer = (option) => {
+    
+    let newDomain = currentDomain;
+    if (quizStep === 0) {
+        if (option.boostTags.includes('slasher')) newDomain = 'slasher';
+        else if (option.boostTags.includes('sobrenatural')) newDomain = 'sobrenatural';
+        else if (option.boostTags.includes('gore')) newDomain = 'gore';
+        else if (option.boostTags.includes('psicologico')) newDomain = 'psicologico';
+        else if (option.boostTags.includes('monstro')) newDomain = 'monstro';
+        else newDomain = 'global';
+        setCurrentDomain(newDomain);
+    }
+
     // Boost scores based on chosen tags
     const newCandidates = candidates.map(movie => {
       let boost = 0;
       if (option.boostTags && option.boostTags.length > 0) {
         option.boostTags.forEach(t => {
-          if (movie.tags && movie.tags.includes(t)) boost += 15; // strong affinity
+          if (movie.tags && movie.tags.includes(t)) boost += 500; // Massive boost for accuracy
         });
       }
       return { ...movie, matchScore: movie.matchScore + boost };
@@ -76,7 +89,7 @@ function App() {
       setQuizStep(prev => prev + 1);
     } else {
       // Pick next dynamic question
-      const nextQ = calculateNextQuestion(newCandidates, newAsked);
+      const nextQ = calculateNextQuestion(newCandidates, newAsked, newDomain);
       if (nextQ) {
         setCurrentQuestion(nextQ);
         setQuizStep(prev => prev + 1);
@@ -89,27 +102,15 @@ function App() {
     }
   };
 
-  const calculateNextQuestion = (currentCands, askedIds) => {
-    // Akinator logic: find most prominent tags in top 50 candidates
-    const topCandidates = [...currentCands].sort((a, b) => b.matchScore - a.matchScore).slice(0, 50);
-    const tagCounts = {};
-    topCandidates.forEach(m => {
-      (m.tags || []).forEach(tag => {
-        tagCounts[tag] = (tagCounts[tag] || 0) + 1;
-      });
-    });
-
-    const availableQuestions = questionPool.filter(q => !askedIds.includes(q.id));
+  const calculateNextQuestion = (currentCands, askedIds, activeDomain) => {
+    // Filter questions by Domain
+    const availableQuestions = questionPool.filter(q => 
+      !askedIds.includes(q.id) && (q.domain === 'global' || q.domain === activeDomain)
+    );
     if (availableQuestions.length === 0) return null;
 
-    availableQuestions.forEach(q => {
-      q.relevanceScore = tagCounts[q.tag] || 0;
-      // Generic tags get a baseline relevance to ensure they are asked
-      if (['era', 'score', 'setting', 'aesthetic'].includes(q.tag)) q.relevanceScore += 15;
-    });
-
-    // Sort by relevance, mix ties randomly
-    availableQuestions.sort((a, b) => b.relevanceScore - a.relevanceScore || Math.random() - 0.5);
+    // To ensure a natural flow, we just pick the next available question in sequence
+    // since the question pool is already structured logically (Era -> Setting -> Weapon -> etc)
     return availableQuestions[0];
   };
 
@@ -120,6 +121,7 @@ function App() {
     // Find Root question
     const rootQ = questionPool.find(q => q.id === "q_root") || questionPool[0];
     setCurrentQuestion(rootQ);
+    setCurrentDomain(null);
     setAskedQuestions([]);
     setQuizStep(0);
     setRecommendations([]);
