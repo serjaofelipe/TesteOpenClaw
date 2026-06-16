@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Analyzer - Protocol 7</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for Terminal Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- Highlight.js for Code Syntax -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+</head>
+<body>
+    <!-- Matrix Background -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <header>
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="NETWORK.ANALYZER">NETWORK.ANALYZER</h1>
+            </div>
+            <p class="subtitle">> Initialize system diagnostics...</p>
+            
+            <nav class="cyber-nav">
+                <a href="#code-analysis" class="nav-btn">> CODE_ANALYSIS</a>
+                <a href="#wifi-networks" class="nav-btn">> WIFI_PROTOCOLS</a>
+                <a href="#bluetooth-networks" class="nav-btn">> BLUETOOTH_SYS</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- SECTION 1: Code Analysis -->
+            <section id="code-analysis" class="cyber-panel">
+                <h2><span class="prompt">root@system:~#</span> ./analyze_code.sh</h2>
+                <div class="content-body">
+                    <p>O script Python fornecido é uma ferramenta avançada de escaneamento de rede utilizando a biblioteca <strong>Scapy</strong>. Ele atua na camada OSI 2 e 3 para descobrir dispositivos e inferir seus sistemas operacionais.</p>
+                    
+                    <div class="code-container">
+                        <pre><code class="language-python">
+import scapy.all as scapy
+from scapy.layers.inet import IP, TCP, ICMP
+import socket
+import requests
+import time
+
+# --- FUNÇÕES AUXILIARES (MANTER IGUAL) ---
+def get_mac_vendor(mac_address):
+    # Função para obter fabricante via API
+    return "Fabricante Local"
+
+def identificar_os(ttl):
+    if ttl <= 64:
+        return "Linux/Android/Mac"
+    elif ttl <= 128:
+        return "Windows"
+    else:
+        return "Desconhecido"
+
+# --- NOVIDADE: PEGAR DADOS DA PRÓPRIA MÁQUINA ---
+def pegar_meu_mac_ip():
+    try:
+        # Pega a interface padrão que o Scapy está usando
+        mac = scapy.get_if_hwaddr(scapy.conf.iface)
+
+        # Pega o IP local (truque do socket UDP)
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(('8.8.8.8', 1))
+        ip = s.getsockname()[0]
+        s.close()
+
+        return {'ip': ip, 'mac': mac, 'vendor': 'ESTE DISPOSITIVO (HOST)'}
+    except:
+        return None
+
+def analisar_host(ip, mac, vendor_pre_definido=None):
+    print(f"\n[+] Analisando: {ip} ({mac})")
+
+    # Se já passamos o fabricante (caso seja o próprio PC), usa ele
+    if vendor_pre_definido:
+        vendor = vendor_pre_definido
+        os_guess = "Windows/Linux (Host Local)"
+    else:
+        vendor = get_mac_vendor(mac)
+        # Tenta Ping para descobrir OS
+        os_guess = "Não respondeu Ping"
+        try:
+            resp = scapy.sr1(IP(dst=ip) / ICMP(), timeout=1, verbose=0)
+            if resp:
+                os_guess = f"{identificar_os(resp.ttl)} (TTL={resp.ttl})"
+        except:
+            pass
+
+    print(f"    ► Fabricante: {vendor}")
+    print(f"    ► Sistema: {os_guess}")
+    print("-" * 50)
+
+def escanear_rede_ultimate(ip_range):
+    print(f"\n🚀 SCAPY SCANNER - Iniciando em {ip_range}")
+    print("=" * 60)
+
+    # 1. ARP Discovery (Vê os Vizinhos)
+    arp = scapy.ARP(pdst=ip_range)
+    ether = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
+    pacote = ether / arp
+    resultado = scapy.srp(pacote, timeout=2, verbose=0)[0]
+
+    # Lista de hosts
+    hosts = []
+
+    # --- AQUI ESTÁ A CORREÇÃO: ADICIONA O PRÓPRIO PC ---
+    meu_pc = pegar_meu_mac_ip()
+    if meu_pc:
+        hosts.append(meu_pc)
+        print(f"✓ (Eu mesmo) {meu_pc['ip']} detectado.")
+
+    # Adiciona os vizinhos encontrados na rede
+    for sent, received in resultado:
+        hosts.append({'ip': received.psrc, 'mac': received.hwsrc, 'vendor': None})
+
+    print(f"✓ Total de {len(hosts)} dispositivos. Detalhando...\n")
+
+    # 2. Análise Profunda
+    for host in hosts:
+        analisar_host(host['ip'], host['mac'], host['vendor'])
+
+# --- MAIN ---
+if __name__ == "__main__":
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(('8.8.8.8', 1))
+        meu_ip = s.getsockname()[0]
+        s.close()
+
+        base_ip = ".".join(meu_ip.split('.')[:3]) + ".1/24"
+        escanear_rede_ultimate(base_ip)
+    except Exception as e:
+        print("Erro de rede:", e)
+                        </code></pre>
+                    </div>
+
+                    <div class="analysis-grid">
+                        <div class="card">
+                            <h3><span class="icon">🔍</span> ARP Discovery</h3>
+                            <p>O <code>scapy.ARP</code> e <code>scapy.Ether</code> criam um pacote broadcast para varrer a sub-rede. A função <code>scapy.srp()</code> envia os pacotes e recebe respostas para mapear os vizinhos ativos (IP e MAC) instantaneamente.</p>
+                        </div>
+                        <div class="card">
+                            <h3><span class="icon">💻</span> Identificação OS (TTL)</h3>
+                            <p>Ao enviar pacotes ICMP (Ping), o script intercepta a resposta e analisa o valor <code>TTL (Time to Live)</code>. Valores nativos de ≤64 geralmente indicam Linux/Mac, enquanto ≤128 sugerem arquitetura Windows.</p>
+                        </div>
+                        <div class="card">
+                            <h3><span class="icon">📡</span> Host Detection</h3>
+                            <p>A função <code>pegar_meu_mac_ip()</code> utiliza um "truque" de conexão UDP (abrindo socket para 8.8.8.8) para extrair o IP local de forma segura, junto à interface nativa do Scapy para pegar o próprio MAC.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2: Wi-Fi -->
+            <section id="wifi-networks" class="cyber-panel">
+                <h2><span class="prompt">root@system:~#</span> cat /doc/wifi_security.txt</h2>
+                <div class="content-body">
+                    <p>Redes sem fio operam transmitindo pacotes por ondas de rádio (geralmente 2.4GHz ou 5GHz). A interceptação é trivial, exigindo criptografia robusta.</p>
+                    
+                    <ul class="data-list">
+                        <li>
+                            <span class="data-label">WPA2 (Wi-Fi Protected Access 2):</span>
+                            O padrão da década, utilizando AES e CCMP. É vulnerável a ataques de dicionário e de força bruta caso a senha seja fraca (ataque ao 4-way handshake).
+                        </li>
+                        <li>
+                            <span class="data-label">WPA3:</span>
+                            O novo padrão. Traz o protocolo SAE (Simultaneous Authentication of Equals), protegendo contra ataques de força bruta offline e criptografando o tráfego aberto.
+                        </li>
+                        <li>
+                            <span class="data-label">Mitigação & Segurança:</span>
+                            <br>- Desative o WPS (Vulnerável a ataques Pixie Dust / Reaver).
+                            <br>- Oculte o SSID em redes críticas.
+                            <br>- Isole redes IoT usando VLANs ou sub-redes convidadas.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION 3: Bluetooth -->
+            <section id="bluetooth-networks" class="cyber-panel">
+                <h2><span class="prompt">root@system:~#</span> bt-device --info</h2>
+                <div class="content-body">
+                    <p>O Bluetooth é um protocolo de rede Piconet de curto alcance operando em 2.4GHz com "frequency-hopping" (FHSS) para evitar interferências.</p>
+
+                    <div class="analysis-grid">
+                        <div class="card">
+                            <h3><span class="icon">⚡</span> Bluetooth LE (BLE)</h3>
+                            <p>Oculto no Bluetooth 4.0+, o BLE não mantém conexão contínua. Envia pacotes curtos e dorme, sendo vital para IoT, smartwatches e Beacons.</p>
+                        </div>
+                        <div class="card">
+                            <h3><span class="icon">🚀</span> Bluetooth 5.0+</h3>
+                            <p>Aumenta a velocidade (2 Mbps), alcança até 240 metros sem obstáculos e tem capacidade estendida de broadcasting. Revolucionou os fones TWS.</p>
+                        </div>
+                        <div class="card">
+                            <h3><span class="icon">🛡️</span> Riscos de Segurança</h3>
+                            <p>Ataques como BlueBorne ou Bluejacking podem comprometer dispositivos pareados. É vital desligar a visibilidade de dispositivos ("Discoverable") quando não estiver ativamente pareando algo.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>CONECTIVIDADE MÁXIMA ESTABELECIDA. &copy; 2026 Atlas Framework.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="script.js"></script>
+</body>
+</html>
