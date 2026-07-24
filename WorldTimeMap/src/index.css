@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg-dark: #0f0f13;
+  --bg-panel: #1a1a20;
+  --neon-purple: #b026ff;
+  --neon-purple-glow: rgba(176, 38, 255, 0.6);
+  --text-main: #f0f0f0;
+  --text-muted: #888890;
+  --map-land: #262630;
+  --map-border: #3f3f4a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  overflow-x: hidden;
+  background-image: radial-gradient(circle at 50% 0%, rgba(176, 38, 255, 0.15), transparent 60%);
+  min-height: 100vh;
+}
+
+h1, h2, h3, .time-display {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(176, 38, 255, 0.2);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-shadow: 0 0 10px var(--neon-purple-glow);
+}
+
+.title-icon {
+  color: var(--neon-purple);
+  filter: drop-shadow(0 0 5px var(--neon-purple));
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+  flex: 1;
+}
+
+@media (max-width: 1100px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.map-container {
+  background: var(--bg-panel);
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(176, 38, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tooltip */
+.map-tooltip {
+  position: absolute;
+  background: rgba(15, 15, 19, 0.9);
+  border: 1px solid var(--neon-purple);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  pointer-events: none;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  box-shadow: 0 0 15px var(--neon-purple-glow);
+  transform: translate(-50%, -150%);
+  z-index: 10;
+}
+
+/* Sidebar / Clocks */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.clock-card {
+  background: var(--bg-panel);
+  border-radius: 15px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.clock-card:hover {
+  transform: translateX(-5px);
+  border-color: rgba(176, 38, 255, 0.3);
+  box-shadow: -5px 5px 20px rgba(176, 38, 255, 0.1);
+}
+
+.clock-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--neon-purple);
+  box-shadow: 0 0 10px var(--neon-purple);
+}
+
+.city-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.time-display {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--neon-purple);
+  text-shadow: 0 0 15px var(--neon-purple-glow);
+  letter-spacing: 2px;
+}
+
+.date-display {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+/* Map Geographies */
+.rsm-geography {
+  transition: all 200ms;
+}
+
+.rsm-geography:hover {
+  fill: var(--neon-purple);
+  filter: drop-shadow(0 0 5px var(--neon-purple));
+  outline: none;
+}
