@@ -8,8 +8,8 @@ export default function Player() {
   const [ref, api] = useSphere(() => ({
     mass: 1,
     type: 'Dynamic',
-    position: [0, 5, 0],
-    args: [0.5]
+    position: [0, 10, 0], // Start higher to drop into the world
+    args: [0.5] // Player collision radius
   }))
 
   const velocity = useRef([0, 0, 0])
@@ -25,6 +25,7 @@ export default function Player() {
   const { moveForward, moveBackward, moveLeft, moveRight, jump } = usePlayerControls()
 
   useFrame(() => {
+    // Make camera follow the physics sphere
     camera.position.copy(new Vector3(pos.current[0], pos.current[1] + 0.5, pos.current[2]))
 
     const direction = new Vector3()
@@ -34,17 +35,18 @@ export default function Player() {
     direction
       .subVectors(frontVector, sideVector)
       .normalize()
-      .multiplyScalar(5)
+      .multiplyScalar(8) // Speed
       .applyEuler(camera.rotation)
 
     api.velocity.set(direction.x, velocity.current[1], direction.z)
 
+    // Simple jump logic (check if velocity y is almost 0 to jump)
     if (jump && Math.abs(velocity.current[1]) < 0.05) {
       api.velocity.set(velocity.current[0], 10, velocity.current[2])
     }
   })
 
-  return <mesh ref={ref} />
+  return <mesh ref={ref} /> // invisible mesh for physics
 }
 
 function usePlayerControls() {
